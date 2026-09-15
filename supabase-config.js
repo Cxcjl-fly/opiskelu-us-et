@@ -1,5 +1,5 @@
 // Paste the values from Supabase: Project Settings -> API
 window.OPISKELU_SUPABASE = {
-  url: 'https://YOUR_PROJECT_REF.supabase.co',
-  anonKey: 'YOUR_PUBLISHABLE_OR_ANON_KEY'
+    url: 'https://xejcdjfugzrrzwzlafyz.supabase.co',
+    anonKey: 'sb_publishable_lJpNgW-VYBoi36TZ2iEljQ_JVuYQ3kF'
 };
