@@ -1,0 +1,1361 @@
+<!doctype html><html lang="fi"><head><meta charset="utf-8"><meta name="viewport" content="width=device-width,initial-scale=1"><title>OPISKELU — US & ET</title><style>
+:root{--bg:#f4f0e7;--paper:#fffdf8;--ink:#1f2924;--muted:#68716b;--green:#365b4d;--gold:#b28b55;--line:#ddd5c7;--shadow:0 18px 55px #1c2a2218}
+*{box-sizing:border-box}html{scroll-behavior:smooth}body{margin:0;background:var(--bg);color:var(--ink);font-family:system-ui,-apple-system,"Segoe UI",sans-serif}.top{position:fixed;z-index:50;top:16px;left:16px;right:16px;display:flex;justify-content:space-between}.round{width:52px;height:52px;border:1px solid #ffffffaa;border-radius:50%;background:#fffdf4dd;backdrop-filter:blur(12px);box-shadow:0 8px 25px #0001;font-size:22px;cursor:pointer}.hero{min-height:86vh;display:grid;place-items:center;text-align:center;padding:100px 20px 80px;background:linear-gradient(#1d382c99,#1d382c99),url("data:image/svg+xml;utf8,<svg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 1600 900'><rect width='1600' height='900' fill='%239ebbb2'/><circle cx='1250' cy='170' r='120' fill='%23f3e4b6'/><path d='M0 500L180 270l150 230 170-260 160 260 180-300 170 300 190-260 190 260 170-290v400H0z' fill='%233e6657'/><path d='M0 600Q300 520 600 610T1200 600t400 20v280H0z' fill='%23213e35'/><path d='M0 690Q350 610 700 700t900-10v210H0z' fill='%23aebfba'/></svg>") center/cover}.heroCard{max-width:820px;color:#fff}.eyebrow{font-size:.8rem;letter-spacing:.18em;text-transform:uppercase}.hero h1,.serif{font-family:Georgia,serif}.hero h1{font-size:clamp(3rem,9vw,7rem);line-height:.92;margin:18px 0}.hero p{font-size:1.05rem;line-height:1.75;max-width:700px;margin:0 auto 25px}.btn{border:0;border-radius:999px;padding:13px 22px;font-weight:800;cursor:pointer;background:var(--green);color:white}.hero .btn{background:white;color:var(--ink)}.page{max-width:1080px;margin:auto;padding:70px 20px}.title{font:clamp(2.2rem,6vw,4rem) Georgia,serif;margin:0 0 10px}.muted{color:var(--muted);line-height:1.7}.books{display:grid;grid-template-columns:repeat(2,1fr);gap:24px;margin-top:30px}.book{background:var(--paper);border:1px solid var(--line);border-radius:28px;padding:30px;box-shadow:var(--shadow)}.book h2{font:2.2rem Georgia,serif;margin:8px 0}.list{display:grid;grid-template-columns:repeat(2,1fr);gap:10px;margin-top:18px}.chapter{display:flex;gap:10px;text-align:left;border:1px solid var(--line);border-radius:14px;background:white;padding:13px;font-weight:700;cursor:pointer}.chapter b{color:var(--green)}.drawer{position:fixed;z-index:60;left:0;top:0;bottom:0;width:min(340px,88vw);background:var(--paper);box-shadow:20px 0 50px #0003;transform:translateX(-105%);transition:.3s;padding:85px 22px;overflow:auto}.drawer.open{transform:none}.overlay{position:fixed;z-index:55;inset:0;background:#10201866;opacity:0;pointer-events:none;transition:.3s}.overlay.open{opacity:1;pointer-events:auto}.drawer button{width:100%;margin:6px 0;text-align:left;border:1px solid var(--line);background:white;border-radius:12px;padding:12px}.drawer .sub{border:0;background:transparent;color:var(--muted);padding:7px 14px}.panel{position:fixed;z-index:55;right:16px;top:76px;width:min(360px,calc(100vw - 32px));background:var(--paper);border:1px solid var(--line);border-radius:20px;padding:20px;box-shadow:var(--shadow)}input,textarea{width:100%;padding:11px;margin:6px 0;border:1px solid var(--line);border-radius:12px;background:white}.hidden{display:none!important}.reader{max-width:920px;margin:auto;padding:95px 20px 70px}.rail{position:fixed;z-index:20;left:0;top:42%;writing-mode:vertical-rl;transform:rotate(180deg);border:1px solid var(--line);border-radius:0 14px 14px 0;background:var(--paper);padding:13px 9px;font-weight:800;cursor:pointer;box-shadow:5px 10px 25px #0001}.head{text-align:center}.head h1{font:clamp(2.3rem,6vw,4.4rem) Georgia,serif;margin:12px 0 20px}.illustration{width:100%;height:260px;object-fit:cover;border-radius:26px;background:#496a5b}.toc{position:sticky;top:8px;z-index:10;display:flex;gap:8px;flex-wrap:wrap;padding:10px;background:#f4f0e7e8;backdrop-filter:blur(10px);border:1px solid var(--line);border-radius:18px;margin:20px 0}.toc button{flex:1;border:0;border-radius:12px;background:white;padding:10px;font-weight:800;cursor:pointer}.article{background:var(--paper);border:1px solid var(--line);border-radius:24px;padding:clamp(22px,5vw,40px);box-shadow:var(--shadow);margin:18px 0}.article p,.article li{line-height:1.8}.memory{border-left:6px solid var(--gold)}.task{border-top:1px solid var(--line);padding:20px 0}.task:first-child{border-top:0}.thumbs{display:flex;gap:8px;margin-bottom:9px}.thumbs button{width:45px;height:40px;border:1px solid var(--line);border-radius:12px;background:white;cursor:pointer;font-size:19px}.thumbs button.active{outline:2px solid var(--green)}.answer{display:none;margin-top:12px;background:#eaf1eb;border-radius:12px;padding:12px}.answer.show{display:block}.comments{margin-top:40px}.comment{background:white;border:1px solid var(--line);border-radius:15px;padding:12px;margin:9px 0}.avatar{width:30px;height:30px;border-radius:50%;object-fit:cover;vertical-align:middle;margin-right:8px}footer{border-top:1px solid var(--line);padding:35px 20px 25px;text-align:center;color:#727870;font-size:.76rem;line-height:1.6}@media(max-width:700px){.books,.list{grid-template-columns:1fr}.hero{min-height:80vh}.rail{font-size:.72rem}.reader{padding-left:15px;padding-right:15px}.toc button{min-width:90px}.illustration{height:210px}}
+
+/* V2 visual improvements */
+:root{--bg:#f5f7f2;--surface:#fff;--text:#17211b;--muted:#607064;--accent:#315b43;--line:#dbe3dc;--shadow:0 12px 35px rgba(20,40,28,.10)}
+body{background:var(--bg);color:var(--text);transition:background .3s,color .3s}
+.card,.panel,.chapter-card,.comments,.task,.hero,.modal,.side-menu{background:var(--surface);color:var(--text);border-color:var(--line)}
+.theme-toggle{position:fixed;top:18px;right:72px;z-index:1000;border:1px solid var(--line);background:var(--surface);color:var(--text);width:42px;height:42px;border-radius:50%;font-size:20px;cursor:pointer;box-shadow:var(--shadow)}
+.visual-gallery{display:grid;grid-template-columns:repeat(4,1fr);gap:12px;margin:28px 0}
+.visual-gallery .visual-card{min-height:150px;border-radius:20px;overflow:hidden;position:relative;background:linear-gradient(145deg,#dce9df,#eef3ed);border:1px solid var(--line)}
+.visual-gallery svg{width:100%;height:100%;display:block}
+.visual-card span{position:absolute;left:12px;bottom:10px;background:rgba(255,255,255,.82);padding:5px 9px;border-radius:999px;font-size:12px}
+.chapter-illustration{width:100%;max-height:330px;object-fit:cover;border-radius:24px;margin:14px 0 26px;border:1px solid var(--line);box-shadow:var(--shadow)}
+@media(max-width:800px){.visual-gallery{grid-template-columns:repeat(2,1fr)}.theme-toggle{right:64px}}
+@media(max-width:480px){.visual-gallery{grid-template-columns:1fr 1fr}.visual-gallery .visual-card{min-height:120px}}
+body.dark{--bg:#101613;--surface:#18201b;--text:#edf3ed;--muted:#aebcb1;--accent:#8fc5a1;--line:#304038;--shadow:0 14px 35px rgba(0,0,0,.28)}
+body.dark .theme-toggle{background:var(--surface);color:var(--text)}
+body.dark .visual-card{background:linear-gradient(145deg,#20372a,#16231c)}
+body.dark .visual-card span{background:rgba(20,28,23,.82);color:#edf3ed}
+
+
+/* ===== V3: visual gallery, theme switcher and forum ===== */
+.theme-switcher{
+  position:fixed;right:18px;top:18px;z-index:1200;
+  display:flex;gap:4px;padding:4px;border:1px solid var(--line);
+  border-radius:999px;background:var(--surface);box-shadow:var(--shadow);
+}
+.theme-switcher button{
+  border:0;background:transparent;color:var(--text);width:38px;height:34px;
+  border-radius:999px;cursor:pointer;font-size:16px;
+}
+.theme-switcher button.active{background:var(--accent);color:#fff}
+.mega-gallery{max-width:1180px;margin:30px auto 55px;padding:0 18px}
+.gallery-title{text-align:center;margin-bottom:20px}
+.gallery-title span,.section-kicker{letter-spacing:.16em;font-size:12px;color:var(--accent);font-weight:700}
+.gallery-title h2{margin:7px 0 0}
+.gallery-grid{display:grid;grid-template-columns:repeat(4,1fr);gap:14px}
+.gpic{
+  position:relative;min-height:180px;border-radius:22px;overflow:hidden;
+  border:1px solid var(--line);box-shadow:var(--shadow);
+  background-size:cover;background-position:center;
+}
+.gpic:before,.gpic:after{content:"";position:absolute;inset:0}
+.gpic:after{background:linear-gradient(transparent 45%,rgba(0,0,0,.58))}
+.gpic span{position:absolute;z-index:2;left:14px;bottom:13px;color:#fff;font-weight:700;text-shadow:0 1px 4px #000}
+.lake{background:linear-gradient(160deg,#b9d7e1 0 38%,#59745d 39% 59%,#719ca6 60% 100%)}
+.lake:before{background:linear-gradient(135deg,transparent 42%,rgba(255,255,255,.6) 43% 45%,transparent 46%);transform:scale(2)}
+.pine{background:linear-gradient(#c6dbe1 0 35%,#3f624d 36% 100%)}
+.pine:before{background:repeating-linear-gradient(110deg,transparent 0 25px,#274633 26px 48px);opacity:.8}
+.aurora{background:linear-gradient(160deg,#071923,#193d42 48%,#253b2c)}
+.aurora:before{background:radial-gradient(ellipse at 55% 20%,rgba(180,240,190,.8),transparent 38%),radial-gradient(ellipse at 30% 30%,rgba(130,200,220,.45),transparent 35%)}
+.cabin{background:linear-gradient(#cbdde0 0 46%,#526b50 47% 100%)}
+.cabin:before{inset:auto 15% 20% 15%;height:50%;background:#765844;clip-path:polygon(50% 0,100% 35%,100% 100%,0 100%,0 35%);box-shadow:inset 0 20px #8e6b51}
+.winter{background:linear-gradient(#b8cbd7 0 50%,#f4f5f2 51% 100%)}
+.winter:before{background:repeating-linear-gradient(110deg,transparent 0 28px,#58705e 29px 40px);opacity:.65}
+.meadow{background:linear-gradient(#e1cda9 0 45%,#738c60 46% 100%)}
+.meadow:before{background:radial-gradient(circle at 20% 30%,#fff 0 3px,transparent 4px),radial-gradient(circle at 60% 25%,#fff 0 3px,transparent 4px),radial-gradient(circle at 75% 55%,#fff 0 3px,transparent 4px)}
+.study{background:linear-gradient(135deg,#d7c6ae,#f2eadc)}
+.study:before{inset:20% 13%;background:repeating-linear-gradient(#8c755e 0 3px,transparent 4px 17px);border-radius:7px;box-shadow:0 0 0 12px #eee7dc}
+.mountain{background:linear-gradient(#b9d0d9 0 48%,#5d725c 49% 100%)}
+.mountain:before{background:linear-gradient(135deg,transparent 35%,#6c7f70 36% 55%,transparent 56%),linear-gradient(35deg,transparent 38%,#415a48 39% 70%,transparent 71%)}
+.forestpath{background:linear-gradient(120deg,#314d3b,#728866)}
+.forestpath:before{background:linear-gradient(65deg,transparent 40%,#c3ad89 41% 58%,transparent 59%);filter:blur(1px)}
+.autumn{background:linear-gradient(#d5b28e 0 42%,#7a6548 43% 100%)}
+.autumn:before{background:radial-gradient(circle at 20% 35%,#b56d48 0 16px,transparent 17px),radial-gradient(circle at 70% 28%,#c68a49 0 18px,transparent 19px),radial-gradient(circle at 45% 55%,#9c5b43 0 14px,transparent 15px)}
+.island{background:linear-gradient(#bdd6df 0 48%,#769ba3 49% 100%)}
+.island:before{inset:34% 20% 30%;background:#526c50;border-radius:50% 55% 45% 45%}
+.sunrise{background:linear-gradient(#d5c3b2 0 45%,#7c8f6b 46% 100%)}
+.sunrise:before{background:radial-gradient(circle at 50% 45%,#f1c681 0 35px,transparent 36px)}
+.forum-section{max-width:1000px;margin:40px auto;padding:30px 18px}
+.forum-intro{color:var(--muted)}
+.forum-toolbar{display:flex;gap:8px;flex-wrap:wrap;margin:18px 0}
+.forum-tab{padding:9px 14px;border-radius:999px;border:1px solid var(--line);background:var(--surface);color:var(--text);cursor:pointer}
+.forum-tab.active{background:var(--accent);color:#fff}
+.forum-form{display:grid;gap:10px;padding:20px;border:1px solid var(--line);border-radius:20px;background:var(--surface)}
+.forum-form input,.forum-form select,.forum-form textarea{
+  width:100%;box-sizing:border-box;padding:12px;border-radius:12px;border:1px solid var(--line);
+  background:var(--bg);color:var(--text);font:inherit
+}
+.forum-form textarea{min-height:110px;resize:vertical}
+.forum-form button{justify-self:start;border:0;border-radius:12px;padding:11px 17px;background:var(--accent);color:#fff;cursor:pointer}
+.forum-note{font-size:13px;color:var(--muted)}
+.forum-list{display:grid;gap:12px;margin-top:18px}
+.forum-post{padding:18px;border:1px solid var(--line);border-radius:18px;background:var(--surface)}
+.forum-post-head{display:flex;justify-content:space-between;gap:10px;align-items:center}
+.forum-badge{font-size:11px;letter-spacing:.08em;padding:5px 8px;border-radius:999px;background:var(--bg);color:var(--accent)}
+.forum-post h3{margin:9px 0 5px}
+.forum-post p{color:var(--muted);white-space:pre-wrap}
+.forum-meta{font-size:12px;color:var(--muted)}
+@media(max-width:900px){.gallery-grid{grid-template-columns:repeat(3,1fr)}}
+@media(max-width:650px){.gallery-grid{grid-template-columns:repeat(2,1fr)}.gpic{min-height:140px}}
+@media(max-width:420px){.gallery-grid{grid-template-columns:1fr}.gpic{min-height:170px}}
+
+
+/* V4: strong readable text over image backgrounds */
+body{
+  --text-on-image:#fff;
+  --image-overlay:linear-gradient(135deg,rgba(8,22,14,.72),rgba(18,45,29,.42));
+}
+.hero,.hero-section,.home-hero{
+  position:relative;
+  overflow:hidden;
+  color:#fff !important;
+  background-image:var(--image-overlay),linear-gradient(135deg,#365c46,#789b84) !important;
+  min-height:360px;
+  display:flex;
+  align-items:center;
+}
+.hero::before,.hero-section::before,.home-hero::before{
+  content:"";position:absolute;inset:0;
+  background:
+    radial-gradient(circle at 78% 25%,rgba(255,255,255,.28),transparent 22%),
+    linear-gradient(125deg,transparent 45%,rgba(255,255,255,.08) 46% 48%,transparent 49%);
+  pointer-events:none;
+}
+.hero>* ,.hero-section>* ,.home-hero>*{position:relative;z-index:1}
+.hero h1,.hero h2,.hero h3,.hero p,
+.hero-section h1,.hero-section h2,.hero-section h3,.hero-section p,
+.home-hero h1,.home-hero h2,.home-hero h3,.home-hero p{
+  color:#fff !important;
+  text-shadow:0 2px 12px rgba(0,0,0,.65);
+}
+.hero p,.hero-section p,.home-hero p{max-width:760px}
+.hero .button,.hero-section .button,.home-hero .button,
+.hero button,.hero-section button,.home-hero button{
+  box-shadow:0 5px 18px rgba(0,0,0,.22);
+}
+.card,.panel,.chapter-card,.comments,.task,.forum-post{
+  color:var(--text);
+}
+.card p,.panel p,.chapter-card p,.comments p,.task p,.forum-post p{
+  color:var(--muted);
+}
+/* Put important headings on image-like banners for contrast */
+.chapter-header,.page-banner,.section-banner{
+  position:relative;
+  color:#fff !important;
+  border-radius:24px;
+  padding:38px 30px;
+  overflow:hidden;
+  background:
+    linear-gradient(135deg,rgba(13,36,24,.80),rgba(43,79,57,.50)),
+    linear-gradient(120deg,#466b52,#9bb29d) !important;
+  box-shadow:var(--shadow);
+}
+.chapter-header::after,.page-banner::after,.section-banner::after{
+  content:"";position:absolute;inset:0;
+  background:radial-gradient(circle at 75% 20%,rgba(255,255,255,.24),transparent 25%);
+  pointer-events:none;
+}
+.chapter-header>* ,.page-banner>* ,.section-banner>*{position:relative;z-index:1}
+.chapter-header h1,.chapter-header h2,.chapter-header p,
+.page-banner h1,.page-banner h2,.page-banner p,
+.section-banner h1,.section-banner h2,.section-banner p{
+  color:#fff !important;text-shadow:0 2px 10px rgba(0,0,0,.65);
+}
+/* Light theme: never allow muted text to become too pale */
+body:not(.dark){--text:#17211b;--muted:#405247}
+body:not(.dark) .forum-note,body:not(.dark) .forum-meta{color:#53665a}
+body:not(.dark) .card,body:not(.dark) .panel,body:not(.dark) .chapter-card,
+body:not(.dark) .comments,body:not(.dark) .task,body:not(.dark) .forum-post{
+  background:#fff;
+}
+/* Make section labels readable on pale backgrounds */
+body:not(.dark) .section-kicker{color:#28553c}
+/* Optional image-style title cards */
+.image-title-card{
+  color:#fff!important;border-radius:24px;padding:28px;min-height:180px;
+  display:flex;flex-direction:column;justify-content:flex-end;
+  background:linear-gradient(0deg,rgba(0,0,0,.72),rgba(0,0,0,.08)),linear-gradient(135deg,#53745e,#b0c7b5);
+  box-shadow:var(--shadow);overflow:hidden;
+}
+.image-title-card *{color:#fff!important;text-shadow:0 2px 8px rgba(0,0,0,.7)}
+
+
+/* V5: synchronized text colors for light/dark themes */
+:root{
+  --bg:#f5f7f2;
+  --surface:#ffffff;
+  --surface-2:#eef3ee;
+  --text:#16211a;
+  --text-strong:#0d1711;
+  --muted:#405247;
+  --accent:#315b43;
+  --line:#d4ded7;
+}
+body.dark{
+  --bg:#101613;
+  --surface:#18201b;
+  --surface-2:#202b24;
+  --text:#edf5ee;
+  --text-strong:#ffffff;
+  --muted:#c0cdc3;
+  --accent:#9bcbaa;
+  --line:#35443a;
+}
+body,body *{
+  transition:color .2s ease,background-color .2s ease,border-color .2s ease;
+}
+body{
+  background:var(--bg)!important;
+  color:var(--text)!important;
+}
+body h1,body h2,body h3,body h4,body h5,body h6,
+body p,body li,body label,body span,body div{
+  color:inherit;
+}
+body a{color:var(--accent)}
+body .card,body .panel,body .chapter-card,body .comments,
+body .task,body .forum-post,body .forum-form{
+  background:var(--surface)!important;
+  color:var(--text)!important;
+  border-color:var(--line)!important;
+}
+body .card p,body .panel p,body .chapter-card p,
+body .comments p,body .task p,body .forum-post p,
+body .forum-note,body .forum-meta{
+  color:var(--muted)!important;
+}
+body input,body textarea,body select{
+  background:var(--surface-2)!important;
+  color:var(--text)!important;
+  border-color:var(--line)!important;
+}
+body input::placeholder,body textarea::placeholder{color:var(--muted)!important;opacity:.9}
+body .theme-switcher{
+  background:var(--surface)!important;
+  border-color:var(--line)!important;
+}
+body .theme-switcher button{color:var(--text)!important}
+body .theme-switcher button.active{background:var(--accent)!important;color:#fff!important}
+/* Menus and navigation also follow the selected theme */
+body .side-menu,body .menu,body nav,body header{
+  color:var(--text);
+}
+body .side-menu a,body nav a{color:var(--text)}
+/* Image banners deliberately keep white text in BOTH themes */
+body .hero,body .hero-section,body .home-hero,
+body .chapter-header,body .page-banner,body .section-banner,
+body .image-title-card{
+  color:#fff!important;
+}
+body .hero *,body .hero-section *,body .home-hero *,
+body .chapter-header *,body .page-banner *,body .section-banner *,
+body .image-title-card *{
+  color:#fff!important;
+}
+/* Buttons with light backgrounds must stay readable */
+body button:not(.theme-switcher button){
+  color:var(--text);
+}
+body .forum-tab{background:var(--surface)!important;color:var(--text)!important;border-color:var(--line)!important}
+body .forum-tab.active{background:var(--accent)!important;color:#fff!important}
+
+
+/* V6: profile button directly under the hamburger menu */
+.profile-btn,.profile-button,#profile-btn,#profile-button{
+  position:fixed!important;
+  left:18px!important;
+  top:70px!important;
+  right:auto!important;
+  z-index:1190!important;
+}
+@media(max-width:600px){
+  .profile-btn,.profile-button,#profile-btn,#profile-button{
+    left:14px!important;
+    top:66px!important;
+  }
+}
+
+
+/* V7: theme applies everywhere, including PÄÄVALIKKO and forum entries */
+body, body.dark{
+  --bg: #f5f7f2;
+  --surface: #ffffff;
+  --surface-2: #eef3ee;
+  --text: #16211a;
+  --text-strong: #0d1711;
+  --muted: #405247;
+  --accent: #315b43;
+  --line: #d4ded7;
+}
+body.dark{
+  --bg: #101613;
+  --surface: #18201b;
+  --surface-2: #202b24;
+  --text: #edf5ee;
+  --text-strong: #ffffff;
+  --muted: #c0cdc3;
+  --accent: #9bcbaa;
+  --line: #35443a;
+}
+
+/* Force every main UI container to use theme variables */
+body, main, header, footer, nav, section, article, aside,
+.paa-menu, .paavalikko, .main-menu, .side-menu, .sidebar,
+.menu-panel, .modal, .profile-panel, .comments, .comment,
+.forum-section, .forum-list, .forum-post, .forum-form,
+.card, .panel, .chapter-card, .task, .content, .catalog,
+.chapter, .page, .selection, .choice, .option{
+  color:var(--text);
+}
+
+/* PÄÄVALIKKO */
+.paa-menu, .paavalikko, .main-menu, .side-menu, .sidebar, .menu-panel{
+  background:var(--surface)!important;
+  color:var(--text)!important;
+  border-color:var(--line)!important;
+}
+.paa-menu *, .paavalikko *, .main-menu *, .side-menu *, .sidebar *, .menu-panel *{
+  color:var(--text)!important;
+}
+.paa-menu a, .paavalikko a, .main-menu a, .side-menu a, .sidebar a, .menu-panel a{
+  color:var(--text)!important;
+}
+.paa-menu a:hover, .paavalikko a:hover, .main-menu a:hover,
+.side-menu a:hover, .sidebar a:hover, .menu-panel a:hover{
+  color:var(--accent)!important;
+  background:var(--surface-2)!important;
+}
+
+/* All cards/records */
+.card,.panel,.chapter-card,.task,.comments,.comment,.forum-post,.forum-form,
+.selection,.choice,.option{
+  background:var(--surface)!important;
+  color:var(--text)!important;
+  border-color:var(--line)!important;
+}
+.card *, .panel *, .chapter-card *, .task *, .comments *, .comment *,
+.forum-post *, .forum-form *, .selection *, .choice *, .option *{
+  color:var(--text);
+}
+.card p,.panel p,.chapter-card p,.task p,.comments p,.comment p,
+.forum-post p,.forum-note,.forum-meta{
+  color:var(--muted)!important;
+}
+
+/* Form controls */
+input,textarea,select{
+  background:var(--surface-2)!important;
+  color:var(--text)!important;
+  border-color:var(--line)!important;
+}
+input::placeholder,textarea::placeholder{color:var(--muted)!important}
+
+/* Keep text on photographic/image banners white for contrast */
+.hero,.hero-section,.home-hero,.chapter-header,.page-banner,.section-banner,.image-title-card{
+  color:#fff!important;
+}
+.hero *, .hero-section *, .home-hero *, .chapter-header *,
+.page-banner *, .section-banner *, .image-title-card *{
+  color:#fff!important;
+}
+
+/* Footer follows theme too */
+footer{
+  background:var(--surface)!important;
+  color:var(--muted)!important;
+  border-color:var(--line)!important;
+}
+footer *{color:var(--muted)!important}
+
+/* Buttons follow theme unless they are accent buttons */
+button:not(.theme-switcher button){
+  color:var(--text);
+}
+button.primary,.primary,.btn-primary,
+.forum-form button,.forum-tab.active{
+  background:var(--accent)!important;
+  color:#fff!important;
+}
+
+/* Avoid hard-coded white/black backgrounds from old prototype */
+body.dark .white,.dark-mode .white{color:var(--text)!important}
+
+
+/* V9 — one global theme system for the ENTIRE interface */
+:root{
+  color-scheme:light;
+  --theme-bg:#f4f7f3;
+  --theme-surface:#ffffff;
+  --theme-surface-2:#edf2ed;
+  --theme-text:#142019;
+  --theme-heading:#0b1710;
+  --theme-muted:#405248;
+  --theme-border:#d1ddd4;
+  --theme-accent:#315b43;
+  --theme-accent-2:#e2ece4;
+  --theme-shadow:0 10px 30px rgba(21,42,29,.10);
+}
+body.dark{
+  color-scheme:dark;
+  --theme-bg:#0d1310;
+  --theme-surface:#171e1a;
+  --theme-surface-2:#202923;
+  --theme-text:#eef6ef;
+  --theme-heading:#ffffff;
+  --theme-muted:#c2cec5;
+  --theme-border:#35433a;
+  --theme-accent:#9bcbaa;
+  --theme-accent-2:#26382c;
+  --theme-shadow:0 10px 30px rgba(0,0,0,.32);
+}
+
+/* Global canvas */
+html,body{
+  background:var(--theme-bg)!important;
+  color:var(--theme-text)!important;
+}
+body *{
+  border-color:var(--theme-border);
+}
+body h1,body h2,body h3,body h4,body h5,body h6{
+  color:var(--theme-heading)!important;
+  text-shadow:none!important;
+}
+body p,body li,body label,body span,body small{
+  color:var(--theme-text);
+  text-shadow:none!important;
+}
+body .muted,body .description,body .subtitle,
+body .forum-note,body .forum-meta{
+  color:var(--theme-muted)!important;
+}
+body a{
+  color:var(--theme-accent)!important;
+}
+
+/* All likely containers / menus / records */
+body main,body header,body footer,body nav,body aside,body section,body article,
+body .card,body .panel,body .chapter-card,body .task,body .comments,
+body .comment,body .forum-section,body .forum-list,body .forum-post,
+body .forum-form,body .side-menu,body .sidebar,body .menu,
+body .menu-panel,body .modal,body .profile-panel,body .profile-menu,
+body .catalog,body .chapter,body .content,body .selection,body .choice,
+body .option{
+  color:var(--theme-text);
+}
+
+/* Surfaces follow theme */
+body .card,body .panel,body .chapter-card,body .task,
+body .comments,body .comment,body .forum-post,body .forum-form,
+body .side-menu,body .sidebar,body .menu-panel,body .modal,
+body .profile-panel,body .profile-menu,body .catalog{
+  background:var(--theme-surface)!important;
+  color:var(--theme-text)!important;
+  border-color:var(--theme-border)!important;
+  box-shadow:var(--theme-shadow);
+}
+body .card *,body .panel *,body .chapter-card *,body .task *,
+body .comments *,body .comment *,body .forum-post *,body .forum-form *,
+body .side-menu *,body .sidebar *,body .menu-panel *,body .modal *,
+body .profile-panel *,body .profile-menu *{
+  color:var(--theme-text);
+}
+body .card p,body .panel p,body .chapter-card p,body .task p,
+body .comments p,body .comment p,body .forum-post p{
+  color:var(--theme-muted)!important;
+}
+
+/* Inputs and controls */
+body input,body textarea,body select{
+  background:var(--theme-surface-2)!important;
+  color:var(--theme-text)!important;
+  border:1px solid var(--theme-border)!important;
+}
+body input::placeholder,body textarea::placeholder{
+  color:var(--theme-muted)!important;
+  opacity:1;
+}
+body button{
+  color:var(--theme-text);
+  border-color:var(--theme-border);
+}
+body .theme-switcher{
+  background:var(--theme-surface)!important;
+  border-color:var(--theme-border)!important;
+}
+body .theme-switcher button{
+  color:var(--theme-text)!important;
+}
+body .theme-switcher button.active,
+body .forum-tab.active{
+  background:var(--theme-accent)!important;
+  color:#fff!important;
+}
+
+/* Hamburger + profile/login: both are part of the selected theme */
+.menu-btn,.menu-button,.hamburger,
+.profile-btn,.profile-button,#profile-btn,#profile-button{
+  background:var(--theme-surface)!important;
+  color:var(--theme-text)!important;
+  border:1px solid var(--theme-border)!important;
+  box-shadow:var(--theme-shadow)!important;
+}
+.profile-btn,.profile-button,#profile-btn,#profile-button{
+  position:fixed!important;
+  left:18px!important;
+  top:70px!important;
+  right:auto!important;
+  z-index:1190!important;
+}
+
+/* Text over intentional image banners stays white */
+.hero,.hero-section,.home-hero,
+.chapter-header,.page-banner,.section-banner,.image-title-card{
+  color:#fff!important;
+}
+.hero h1,.hero h2,.hero h3,.hero p,
+.hero-section h1,.hero-section h2,.hero-section h3,.hero-section p,
+.home-hero h1,.home-hero h2,.home-hero h3,.home-hero p,
+.chapter-header h1,.chapter-header h2,.chapter-header h3,.chapter-header p,
+.page-banner h1,.page-banner h2,.page-banner h3,.page-banner p,
+.section-banner h1,.section-banner h2,.section-banner h3,.section-banner p,
+.image-title-card h1,.image-title-card h2,.image-title-card h3,.image-title-card p{
+  color:#fff!important;
+  text-shadow:0 2px 12px rgba(0,0,0,.72)!important;
+}
+
+/* Footer changes too */
+body footer,body footer *{
+  background:var(--theme-surface)!important;
+  color:var(--theme-muted)!important;
+}
+
+/* Remove old hard-coded prototype colors from common elements */
+body.dark .white,body.dark .black,
+body.dark [style*="color: black"],body.dark [style*="color:black"],
+body.dark [style*="background: white"],body.dark [style*="background:white"]{
+  color:var(--theme-text)!important;
+  background:var(--theme-surface)!important;
+}
+@media(max-width:600px){
+  .profile-btn,.profile-button,#profile-btn,#profile-button{
+    left:14px!important;
+    top:66px!important;
+  }
+}
+
+
+/* V10: theme-aware hamburger menu background images */
+.drawer{
+  isolation:isolate;
+  background:var(--theme-surface)!important;
+  overflow:hidden;
+}
+.drawer::before{
+  content:"";
+  position:absolute;
+  inset:0;
+  z-index:-2;
+  background:
+    linear-gradient(180deg,rgba(247,250,247,.72),rgba(247,250,247,.92)),
+    url("data:image/svg+xml;utf8,<svg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 900 1200'><rect width='900' height='1200' fill='%23b9d4dc'/><circle cx='700' cy='180' r='95' fill='%23f3df9a'/><path d='M0 520L140 300l120 220 150-250 150 250 130-190 210 230v420H0z' fill='%234b7059'/><path d='M0 690Q180 620 360 700T720 690t360 20v490H0z' fill='%236f9eaa'/><path d='M0 820Q220 750 450 830t450-5v375H0z' fill='%232a4c3d'/><path d='M70 700L140 520l70 180M210 720l65-210 80 210M620 690l80-210 85 210M760 700l65-180 75 180' stroke='%232b4d3c' stroke-width='38' fill='none'/></svg>") center/cover;
+  filter:saturate(.9);
+}
+.drawer::after{
+  content:"";
+  position:absolute;
+  inset:0;
+  z-index:-1;
+  background:linear-gradient(180deg,rgba(255,255,255,.18),rgba(255,255,255,.55));
+  pointer-events:none;
+}
+.drawer > *{position:relative;z-index:1}
+.drawer h2{
+  display:inline-block;
+  padding:9px 14px;
+  border-radius:14px;
+  background:rgba(255,255,255,.72);
+  backdrop-filter:blur(10px);
+}
+.drawer button{
+  background:rgba(255,255,255,.78)!important;
+  backdrop-filter:blur(10px);
+  box-shadow:0 5px 18px rgba(0,0,0,.08);
+}
+body.dark .drawer::before{
+  background:
+    linear-gradient(180deg,rgba(8,20,17,.54),rgba(8,20,17,.88)),
+    url("data:image/svg+xml;utf8,<svg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 900 1200'><rect width='900' height='1200' fill='%230b1d29'/><circle cx='700' cy='180' r='80' fill='%23d9e8dc' opacity='.75'/><path d='M0 430Q180 250 350 420T700 380t300 20v780H0z' fill='%231a3b3b'/><path d='M-50 420Q170 210 380 370T780 300T980 250' stroke='%2399e5b5' stroke-width='95' fill='none' opacity='.38'/><path d='M-50 390Q170 180 380 330T780 260T980 210' stroke='%2374b9d0' stroke-width='45' fill='none' opacity='.34'/><path d='M0 720Q220 650 450 730t450-5v475H0z' fill='%230d241b'/><path d='M70 720L145 500l75 220M215 735l70-260 90 260M610 720l80-240 85 240M755 730l70-210 80 210' stroke='%23091b14' stroke-width='42' fill='none'/></svg>") center/cover;
+}
+body.dark .drawer::after{
+  background:linear-gradient(180deg,rgba(8,20,17,.28),rgba(8,20,17,.66));
+}
+body.dark .drawer h2,
+body.dark .drawer button{
+  background:rgba(24,34,29,.78)!important;
+  color:var(--theme-text)!important;
+  border-color:rgba(160,190,170,.22)!important;
+}
+
+
+/* V11: opiskelun työkalut */
+.study-tools{display:grid;grid-template-columns:1.3fr .7fr;gap:14px;margin:22px 0}.search-box{padding:14px 16px;font-size:1rem}.progress-card{background:var(--surface);border:1px solid var(--line);border-radius:18px;padding:16px;box-shadow:var(--shadow)}.progress-track{height:10px;background:var(--surface-2);border-radius:999px;overflow:hidden;margin-top:9px}.progress-fill{height:100%;width:0;background:var(--accent);transition:width .35s}.chapter.done{border-color:var(--accent)}.chapter.done::after{content:'✓';margin-left:auto;color:var(--accent);font-size:1.2rem}.chapter-actions{display:flex;gap:10px;flex-wrap:wrap;margin-top:16px}.btn.secondary{background:var(--surface-2);color:var(--text);border:1px solid var(--line)}.study-tip{font-size:.9rem;color:var(--muted);margin:8px 0 0}@media(max-width:700px){.study-tools{grid-template-columns:1fr}}
+
+
+/* V17: tärkeimmät asiat laajemmin ja vastaukset näkyviksi kaikilla teemoilla */
+.memory li{margin:0 0 16px;padding:14px 16px;background:var(--accent-soft)!important;color:var(--theme-text)!important;border-radius:14px;border:1px solid color-mix(in srgb,var(--accent) 35%,transparent);line-height:1.75}
+.memory strong{color:var(--accent-strong)!important}
+body.dark .memory strong{color:var(--accent)!important}
+.answer{background:var(--theme-surface)!important;color:var(--theme-text)!important;border:2px solid var(--accent)!important;border-left:7px solid var(--accent)!important;box-shadow:0 6px 18px #0002;padding:16px 18px;line-height:1.7;font-size:1rem}
+.answer b{display:block;color:var(--accent)!important;font-size:1.05rem;margin-bottom:6px}
+.answer.show{display:block!important;animation:answerIn .2s ease-out}
+.task{color:var(--theme-text)!important}
+.task b{color:var(--theme-text)!important;line-height:1.6}
+body.dark .answer{background:#1d2921!important;color:#f4faf5!important;border-color:var(--accent)!important}
+body.dark .answer b{color:#b8e0c2!important}
+@keyframes answerIn{from{opacity:.2;transform:translateY(-4px)}to{opacity:1;transform:none}}
+
+
+/* V18: erittäin luettava tumma teema */
+body.dark{
+  --bg:#0b100d;--paper:#151d18;--surface:#151d18;--surface-2:#1d2821;
+  --text:#f5f8f5;--text-strong:#ffffff;--muted:#d2dbd4;--theme-text:#f7faf7;--theme-muted:#d5ded7;
+  --line:#46564c;--accent:#9fd9ae;--accent-soft:#223b2a;
+}
+body.dark,body.dark .page,body.dark .reader,body.dark .mega-gallery,body.dark .forum-section{color:var(--theme-text)!important;background:var(--bg)!important}
+body.dark p,body.dark li,body.dark label,body.dark span,body.dark div,body.dark small{color:inherit}
+body.dark .muted,body.dark .study-tip,body.dark .forum-note,body.dark .forum-meta,body.dark footer{color:#d5ded7!important;opacity:1}
+body.dark .article,body.dark .book,body.dark .panel,body.dark .progress-card,body.dark .forum-post,body.dark .forum-form,body.dark .comment,body.dark .drawer,body.dark .toc,body.dark .chapter,body.dark .answer{background:#18211b!important;color:#f7faf7!important;border-color:#46564c!important}
+body.dark .chapter,body.dark .drawer button,body.dark .toc button,body.dark .thumbs button,body.dark .round{background:#202b24!important;color:#ffffff!important;border-color:#53645a!important}
+body.dark input,body.dark textarea,body.dark select{background:#0f1612!important;color:#ffffff!important;border-color:#607168!important}
+body.dark input::placeholder,body.dark textarea::placeholder{color:#c9d3cc!important;opacity:1}
+body.dark .answer{background:#203426!important;border-left:5px solid var(--accent)!important;box-shadow:0 0 0 1px rgba(159,217,174,.15)}
+body.dark .answer *{color:#ffffff!important}
+body.dark h1,body.dark h2,body.dark h3,body.dark h4,body.dark h5,body.dark h6{color:#ffffff!important}
+body.dark .memory{background:#1c2a20!important;color:#fff!important}
+body.dark a{color:#b9f0c5!important}
+body.dark .section-kicker,body.dark .chapter b,body.dark .forum-badge{color:#b9f0c5!important}
+body.dark .gpic,.topic-visual{border-color:#526259!important}
+body.dark .theme-switcher{background:#18211b!important}
+body.dark footer{border-color:#46564c!important}
+
+/* V18: lisää aihetta kuvaavia visuaaleja */
+.topic-visuals{max-width:1080px;margin:30px auto 45px;padding:0 20px}
+.topic-visuals h2{text-align:center;margin:6px 0 22px}
+.topic-grid{display:grid;grid-template-columns:repeat(3,1fr);gap:16px}
+.topic-visual{min-height:210px;border-radius:22px;overflow:hidden;background:var(--surface);border:1px solid var(--line);box-shadow:var(--shadow);position:relative}
+.topic-visual svg{width:100%;height:160px;display:block;background:var(--surface-2)}
+.topic-visual h3{margin:14px 16px 6px}.topic-visual p{margin:0 16px 18px;color:var(--muted);line-height:1.55}
+@media(max-width:850px){.topic-grid{grid-template-columns:repeat(2,1fr)}}
+@media(max-width:520px){.topic-grid{grid-template-columns:1fr}.topic-visual{min-height:200px}}
+
+
+.v21-admin-badge,.v21-mod-badge{display:inline-block;font-size:.72rem;font-weight:900;padding:3px 7px;border-radius:999px;margin-left:6px;vertical-align:middle;letter-spacing:.02em}.v21-admin-badge{background:#f2c94c;color:#3b2a00}.v21-mod-badge{background:#d9e8ff;color:#173b6b}.v21-muted{display:inline-block;margin-left:6px;font-size:.72rem;font-weight:800}.v21-muted-note{padding:12px;border:1px solid #d6b7b7;border-radius:12px;margin-bottom:10px}.v21-mod-actions,.v21-forum-actions{display:flex;gap:7px;margin-top:10px;flex-wrap:wrap}.v21-mod-actions button,.v21-forum-actions button,.v21-panel-head button,.v21-row button{border:1px solid #bbb;border-radius:8px;padding:6px 9px;cursor:pointer;background:var(--surface,#fff);color:var(--text,#111)}.v21-admin-button{position:fixed;right:18px;bottom:18px;z-index:99998;border:0;border-radius:999px;padding:11px 15px;background:#315b43;color:#fff;font-weight:900;box-shadow:0 6px 20px #0003;cursor:pointer}.v21-panel{position:fixed;inset:0;z-index:99999;background:#0007;display:flex;align-items:center;justify-content:center;padding:20px}.v21-panel-card{width:min(760px,96vw);max-height:90vh;overflow:auto;background:var(--surface,#fff);color:var(--text,#111);border-radius:18px;padding:20px;box-shadow:0 20px 60px #0005}.v21-panel-head{display:flex;justify-content:space-between;align-items:center;gap:10px}.v21-row{padding:9px 0;border-bottom:1px solid var(--line,#ddd)}.v21-muted-post{opacity:.72}
+
+
+/* V12: allow the main menu and the whole site to scroll */
+html, body { height: 100%; overflow-x: hidden; }
+body { overflow-y: auto !important; }
+
+/* Side/main menus get their own vertical scrolling when content is taller than the screen */
+.drawer, .paa-menu, .paavalikko, .main-menu, .side-menu, .sidebar, .menu-panel {
+  max-height: 100vh;
+  overflow-y: auto !important;
+  overscroll-behavior: contain;
+  -webkit-overflow-scrolling: touch;
+}
+
+/* Keep menu content reachable on small screens */
+@media (max-height: 700px) {
+  .drawer { padding-top: 75px; padding-bottom: 30px; }
+  .paa-menu, .paavalikko, .main-menu, .side-menu, .sidebar, .menu-panel {
+    padding-bottom: 30px;
+  }
+}
+
+
+/* V13: cross-device compatibility and responsive interaction */
+html{min-height:100%;-webkit-text-size-adjust:100%;text-size-adjust:100%}
+body{min-width:0;min-height:100dvh;overflow-x:hidden!important}
+img,svg,video,canvas{max-width:100%;height:auto}
+button,input,select,textarea{font:inherit;max-width:100%}
+button,.btn,.chapter,.round,.toc button,.forum-tab,.theme-switcher button{touch-action:manipulation}
+button{min-height:44px}
+input,select{min-height:44px}
+textarea{min-height:110px}
+.top{gap:12px}
+.page,.reader,.mega-gallery,.forum-section{width:min(100%,1180px)}
+.books{min-width:0}.book,.article,.forum-post,.forum-form{min-width:0}
+.chapter{min-width:0;align-items:center;overflow-wrap:anywhere}
+.hero{min-height:100svh;min-height:100dvh;padding-left:max(20px,env(safe-area-inset-left));padding-right:max(20px,env(safe-area-inset-right))}
+.top{padding-left:env(safe-area-inset-left);padding-right:env(safe-area-inset-right)}
+.drawer{padding-bottom:max(30px,env(safe-area-inset-bottom));}
+.theme-switcher{right:max(18px,env(safe-area-inset-right));top:max(18px,env(safe-area-inset-top))}
+.progress-card,.study-tools{width:100%;min-width:0}
+.search-box{font-size:16px!important} /* prevents iOS zoom */
+@media (max-width:900px){
+ .books{grid-template-columns:1fr}
+ .book{padding:24px}
+ .top{top:10px;left:10px;right:10px}
+ .round{width:48px;height:48px}
+ .reader{padding-top:82px}
+}
+@media (max-width:700px){
+ .page{padding:52px 14px}.reader{padding:82px 12px 45px}
+ .hero{padding-top:95px;padding-bottom:55px}.hero h1{font-size:clamp(2.7rem,14vw,4.6rem)}
+ .hero p{font-size:1rem}.book{border-radius:20px;padding:20px}.article{border-radius:18px;padding:20px}
+ .list{grid-template-columns:1fr}.chapter{padding:14px;min-height:52px}
+ .toc{position:relative;top:auto;display:grid;grid-template-columns:repeat(2,minmax(0,1fr));gap:8px}
+ .toc button{min-width:0;white-space:normal}
+ .panel{left:10px;right:10px;top:70px;width:auto;max-height:calc(100dvh - 85px);overflow:auto}
+ .drawer{width:min(92vw,380px)}
+ .forum-post-head{align-items:flex-start;flex-direction:column}.forum-toolbar{display:grid;grid-template-columns:1fr 1fr}.forum-tab{width:100%}
+ .gallery-grid{grid-template-columns:1fr 1fr}.visual-gallery{grid-template-columns:1fr 1fr}
+ .chapter-actions{display:grid!important;grid-template-columns:1fr;gap:10px}.chapter-actions .btn{width:100%}
+}
+@media (max-width:420px){
+ .top{gap:8px}.round{width:44px;height:44px;font-size:19px}
+ .theme-switcher{transform:scale(.92);transform-origin:top right}
+ .gallery-grid,.visual-gallery{grid-template-columns:1fr}
+ .forum-toolbar{grid-template-columns:1fr}
+ .toc{grid-template-columns:1fr}
+ .title{font-size:2.2rem}
+}
+@media (hover:none){
+ .chapter:hover,.btn:hover,button:hover{transform:none!important}
+}
+@media (prefers-reduced-motion:reduce){
+ *,*::before,*::after{scroll-behavior:auto!important;transition-duration:.01ms!important;animation-duration:.01ms!important}
+}
+
+
+/* V14: yhtenäinen teemaväri, profiili valikkoon ja parempi luettavuus */
+:root{--accent:#315b43;--accent-strong:#244634;--accent-soft:#dcebe1;--theme-text:#16211a;--theme-muted:#405247;--theme-surface:#ffffff}
+body.dark{--accent:#9bcbaa;--accent-strong:#78b58a;--accent-soft:#243a2d;--theme-text:#f4faf5;--theme-muted:#c7d2c9;--theme-surface:#18201b}
+/* Käytä teemaväriä johdonmukaisesti kaikissa tärkeissä käyttöliittymäosissa */
+.btn,.progress-fill,.forum-tab.active,.theme-switcher button.active,.profile-menu-btn{background:var(--accent)!important;color:#fff!important}
+body.dark .btn,body.dark .progress-fill,body.dark .forum-tab.active,body.dark .theme-switcher button.active,body.dark .profile-menu-btn{color:#102016!important}
+.chapter b,.section-kicker,.gallery-title span,.forum-badge{color:var(--accent)!important}
+.chapter.done{border-color:var(--accent)!important;background:var(--accent-soft)!important}
+.chapter.done::after{color:var(--accent)!important}
+.thumbs button.active{outline-color:var(--accent)!important}
+.memory{border-left-color:var(--accent)!important}
+input:focus,textarea:focus,select:focus,button:focus-visible{outline:3px solid var(--accent)!important;outline-offset:2px}
+/* Kaikki tavallinen teksti riittävän kontrastiseksi */
+body,body p,body li,body label,body input,body textarea,body select,body button{color:var(--theme-text)}
+.muted,.study-tip,.forum-note,.forum-meta,footer{color:var(--theme-muted)!important}
+body.dark .muted,body.dark .study-tip,body.dark .forum-note,body.dark .forum-meta,body.dark footer{color:var(--theme-muted)!important}
+.article,.book,.panel,.progress-card,.forum-post,.forum-form,.comment{background:var(--theme-surface)!important;color:var(--theme-text)!important}
+.article h1,.article h2,.article h3,.book h1,.book h2,.book h3,.page h1,.page h2,.page h3,.reader h1,.reader h2,.reader h3{color:var(--theme-text)!important}
+/* Päävalikon profiili on heti hampurilaisvalikon sisällä */
+.top{justify-content:flex-start!important}.profile-menu-btn{font-weight:800!important;text-align:left!important}
+.drawer{overflow-y:auto!important;overscroll-behavior:contain}
+/* Teeman valinta pysyy näkyvänä kaikilla laitteilla */
+.theme-switcher{border-color:var(--accent)!important}
+.theme-switcher button.active{box-shadow:0 0 0 2px color-mix(in srgb,var(--accent) 35%,transparent)}
+@media(max-width:700px){.theme-switcher{right:12px;top:12px}.top{left:12px;right:auto}.drawer{padding-top:72px}.heroCard{padding-top:30px}}
+
+/* V19: päävalikon avattavat kappaleet */
+#navUS,#navET{display:none;padding:4px 0 10px;animation:menuOpen .18s ease-out}
+#navUS.open,#navET.open{display:block}
+.drawer>button[onclick*="nav('US')"],.drawer>button[onclick*="nav('ET')"]{position:relative;font-weight:800}
+.drawer>button[onclick*="nav('US')"]::after,.drawer>button[onclick*="nav('ET')"]::after{content:'⌄';float:right;font-size:1.1em}
+.drawer .sub{display:block!important;width:100%!important;padding:11px 14px!important;line-height:1.35!important;white-space:normal!important}
+.profile-menu-btn{font-size:18px!important;font-weight:800!important;color:#fff!important;background:var(--accent)!important;display:block!important;width:100%!important;text-align:left!important;padding:13px 14px!important;line-height:1.35!important;visibility:visible!important;opacity:1!important}
+@keyframes menuOpen{from{opacity:0;transform:translateY(-6px)}to{opacity:1;transform:none}}
+.task-grid{display:grid;gap:14px}.task-card{border:1px solid var(--line);border-radius:18px;padding:18px;background:var(--surface);box-shadow:0 6px 20px #0000000d}.task-card h3{margin:0 0 10px}.option-list{display:grid;gap:8px;margin-top:10px}.option-btn,.match-row select{border:1px solid var(--line);background:var(--surface);color:var(--text);border-radius:11px;padding:10px;text-align:left;cursor:pointer}.option-btn.correct,.match-row select.correct{outline:2px solid #4b8b61}.option-btn.wrong{outline:2px solid #b85c5c}.task-feedback{margin-top:10px;padding:10px 12px;border-radius:12px;background:var(--accent-soft,#eaf1eb)}.match-grid{display:grid;gap:10px;margin-top:12px}.match-row{display:grid;grid-template-columns:1fr 1fr;gap:10px;align-items:center}.match-row select{width:100%}.open-answer{min-height:120px}.score-box{position:sticky;top:70px;z-index:9;margin-bottom:16px;padding:12px 16px;border-radius:15px;background:var(--accent-soft,#eaf1eb);border:1px solid var(--line);font-weight:800}
+/* V20 — selkeä opiskelunäkymä ja korjattu päävalikko */
+.menu-help{font-size:.9rem;line-height:1.55;color:var(--theme-muted,#405247);margin:-4px 0 14px}
+.drawer .menu-arrow{float:right;font-weight:900}
+.drawer button{position:relative;z-index:3}
+.article{line-height:1.8}
+.article p{max-width:78ch;font-size:1.04rem}
+.memory{border-left:5px solid var(--accent);padding:24px 26px!important}
+.memory h2{margin-top:0}
+.memory ul{margin:14px 0 0;padding-left:1.3rem}
+.memory li{margin:12px 0;line-height:1.7}
+.memory li strong{font-weight:850}
+.task-card{line-height:1.6}
+.task-card h3{font-size:1.08rem}
+.task-card p{margin-top:6px}
+.task-card input,.task-card textarea,.task-card select{font:inherit}
+.forum-hero{border-radius:28px;overflow:hidden;padding:42px 28px;margin-bottom:24px;color:white;background:linear-gradient(180deg,rgba(18,47,37,.28),rgba(18,47,37,.76)),linear-gradient(135deg,#b6d0d5 0 35%,#57765d 36% 62%,#779da4 63% 100%);position:relative}
+.forum-hero:after{content:"";position:absolute;inset:0;background:radial-gradient(circle at 78% 25%,rgba(255,246,190,.65),transparent 12%),linear-gradient(130deg,transparent 55%,rgba(24,55,42,.55) 56%);pointer-events:none}
+.forum-hero>*{position:relative;z-index:1}
+.forum-hero h1{font:clamp(2.2rem,6vw,4rem) Georgia,serif;margin:8px 0}
+.forum-filter{display:grid;grid-template-columns:1fr 1fr;gap:12px;margin:18px 0}
+.forum-filter label{font-weight:800}
+.forum-filter select{margin-top:6px}
+.forum-empty{padding:24px;border:1px dashed var(--line);border-radius:18px;color:var(--theme-muted);text-align:center}
+@media(max-width:650px){.forum-filter{grid-template-columns:1fr}}
+
+/* V25 — laajempi oppimateriaali: teksti on pääsisältö, ei vain tiivistelmä */
+.article.study-article{font-size:1.06rem;line-height:1.85}
+.article.study-article p{max-width:82ch;font-size:1.08rem;line-height:1.88;margin:0 0 1.05rem}
+.article.study-article h2{margin-top:2rem;margin-bottom:.75rem;font-size:1.5rem}
+.article.study-article .concept-note p{font-size:1rem;line-height:1.7}
+.study-summary{margin-top:2rem;padding:24px 28px}
+@media(min-width:1000px){.article.study-article{padding:42px 58px}.article.study-article p{max-width:85ch}}
+
+.study-length{display:inline-block;margin:0 0 18px;padding:8px 12px;border-radius:999px;background:var(--accent-soft,#eaf1eb);color:var(--accent,#315b43);font-weight:900;font-size:.88rem;border:1px solid var(--line)}
+.study-article p{max-width:78ch;font-size:1.05rem;line-height:1.95;margin:0 0 1.25rem}
+.study-article h2{margin-top:2rem}
+@media(min-width:1100px){.reader{max-width:1120px}.study-article{padding:48px 72px}.study-article p{font-size:1.08rem;line-height:2;max-width:82ch}.article{max-width:1080px;margin-left:auto;margin-right:auto}}
+
+/* V26 — anonyymi foorumin moderointi + viestinumerot */
+.top{flex-direction:column;align-items:flex-start;gap:7px}
+.mini-admin{width:34px;height:28px;border:1px solid var(--line,#d9ddd7);border-radius:9px;background:var(--surface,#fff);color:var(--text,#18231d);font-size:14px;cursor:pointer;box-shadow:0 5px 14px #0002;padding:0}
+.mini-admin:hover{transform:translateY(-1px)}
+.v26-admin-panel{position:fixed;inset:0;z-index:100000;background:#0008;display:flex;align-items:center;justify-content:center;padding:18px}
+.v26-admin-card{width:min(900px,96vw);max-height:90vh;overflow:auto;background:var(--theme-surface,#fff);color:var(--theme-text,#111);border:1px solid var(--line,#ddd);border-radius:22px;padding:22px;box-shadow:0 25px 80px #0006}
+.v26-admin-head{display:flex;align-items:center;justify-content:space-between;gap:12px;margin-bottom:12px}
+.v26-admin-head h2{margin:0;font:700 1.7rem Georgia,serif}
+.v26-admin-close{border:1px solid var(--line,#ddd);background:var(--surface,#fff);border-radius:10px;padding:8px 11px;cursor:pointer}
+.v26-admin-note{padding:12px 14px;border-radius:13px;background:var(--accent-soft,#eaf1eb);margin:12px 0;color:var(--theme-text,#111);line-height:1.55}
+.v26-admin-list{display:grid;gap:10px}
+.v26-admin-row{border:1px solid var(--line,#ddd);border-radius:14px;padding:14px}
+.v26-admin-row-top{display:flex;justify-content:space-between;gap:10px;align-items:flex-start}
+.v26-admin-row h3{margin:5px 0}
+.v26-admin-row p{white-space:pre-wrap;line-height:1.65;margin:8px 0;color:var(--theme-muted,#53665a)}
+.v26-post-number{font-weight:900;letter-spacing:.03em;color:var(--accent,#315b43)}
+.v26-delete{border:1px solid #c88989;background:#fff5f5;color:#8d2f2f;border-radius:9px;padding:7px 10px;font-weight:800;cursor:pointer}
+.v26-delete:hover{background:#ffe9e9}
+.forum-post-number{font-size:.78rem;font-weight:900;letter-spacing:.04em;color:var(--accent);padding:5px 8px;border:1px solid var(--line);border-radius:999px;background:var(--surface-2)}
+.forum-post-head{align-items:flex-start}
+@media(max-width:600px){.v26-admin-head{align-items:flex-start}.v26-admin-row-top{flex-direction:column}.v26-delete{width:100%}}
+</style><style>
+/* v3.1.2 — Human rights / basic laws cards + version badge */
+.law-cards-section{max-width:1080px;margin:34px auto 70px;padding:0 20px}
+.law-cards-heading{text-align:center;margin-bottom:18px}
+.law-cards-heading .eyebrow{margin-bottom:7px}
+.law-cards-heading h2{margin:0 0 8px;font:700 clamp(1.65rem,3vw,2.25rem) Georgia,serif}
+.law-cards-heading p{max-width:720px;margin:0 auto;color:var(--muted);line-height:1.6}
+.law-cards-grid{display:grid;grid-template-columns:repeat(3,1fr);gap:15px}
+.law-card{background:var(--surface);border:1px solid var(--line);border-radius:20px;padding:19px;box-shadow:0 10px 28px rgba(20,40,30,.07);min-height:175px;transition:transform .18s ease,box-shadow .18s ease}
+.law-card:hover{transform:translateY(-3px);box-shadow:0 15px 34px rgba(20,40,30,.12)}
+.law-card .law-icon{font-size:1.65rem}
+.law-card h3{margin:8px 0 7px;font-size:1.08rem}
+.law-card p{margin:0;color:var(--muted);font-size:.92rem;line-height:1.55}
+.law-card small{display:block;margin-top:12px;font-weight:800;opacity:.72}
+.version-badge{position:fixed;right:14px;bottom:12px;z-index:9999;background:var(--surface);color:var(--muted);border:1px solid var(--line);border-radius:999px;padding:7px 11px;font-size:.74rem;font-weight:800;box-shadow:0 6px 18px rgba(0,0,0,.10);backdrop-filter:blur(8px)}
+@media(max-width:900px){.law-cards-grid{grid-template-columns:repeat(2,1fr)}}
+@media(max-width:600px){.law-cards-section{padding:0 15px;margin-bottom:55px}.law-cards-grid{grid-template-columns:1fr}.version-badge{right:9px;bottom:8px;font-size:.68rem}}
+</style><style>
+/* v3.1.2 */
+.version-badge{position:fixed!important;right:16px!important;bottom:14px!important;z-index:2147483647!important;background:#173b2b!important;color:#fff!important;border:2px solid rgba(255,255,255,.85)!important;border-radius:12px!important;padding:8px 12px!important;font-size:.82rem!important;font-weight:900!important;line-height:1!important;box-shadow:0 5px 18px rgba(0,0,0,.25)!important;display:block!important}
+.law-cards-section{max-width:1080px!important;margin:38px auto 72px!important;padding:0 20px!important}
+.law-cards-grid{display:grid!important;grid-template-columns:repeat(3,1fr)!important;gap:15px!important}
+@media(max-width:900px){.law-cards-grid{grid-template-columns:repeat(2,1fr)!important}}
+@media(max-width:600px){.law-cards-section{padding:0 15px!important}.law-cards-grid{grid-template-columns:1fr!important}.version-badge{right:9px!important;bottom:8px!important;font-size:.72rem!important}}
+/* Anonymous forum avatars */
+.forum-avatar-picker{display:grid;grid-template-columns:repeat(5,1fr);gap:9px;margin:10px 0 14px}
+.forum-avatar-option{border:2px solid var(--line);background:var(--surface-2);border-radius:14px;padding:8px;cursor:pointer;text-align:center;font-size:1.65rem;transition:.15s}
+.forum-avatar-option:hover{transform:translateY(-2px);border-color:var(--accent)}
+.forum-avatar-option.selected{border-color:var(--accent);box-shadow:0 0 0 3px rgba(0,0,0,.07)}
+.forum-post-avatar{width:42px;height:42px;border-radius:50%;display:inline-flex;align-items:center;justify-content:center;background:var(--surface-2);border:1px solid var(--line);font-size:1.35rem;flex:0 0 auto}
+@media(max-width:500px){.forum-avatar-picker{grid-template-columns:repeat(5,1fr);gap:6px}.forum-avatar-option{padding:6px;font-size:1.4rem}}
+</style><style>
+/* v3.1.2 */
+.rights-section{max-width:1120px;margin:40px auto 72px;padding:0 20px}
+.rights-header{padding:28px;border:1px solid var(--line);border-radius:24px;background:var(--surface);box-shadow:0 12px 32px rgba(20,40,30,.08)}
+.rights-header h2{margin:6px 0 8px;font:700 clamp(1.7rem,3vw,2.5rem) Georgia,serif}
+.rights-header p{margin:0;color:var(--muted);line-height:1.6;max-width:820px}
+.rights-grid{display:grid;grid-template-columns:repeat(3,1fr);gap:14px;margin-top:16px}
+.right-card{padding:18px;border:1px solid var(--line);border-radius:18px;background:var(--surface-2)}
+.right-card h3{margin:6px 0;font-size:1.05rem}.right-card p{margin:0;color:var(--muted);line-height:1.5;font-size:.92rem}
+@media(max-width:900px){.rights-grid{grid-template-columns:repeat(2,1fr)}}@media(max-width:600px){.rights-section{padding:0 15px}.rights-grid{grid-template-columns:1fr}}
+.forum-avatar-picker-wrap{margin:12px 0}
+</style></head><body><div class="theme-switcher" aria-label="Teema"><button type="button" data-theme="light">☀️</button><button type="button" data-theme="dark">🌙</button></div><div class="top"><button class="round menu-toggle" aria-label="Avaa päävalikko" onclick="drawer()">☰</button><button class="mini-admin" aria-label="Foorumin ylläpito" title="Foorumin ylläpito" onclick="adminLogin()">🔒</button></div><div id="shade" class="overlay" onclick="drawer()"></div><aside id="drawer" class="drawer">
+<h2 class="serif">Päävalikko</h2>
+<p class="menu-help">Valitse oppiaine tai avaa anonyymi opiskelijoiden foorumi.</p>
+<button onclick="home();drawer()">⌂ Etusivu</button>
+<button onclick="nav('US')">📖 USKONTO <span class="menu-arrow">⌄</span></button>
+<div id="navUS"></div>
+<button onclick="nav('ET')">⚖️ ETIIKAN PERUSTEET <span class="menu-arrow">⌄</span></button>
+<div id="navET"></div>
+<button onclick="miniTest();drawer()">📝 Mini-kontrollit</button><button onclick="miniGames();drawer()">🎮 Mini-pelit</button><button onclick="forum();drawer()">💬 Foorumi</button><button class="sub" onclick="adminLogin()">🔒 Foorumin ylläpito</button>
+</aside><div id="adminPanel" class="v26-admin-panel hidden" aria-hidden="true"></div><main id="app"></main><footer>© 2026 Opiskelu-sivusto. Kaikki oikeudet pidätetään. Sivuston sisältö on tarkoitettu opiskeluun ja kokeisiin valmistautumiseen.</footer><script>const DATA={"US":[["US 1","Eettisen pohdinnan perusteet","Etiikka tarkoittaa pohdintaa siitä, mikä on oikein, väärin, hyvää, pahaa, oikeudenmukaista tai epäoikeudenmukaista. Moraali tarkoittaa ihmisen tai yhteisön käsityksiä siitä, miten pitäisi toimia. Arvot ovat asioita, joita pidämme tärkeinä, kuten rehellisyys, turvallisuus, vapaus, tasa-arvo ja toisten kunnioittaminen. Normit ovat sääntöjä tai odotuksia, jotka ohjaavat toimintaa. Kaikki säännöt eivät kuitenkaan ole moraalisia sääntöjä: esimerkiksi koulun käytännön sääntö voi helpottaa arkea, kun taas moraalinen sääntö liittyy usein siihen, miten toimintamme vaikuttaa toisiin ihmisiin.\n\nEettisessä pohdinnassa ei riitä, että sanoo ”minusta tämä on väärin”. Tärkeää on osata perustella kanta. Hyvä perustelu voi liittyä esimerkiksi seurauksiin, oikeuksiin, velvollisuuksiin, ihmisarvoon tai hyveisiin. Sama tilanne voidaan arvioida eri teorioiden avulla. Seurausetiikka kysyy, mitä teosta seuraa. Velvollisuusetiikka painottaa sitä, mitä pitäisi tehdä velvollisuuden tai periaatteen vuoksi. Hyve-etiikka kysyy, millainen ihminen toimii tilanteessa hyvin ja millaisia luonteenpiirteitä pitäisi kehittää.\n\nEettinen ongelma syntyy usein silloin, kun kaksi tärkeää arvoa joutuu ristiriitaan. Esimerkiksi totuuden kertominen voi olla ristiriidassa halun kanssa suojella toista ihmistä. Silloin vaihtoehtoja pitää verrata rauhallisesti. Mieti, keihin päätös vaikuttaa, mitä seurauksia sillä voi olla, mitä oikeuksia tilanteessa on ja millä perusteella oma johtopäätös voidaan puolustaa. Kokeessa hyvä vastaus määrittelee käsitteen, käyttää konkreettista esimerkkiä ja perustelee johtopäätöksen.\n\nMuistilause kontrolliin: etiikka = pohdinta oikeasta ja väärästä, moraali = käsitykset hyvästä ja pahasta, arvo = tärkeänä pidetty asia, normi = toimintaa ohjaava sääntö. Muista myös kolme näkökulmaa: seuraus, velvollisuus ja hyve. Kun saat esimerkkitilanteen, nimeä ongelma, tunnista arvot, vertaile vaihtoehtoja ja perustele johtopäätös."],["US 2","Suuret elämänkysymykset","Suuret elämänkysymykset koskevat asioita, joihin ei yleensä ole yhtä ainoaa vastausta. Tällaisia kysymyksiä ovat esimerkiksi: Mikä on elämän tarkoitus? Mikä tekee elämästä hyvän? Miksi ihmiset kärsivät? Mitä kuoleman jälkeen tapahtuu? Miten pitäisi suhtautua rakkauteen, ystävyyteen ja yksinäisyyteen? Näitä kysymyksiä voidaan tarkastella uskonnollisesta, filosofisesta ja ei-uskonnollisesta näkökulmasta.\n\nElämän tarkoitus voi eri ihmisille tarkoittaa eri asioita. Jollekin tärkeintä voi olla perhe ja ystävät, toiselle usko, työ, oppiminen, luovuus, luonnosta huolehtiminen tai muiden auttaminen. Merkityksellinen elämä ei tarkoita sitä, että ihminen olisi aina onnellinen. Myös vaikeuksien, pettymysten ja menetyksen keskellä ihminen voi kokea, että hänen elämällään on arvoa. Kärsimystä voidaan pitää ongelmana, jota pitäisi vähentää, mutta eri maailmankatsomukset selittävät kärsimystä eri tavoin.\n\nKuolemaa koskevissa kysymyksissä uskonnolliset perinteet voivat opettaa esimerkiksi kuolemanjälkeisestä elämästä, ylösnousemuksesta, jälleensyntymästä tai sielun kohtalosta. Ei-uskonnollinen näkökulma voi korostaa sitä, että kuolema on biologisen elämän päättyminen ja että elämän merkitystä voidaan rakentaa tässä elämässä. Rakkauteen liittyvät puolestaan luottamus, kunnioitus, vastuu, suostumus ja toisen ihmisarvon huomioiminen.\n\nKontrollissa kannattaa muistaa, että suurissa elämänkysymyksissä tärkeää ei ole arvata opettajan mielipidettä. Tärkeää on osoittaa, että tunnet erilaisia näkökulmia, osaat verrata niitä ja pystyt perustelemaan oman ajatuksesi.\n\nMuistilause kontrolliin: suuret elämänkysymykset eivät ole pelkkiä faktoja. Osaa verrata ainakin uskonnollista ja ei-uskonnollista näkökulmaa. Muista käsitteet elämän tarkoitus, merkityksellisyys, kärsimys, kuolema, rakkaus ja maailmankatsomus. Hyvä vastaus antaa useamman mahdollisen näkemyksen ja perustelee, miksi eri ihmiset voivat päätyä erilaisiin vastauksiin."],["US 3","Raamatun eettisiä periaatteita","Raamatun eettisiä periaatteita voidaan tarkastella sekä Vanhan että Uuden testamentin tekstien kautta. Raamattu ei ole yksi ainoa lakikirja, vaan eri aikoina syntyneiden tekstien kokoelma. Siksi eettisiä ohjeita pitää ymmärtää niiden yhteydessä. Vanhassa testamentissa tärkeitä ovat esimerkiksi kymmenen käskyä, oikeudenmukaisuus, lähimmäisen huomioiminen ja ajatus siitä, että Jumalan ja ihmisen suhteeseen kuuluu vastuu. Uudessa testamentissa Jeesuksen opetukset, lähimmäisenrakkaus, anteeksianto ja kultainen sääntö ovat keskeisiä.\n\nKymmenessä käskyssä korostuvat esimerkiksi elämän kunnioittaminen, rehellisyys, uskollisuus ja toisen omaisuuden kunnioittaminen. Jeesuksen opetuksissa moraalia ei kuitenkaan kuvata vain ulkoisina sääntöinä. Vuorisaarnassa korostuu myös ihmisen sisäinen asenne. Lähimmäisenrakkaus tarkoittaa, että toisen hyvää ei pidetä merkityksettömänä. Samarialaisen vertaus puolestaan opettaa, että lähimmäinen ei tarkoita vain omaan ryhmään kuuluvaa henkilöä.\n\nRaamatun eettisiä tekstejä tulkittaessa pitää huomioida, että kristityt voivat painottaa eri asioita. Osa korostaa sääntöjen noudattamista, osa armoa ja anteeksiantoa, osa lähimmäisenrakkautta ja oikeudenmukaisuutta. Kokeessa kannattaa erottaa toisistaan se, mitä Raamatun tekstissä sanotaan, ja oma mielipide siitä, miten opetusta pitäisi soveltaa nykyajan tilanteeseen.\n\nHyvä vastaus voi käyttää rakennetta: käsite tai raamatun opetus → selitys → esimerkki nykyelämästä → oma perusteltu johtopäätös. Näin osoitat, että ymmärrät periaatteen etkä vain muista yksittäistä lausetta.\n\nMuistilause kontrolliin: osaa erottaa Vanhan ja Uuden testamentin, tunnista kymmenen käskyä, lähimmäisenrakkaus, anteeksianto ja kultainen sääntö. Älä vain luettele raamatunkohtia. Selitä aina, mikä eettinen periaate niissä näkyy ja miten sitä voisi soveltaa nykyiseen tilanteeseen. Muista myös, että kristityt voivat tulkita samaa opetusta eri tavoin."],["US 4","Lähi-idän uskontojen eettinen ajattelu","Lähi-idän uskontojen eettiseen ajatteluun liittyvät erityisesti juutalaisuus, kristinusko ja islam. Niillä on yhteisiä historiallisia juuria ja monia yhteisiä moraalisia teemoja, mutta niiden opetukset ja tulkinnat eivät ole samanlaisia. Juutalaisuudessa Toora, käskyt, oikeudenmukaisuus ja yhteisön vastuu ovat tärkeitä. Kristilliseen etiikkaan liittyvät esimerkiksi lähimmäisenrakkaus, anteeksianto, armo ja Jeesuksen opetukset. Islamissa Koraani ja profeetta Muhammadin esimerkki ovat keskeisiä, ja moraaliseen toimintaan liittyvät esimerkiksi oikeudenmukaisuus, armollisuus, vastuu ja yhteisön huomioiminen.\n\nJuutalaisessa ajattelussa mitzvot tarkoittavat käskyjä tai velvollisuuksia, joiden avulla ihminen harjoittaa uskontoa ja toimii oikein. Islamissa viiden peruspilarin tunteminen auttaa ymmärtämään, miten uskonto liittyy käytännön elämään: uskontunnustus, rukous, almuvero, paasto ja pyhiinvaellus ovat keskeisiä. Kristinuskon eri suuntauksissa eettisiä kysymyksiä voidaan perustella esimerkiksi Raamatulla, Jeesuksen opetuksilla, kirkon perinteellä ja omallatunnolla.\n\nNäissä uskonnoissa moraali ei tarkoita vain yksityisiä valintoja. Se liittyy myös köyhyyteen, auttamiseen, oikeudenmukaisuuteen, perheeseen, yhteisöön ja muiden ihmisten kohteluun. Uskonnollinen etiikka voi perustua ajatukseen Jumalan tahdosta, pyhistä teksteistä ja yhteisön tulkintaperinteestä. Samalla yksilöt voivat tulkita samaa perinnettä eri tavalla.\n\nKontrollissa vertaile mieluummin kuin luettele. Kerro esimerkiksi yksi yhteinen piirre ja yksi ero. Hyvä vertailu selittää, miksi kaksi perinnettä voi päätyä samanlaiseen moraaliseen tavoitteeseen eri perustelujen kautta.\n\nMuistilause kontrolliin: juutalaisuus, kristinusko ja islam ovat historiallisesti sukulaisia, mutta eivät sama uskonto. Osaa yhdistää Tooran ja mitzvot juutalaisuuteen, Jeesuksen opetukset kristinuskoon sekä Koraanin ja profeetan esimerkin islamiin. Vertaile yhteisiä arvoja, kuten oikeudenmukaisuutta ja auttamista, ja selitä myös vähintään yksi ero."],["US 5","Kaukoidän uskonnot ja etiikka","Kaukoidän uskontojen ja maailmankatsomusten etiikkaan liittyvät esimerkiksi hindulaisuus, buddhalaisuus, jainalaisuus, taolaisuus ja kungfutselaisuus. Näitä ei pidä ajatella yhtenä samanlaisena ryhmänä. Niillä on erilaiset käsitykset ihmisestä, todellisuudesta ja hyvästä elämästä. Yhteisiä teemoja ovat kuitenkin esimerkiksi kärsimyksen vähentäminen, itsekurin harjoittaminen, muiden huomioiminen ja oman toiminnan seurausten ymmärtäminen.\n\nHindulaisuudessa dharma tarkoittaa velvollisuutta, oikeaa elämäntapaa ja järjestystä, joka liittyy myös ihmisen asemaan ja elämäntilanteeseen. Karma tarkoittaa teon ja sen seurausten välistä yhteyttä. Buddhalaisuudessa keskeistä on kärsimyksen ymmärtäminen ja siitä vapautumiseen tähtäävä harjoitus. Kahdeksanosainen polku sisältää esimerkiksi oikean toiminnan, oikean puheen ja oikean elämänkeinon. Ahimsa eli väkivallattomuus on tärkeä käsite erityisesti jainalaisuudessa ja myös muissa intialaisissa perinteissä.\n\nKungfutselaisuus painottaa ihmissuhteita, kasvatusta, kunnioitusta ja yhteiskunnallista vastuuta. Taolaisuudessa korostuu tasapaino ja luonnollinen toiminta, jota voidaan kuvata käsitteellä wu wei. Eettinen ihanne ei siis aina tarkoita mahdollisimman suurta määrää sääntöjä, vaan joskus kykyä toimia harkitusti ja välttää tarpeetonta vahinkoa.\n\nKokeessa kannattaa osata yhdistää käsite oikeaan perinteeseen ja selittää se omin sanoin. Muista erityisesti karma, dharma, ahimsa, buddhalainen kahdeksanosainen polku, kungfutselainen ihmissuhde-etiikka ja taolainen tasapaino. Pelkkä käsitteen nimeäminen ei riitä, vaan kerro, mitä se tarkoittaa eettisen toiminnan kannalta.\n\nMuistilause kontrolliin: karma liittyy tekojen seurauksiin, dharma oikeaan elämäntapaan ja velvollisuuteen, ahimsa väkivallattomuuteen. Buddhalaisuudessa keskeisiä ovat kärsimyksen ymmärtäminen ja kahdeksanosainen polku. Kungfutselaisuus painottaa ihmissuhteita ja kunnioitusta, taolaisuus tasapainoa ja luonnollista toimintaa. Osaa selittää käsitteet omin sanoin."],["US 6","Ihmisoikeudet ja etiikka","Ihmisoikeudet perustuvat ajatukseen, että jokaisella ihmisellä on ihmisarvo ja tiettyjä oikeuksia riippumatta esimerkiksi syntyperästä, sukupuolesta, uskonnosta, kielestä tai asemasta. Ihmisoikeuksiin liittyvät esimerkiksi oikeus elämään, henkilökohtaiseen turvallisuuteen, koulutukseen, mielipiteen- ja uskonnonvapauteen sekä syrjimättömyyteen. Ihmisoikeudet muodostavat tärkeän perustan modernille eettiselle ja yhteiskunnalliselle ajattelulle.\n\nIhmisarvo tarkoittaa, että ihmistä ei pitäisi kohdella pelkkänä välineenä muiden tavoitteille. Tämä näkyy esimerkiksi siinä, että kidutusta, mielivaltaista syrjintää ja ihmisten hyväksikäyttöä pidetään vakavina vääryyksinä. Oikeudet eivät kuitenkaan tarkoita, että jokainen ihminen voisi tehdä mitä tahansa. Yhden henkilön vapaus voi joutua tasapainoon toisen henkilön oikeuksien ja turvallisuuden kanssa.\n\nIhmisoikeusetiikassa on tärkeää ymmärtää myös vastuu. Jos ihmisellä on oikeus koulutukseen, yhteiskunnan pitää pyrkiä luomaan olosuhteet, joissa koulutus on mahdollista. Jos ihmisellä on sananvapaus, hänen pitää samalla ymmärtää, että muiden ihmisarvo ja oikeudet ovat olemassa. Käytännön tilanteissa voidaan joutua punnitsemaan esimerkiksi yksityisyyttä, turvallisuutta, tasa-arvoa ja vapautta.\n\nKontrollissa kannattaa osata erottaa ihmisoikeus, laki ja moraalinen mielipide. Kaikki moraalisesti hyvä toiminta ei ole laissa pakollista, eikä kaikki lain sallima toiminta ole välttämättä moraalisesti ongelmatonta. Hyvä vastaus määrittelee oikeuden, kertoo miksi se on tärkeä ja antaa esimerkin tilanteesta, jossa oikeudet voivat olla ristiriidassa keskenään.\n\nMuistilause kontrolliin: ihmisoikeudet kuuluvat ihmiselle ihmisarvon perusteella. Osaa nimetä oikeuksia, selittää syrjimättömyyden ja erottaa ihmisoikeuden, lain ja henkilökohtaisen mielipiteen. Kun oikeudet joutuvat ristiriitaan, punnitse molempia. Esimerkiksi sananvapaus ja yksityisyys voivat vaatia tasapainoa. Perustele aina, miksi tietty ratkaisu kunnioittaa ihmisarvoa."],["US 7","Ihminen ja etiikka","Ihmisen ja etiikan kysymyksissä tarkastellaan sitä, millainen ihminen on moraalisena toimijana. Ihmisellä on kyky tehdä valintoja, arvioida vaihtoehtoja ja perustella tekojaan, mutta hänen toimintaansa vaikuttavat myös tunteet, kasvatus, ympäristö, kulttuuri, ystävät, media, biologiset tarpeet ja elämäntilanne. Siksi ihmistä ei ole helppo kuvata täysin vapaaksi eikä täysin muiden ohjaamaksi.\n\nMoraalinen vastuu liittyy siihen, kuinka paljon henkilö pystyy ymmärtämään tilanteen ja vaikuttamaan omaan toimintaansa. Esimerkiksi vahingossa tapahtunutta tekoa arvioidaan eri tavalla kuin tarkoituksellista tekoa. Myös ikä, painostus, tietämättömyys ja erityiset olosuhteet voivat vaikuttaa vastuuseen. Tarkoitus on tärkeä, mutta se ei aina poista seurauksia. Ihminen voi tarkoittaa hyvää ja silti aiheuttaa vahinkoa.\n\nHyve-etiikka tarkastelee ihmisen luonnetta. Hyveitä voivat olla esimerkiksi rohkeus, oikeudenmukaisuus, rehellisyys, kohtuullisuus ja myötätunto. Ajatus on, että hyvä toiminta ei ole vain yksittäisten sääntöjen noudattamista, vaan myös hyvän luonteen harjoittamista. Harjoittelu, tottumukset ja muiden ihmisten esimerkki vaikuttavat siihen, millaisia toimintatapoja ihminen kehittää.\n\nKokeessa kannattaa käyttää erottelua: teko, tarkoitus, seuraukset ja vastuu. Jos kysytään, onko henkilö moraalisesti vastuussa, kerro ensin mitä tapahtui, sitten mitä henkilö tiesi ja halusi, mitä vaihtoehtoja hänellä oli ja miten hänen toimintansa vaikutti muihin. Tämä tekee vastauksesta täsmällisen eikä pelkästään mielipiteen.\n\nMuistilause kontrolliin: moraalinen vastuu liittyy tietoon, tarkoitukseen, valinnanmahdollisuuksiin ja seurauksiin. Erota vahinko ja tarkoituksellinen teko. Hyve-etiikassa kysytään, millainen ihminen pitäisi olla, ei vain mitä yksi sääntö määrää. Osaa käyttää esimerkkeinä rohkeutta, oikeudenmukaisuutta, rehellisyyttä ja kohtuullisuutta. Selitä myös, miten kasvatus ja ympäristö vaikuttavat moraaliseen toimintaan."],["US 8","Elämänkaarien etiikka","Elämänkaarien etiikka tarkastelee moraalisia kysymyksiä eri elämänvaiheissa. Lapsuuteen liittyvät esimerkiksi oikeus turvallisuuteen, kasvatukseen, leikkiin ja koulutukseen. Nuoruudessa korostuvat itsenäistyminen, identiteetti, kaverisuhteet, seksuaalisuus, päihteet ja päätösten seuraukset. Aikuisuudessa voidaan pohtia työtä, perhettä, vanhemmuutta, taloutta ja vastuuta. Vanhuudessa kysymyksiä voivat olla toimintakyky, hoiva, yksinäisyys, itsemääräämisoikeus ja elämän loppuvaihe.\n\nEettinen näkökulma ei tarkoita, että yksi ikäryhmä olisi toista arvokkaampi. Ihmisarvo kuuluu kaikille. Sen sijaan eri elämäntilanteissa ihmisen tarpeet ja riippuvuus toisista voivat muuttua. Lapsi tarvitsee erityistä suojelua, koska hänen mahdollisuutensa päättää omista asioistaan ovat rajallisemmat. Iäkkään ihmisen hoidossa taas pitää kunnioittaa sekä turvallisuutta että itsemääräämisoikeutta.\n\nHoivaetiikka korostaa suhteita, huolenpitoa ja riippuvuutta. Se muistuttaa, että moraali ei aina ole vain yksilön valintojen arvioimista. Myös se, miten yhteiskunta järjestää koulutuksen, terveydenhuollon, vanhuspalvelut ja tuen perheille, on eettinen kysymys.\n\nKontrollissa kannattaa välttää liian yksinkertaista vastausta. Jos kysytään esimerkiksi vanhusten hoidosta, kerro sekä yksilön oikeudet että hoivan tarve. Jos käsitellään nuoren vapautta, huomioi sekä itsenäisyys että turvallisuus. Hyvä vastaus osoittaa, että osaat yhdistää ihmisarvon, vastuun, oikeudet ja käytännön tilanteen.\n\nMuistilause kontrolliin: ihmisarvo kuuluu kaikille elämänvaiheesta riippumatta. Lapsen kohdalla korostuu suojelu ja oikeus kehittyä, nuorella itsenäistyminen ja vastuu, aikuisella monet yhteiskunnalliset ja perheeseen liittyvät velvollisuudet, vanhuksella hoiva ja itsemääräämisoikeus. Osaa yhdistää yksilön oikeudet ja yhteiskunnan vastuun. Hoivaetiikka muistuttaa ihmissuhteiden merkityksestä."],["US 9","Yhteiskunta ja etiikka","Yhteiskunta ja etiikka liittyvät toisiinsa, koska yhteiset päätökset vaikuttavat monien ihmisten elämään. Eettisiä kysymyksiä syntyy esimerkiksi rikollisuudesta ja rangaistuksista, taloudellisesta eriarvoisuudesta, teknologiasta, mediasta, politiikasta ja siitä, miten yhteisiä resursseja jaetaan. Yhteiskunnan tehtävä ei ole vain ylläpitää järjestystä, vaan myös suojella ihmisiä ja mahdollistaa oikeudenmukainen osallistuminen.\n\nRangaistuksen tarkoituksesta voidaan esittää erilaisia näkemyksiä. Rangaistus voi pyrkiä estämään rikoksia, suojelemaan yhteiskuntaa, muuttamaan rikoksentekijän toimintaa tai ilmaisemaan, että teko on väärin. Oikeudenmukaisuus vaatii myös suhteellisuutta: rangaistuksen pitäisi sopia teon vakavuuteen. Samalla pitää pohtia, miten uhreja ja rikoksentekijöitä kohdellaan ihmisarvoa kunnioittaen.\n\nTeknologia tuo uusia eettisiä ongelmia. Algoritmit voivat vaikuttaa siihen, mitä tietoa näemme, millaisia palveluja saamme ja miten meitä arvioidaan. Tekoälyn käytössä voidaan joutua pohtimaan yksityisyyttä, oikeudenmukaisuutta, vastuuta ja virheiden seurauksia. Mediaan liittyy puolestaan kysymys siitä, miten tieto leviää ja miten disinformaatio voi vaikuttaa ihmisten päätöksiin.\n\nKontrollissa hyvä yhteiskuntaetiikan vastaus yhdistää yksilön ja yhteisön näkökulmat. Kysy: kuka hyötyy, kuka voi kärsiä, mitä oikeuksia tilanteessa on, mitä seurauksia päätöksellä voi olla ja onko ratkaisu reilu myös niiden kannalta, joilla on vähän valtaa. Lopuksi perustele oma kantasi selkeästi.\n\nMuistilause kontrolliin: yhteiskuntaetiikassa kysy aina, kuka hyötyy, kuka kärsii, miten valta jakautuu ja onko ratkaisu oikeudenmukainen. Rangaistuksissa muista ehkäisy, suojelu, kuntoutus ja suhteellisuus. Teknologiassa huomioi yksityisyys, algoritmien vaikutus ja vastuu. Mediassa lähdekritiikki on tärkeää. Hyvä vastaus yhdistää yksilön vapauden ja yhteisen hyvän."],["US 10","Ympäristöetiikka","Ympäristöetiikka käsittelee ihmisen suhdetta luontoon, eläimiin ja tuleviin sukupolviin. Keskeinen kysymys on, onko luonnolla arvoa vain siksi, että se hyödyttää ihmistä, vai onko luonnolla itseisarvoa. Ihmiskeskeinen näkökulma painottaa ihmisten hyvinvointia ja luonnon merkitystä esimerkiksi ravinnon, veden, terveyden ja talouden kannalta. Luontokeskeisempi näkökulma korostaa ekosysteemien ja muiden eliöiden arvoa myös riippumatta niiden hyödystä ihmisille.\n\nKestävä kehitys tarkoittaa sitä, että nykyiset tarpeet pyritään täyttämään vaarantamatta tulevien sukupolvien mahdollisuuksia hyvään elämään. Siksi ympäristöongelmia ei voida arvioida vain tämän päivän kustannusten perusteella. Ilmastonmuutos, luonnon monimuotoisuuden väheneminen, kulutus, energiantuotanto ja saastuminen vaikuttavat sekä ihmisiin että muihin eliöihin pitkällä aikavälillä.\n\nYmpäristöetiikkaan liittyy myös vastuun jakaminen. Yksilö voi vaikuttaa esimerkiksi kulutukseen, liikkumiseen ja energiankäyttöön, mutta yrityksillä ja valtioilla on paljon suuremmat mahdollisuudet vaikuttaa tuotantoon, lainsäädäntöön ja infrastruktuuriin. Siksi vastuuta ei ole reilua siirtää kokonaan yksittäiselle ihmiselle.\n\nKontrollissa kannattaa erottaa ympäristöä koskeva fakta ja eettinen arvio. Ensin kerro, mitä tapahtuu, sitten miksi sillä on merkitystä ja lopuksi, mitä pitäisi tehdä. Hyvässä vastauksessa voit käyttää käsitteitä kestävä kehitys, luonnon itseisarvo, tulevat sukupolvet, vastuu ja oikeudenmukaisuus.\n\nMuistilause kontrolliin: ympäristöetiikassa osaa erottaa ihmiskeskeisen ja luontokeskeisen näkökulman. Muista kestävä kehitys, tulevat sukupolvet, luonnon itseisarvo ja vastuun jakaminen. Ympäristöongelmassa erottele ensin fakta, sitten eettinen ongelma ja lopuksi ratkaisu. Älä siirrä kaikkea vastuuta yksilölle, vaan arvioi myös yritysten, valtioiden ja yhteiskunnan mahdollisuuksia vaikuttaa."]],"ET":[["ET 1","Itsenäinen ajattelu","Itsenäinen ajattelu tarkoittaa kykyä muodostaa ja arvioida omia käsityksiä perustelujen, tiedon ja harkinnan avulla. Se ei tarkoita, että pitäisi aina olla eri mieltä muiden kanssa. Itsenäinen ajattelija voi hyväksyä toisen näkemyksen, jos perustelut ovat vakuuttavia. Tärkeää on, ettei mielipidettä pidetä automaattisesti totena vain siksi, että sen sanoi ystävä, opettaja, julkisuuden henkilö tai suuri joukko ihmisiä.\n\nFilosofisessa ajattelussa kysytään usein, mitä väite tarkoittaa, mihin se perustuu ja mitä seurauksia sen hyväksymisellä olisi. Hyvä ajattelu erottaa toisistaan faktan, tulkinnan, mielipiteen ja perustelun. Kriittinen ajattelu ei tarkoita kaiken epäilemistä, vaan sitä, että väitteitä arvioidaan suhteessa näyttöön ja perustelujen laatuun.\n\nArgumentissa on yleensä väite ja sitä tukevia perusteluja. Heikko argumentti voi perustua esimerkiksi henkilöön hyökkäämiseen, liian nopeaan yleistykseen tai ajatukseen, että jokin on totta vain siksi, että moni uskoo siihen. Myös omat ennakkokäsitykset voivat vaikuttaa siihen, mitä tietoa hyväksymme. Siksi on hyödyllistä kysyä, mikä saisi minut muuttamaan mielipidettäni.\n\nKontrollissa hyvä vastaus ei ole pitkä vain pituuden vuoksi. Tärkeämpää on rakenne: väite → perustelu → esimerkki → vastanäkemys → johtopäätös. Jos pystyt selittämään, miksi pidät jotakin perustelua vahvana ja huomioit myös toisen näkökulman, osoitat itsenäistä ja kriittistä ajattelua.\n\nMuistilause kontrolliin: itsenäinen ajattelu ei tarkoita vastustamista vaan perusteltua arviointia. Erota fakta, mielipide, väite ja perustelu. Tunnista heikot perustelut, kuten henkilöön hyökkääminen ja hätäinen yleistys. Hyvä vastaus rakentuu väitteestä, perustelusta, esimerkistä ja johtopäätöksestä. Näytä myös, että pystyt arvioimaan omaa kantaasi ja muuttamaan sitä, jos parempi perustelu löytyy."],["ET 2","Elämän tarkoitus, arvot ja hyveet","Elämän tarkoitus, arvot ja hyveet liittyvät kysymykseen siitä, millaista elämää pidetään hyvänä ja merkityksellisenä. Arvo on asia, jota pidämme tärkeänä ja tavoittelemisen arvoisena. Arvoja voivat olla esimerkiksi vapaus, turvallisuus, oikeudenmukaisuus, ystävyys, terveys, tieto ja rehellisyys. Arvot voivat olla ristiriidassa keskenään: esimerkiksi täydellinen turvallisuus voi rajoittaa vapautta.\n\nElämän tarkoitukseen voidaan vastata monella tavalla. Jotkut näkevät tarkoituksen uskonnossa tai suhteessa Jumalaan. Toiset löytävät merkitystä ihmissuhteista, työstä, oppimisesta, luovuudesta, luonnosta tai muiden auttamisesta. Eksistentialistisessa ajattelussa ihminen voi joutua itse rakentamaan merkityksen ilman valmista universaalia tarkoitusta. Tärkeää on erottaa toisistaan ”mikä tekee minut onnelliseksi nyt” ja ”mikä tekee elämästä kokonaisuutena merkityksellisen”.\n\nHyve on hyväksi katsottu luonteenpiirre tai toimintatapa. Esimerkiksi rohkeus tarkoittaa kykyä toimia oikein myös silloin, kun pelottaa. Kohtuullisuus tarkoittaa kykyä välttää äärimmäisyyksiä. Rehellisyys liittyy totuudenmukaiseen toimintaan. Hyveet eivät synny vain lukemalla määritelmiä, vaan niitä kehitetään toistuvalla harjoittelulla ja valinnoilla.\n\nKontrollissa erottele arvo, tavoite ja hyve. Arvo kertoo, mikä on tärkeää, tavoite kertoo mitä halutaan saavuttaa ja hyve kertoo, millaista luonnetta tai toimintatapaa pidetään hyvänä. Hyvä vastaus antaa aina esimerkin ja perustelee, miksi kyseinen asia voi tehdä elämästä parempaa tai merkityksellisempää.\n\nMuistilause kontrolliin: arvo kertoo, mikä on tärkeää, tavoite kertoo mitä halutaan saavuttaa ja hyve kertoo hyvästä luonteesta tai toimintatavasta. Elämän tarkoituksesta voi olla monia perusteltuja näkemyksiä. Muista käsitteet merkityksellisyys, vapaus, onnellisuus ja hyve. Kun vastaat, anna esimerkki ja selitä, miksi kyseinen arvo tai hyve voi tehdä elämästä hyvää."],["ET 3","Valinnat, vapaus ja vastuu","Vapaus ja vastuu kuuluvat yhteen. Vapaudella voidaan tarkoittaa mahdollisuutta valita eri toimintatapoja ilman tarpeetonta pakkoa. Käytännössä ihmisen vapaus ei ole rajaton. Lait, muiden ihmisten oikeudet, oma taloudellinen tilanne, terveys, kasvatustausta, tunteet ja sosiaalinen ympäristö vaikuttavat siihen, mitä vaihtoehtoja todella on.\n\nMoraalisessa päätöksessä on tärkeää erottaa halu, valinta ja vastuu. Ihminen voi haluta jotakin, mutta se ei tarkoita, että hänen pitäisi tehdä niin. Vapaus merkitsee myös kykyä pysähtyä ja arvioida vaihtoehtoja. Vastuu puolestaan liittyy siihen, että ihminen voi joutua vastaamaan teoistaan ja niiden vaikutuksista. Vastuun määrä riippuu esimerkiksi tiedosta, tarkoituksesta, mahdollisuuksista ja siitä, kuinka paljon henkilö pystyi hallitsemaan toimintaansa.\n\nDeterminismi on näkemys, jonka mukaan tapahtumilla on syitä ja ihmisenkin toiminta voi olla monien tekijöiden vaikutusta. Vapaa tahto taas korostaa ihmisen kykyä tehdä valintoja. Näiden välillä on myös yhteensopivuutta etsivä ajatus, jonka mukaan ihminen voi olla vastuullinen, vaikka hänen toiminnallaan olisi syitä ja taustatekijöitä.\n\nKontrollissa älä vastaa vain ”ihminen on vapaa” tai ”ihminen ei ole vapaa”. Selitä, missä mielessä ihminen voi valita ja mitkä tekijät rajoittavat valintaa. Hyvä vastaus käsittelee myös seurauksia: mitä enemmän ihminen pystyy vaikuttamaan tekoonsa ja ymmärtämään sen seurauksia, sitä vahvemmin vastuuta voidaan yleensä perustella.\n\nMuistilause kontrolliin: vapaus ei tarkoita rajattomuutta. Osaa selittää, miten lait, muiden oikeudet, tunteet, kasvatus ja elämäntilanne rajoittavat valintoja. Vastuu vahvistuu, kun ihminen ymmärtää tekonsa ja pystyy vaikuttamaan siihen. Muista vapaa tahto ja determinismi. Hyvässä vastauksessa et valitse vain yhtä ääripäätä, vaan arvioit sekä vapauden että rajoittavien tekijöiden merkitystä."],["ET 4","Seurausten eettinen arviointi","Seurausetiikassa teon moraalista arvoa arvioidaan sen perusteella, mitä teosta seuraa. Utilitarismi on tunnettu seurausetiikan muoto. Sen perusajatus on, että moraalisessa päätöksessä pitäisi pyrkiä mahdollisimman hyvään kokonaisseuraamukseen ja vähentämään kärsimystä. Jeremy Bentham ja John Stuart Mill ovat keskeisiä utilitarismin klassisia ajattelijoita. Mill korosti myös sitä, että hyvinvoinnin laatu voi olla merkityksellistä eikä vain määrää tarvitse verrata.\n\nSeurausetiikan vahvuus on, että se pakottaa miettimään käytännön vaikutuksia. Päätöksessä ei riitä hyvä tarkoitus, jos lopputulos aiheuttaa paljon vahinkoa. Toisaalta kaikkia seurauksia ei voi tietää varmasti. Lisäksi voi olla vaikeaa päättää, kenen hyvinvointi pitäisi laskea mukaan ja miten erilaisia haittoja ja hyötyjä verrataan.\n\nEettinen dilemma syntyy, kun kaksi moraalisesti tärkeää asiaa joutuu ristiriitaan. Esimerkiksi yhden ihmisen auttaminen voi viedä resursseja useilta muilta. Hyvässä analyysissä luetellaan vaihtoehdot, arvioidaan seuraukset eri ihmisille, huomioidaan todennäköisyys ja epävarmuus ja tehdään perusteltu johtopäätös.\n\nKontrollissa käytä rakennetta: 1) mikä teko tai päätös on kyseessä, 2) mitä vaihtoehtoja on, 3) mitä hyötyä ja haittaa niistä seuraa, 4) keihin vaikutus kohdistuu, 5) mikä vaihtoehto tuottaa parhaan kokonaisuuden ja 6) mikä on oma johtopäätös. Jos vertaat seurausetiikkaa velvollisuusetiikkaan, muista: seurausetiikka painottaa lopputulosta, velvollisuusetiikka itse teon periaatetta tai velvollisuutta.\n\nMuistilause kontrolliin: seurausetiikka arvioi tekoa lopputuloksen perusteella. Utilitarismissa pyritään mahdollisimman suureen kokonais-hyvinvointiin. Muista Bentham ja Mill. Kun analysoit dilemmaa, vertaile vaihtoehtojen hyötyjä ja haittoja, vaikutusten kohteita ja epävarmuutta. Vertaa tarvittaessa velvollisuusetiikkaan: siinä oikea teko ei riipu vain seurauksesta vaan myös moraalisesta periaatteesta tai velvollisuudesta."],["ET 5","Sananvapaus ja median etiikka","Sananvapaus tarkoittaa oikeutta ilmaista ajatuksia ja vastaanottaa tietoa. Se on tärkeä osa demokraattista yhteiskuntaa, koska ihmisillä pitää olla mahdollisuus keskustella, kritisoida vallankäyttäjiä ja osallistua yhteisiin asioihin. Sananvapaus ei kuitenkaan tarkoita, että jokainen ilmaisu olisi automaattisesti hyväksyttävä tai että muiden oikeudet voisi sivuuttaa.\n\nMedian etiikassa keskeisiä arvoja ovat totuudenmukaisuus, lähdekritiikki, yksityisyyden suoja, oikeudenmukaisuus ja vastuu. Toimittajan tai sisällöntuottajan pitäisi arvioida, onko tieto riittävän luotettavaa ja onko julkaisemisesta enemmän hyötyä kuin haittaa. Yksityiselämän suoja voi olla tärkeä esimerkiksi silloin, kun kyseessä on alaikäinen tai henkilö, joka ei ole julkisuuden henkilö.\n\nSosiaalinen media tekee jokaisesta mahdollisen tiedon levittäjän. Siksi medialukutaito kuuluu myös tavalliselle käyttäjälle. Tarkista kuka väitteen julkaisi, milloin se julkaistiin, mihin väite perustuu ja löytyykö sama tieto useasta riippumattomasta lähteestä. Varo erityisesti sisältöä, joka yrittää saada aikaan voimakkaan tunne-reaktion ennen kuin lukija ehtii tarkistaa väitteen. Disinformaatio on tarkoituksellisesti harhaanjohtavaa tietoa, kun taas väärä tieto voi levitä myös ilman tarkoituksellista huijaamista.\n\nKontrollissa erottele sananvapaus ja vastuu. Hyvä vastaus kertoo, miksi sananvapaus on tärkeä, mutta myös millaisia seurauksia julkaisemisella voi olla. Käytä käsitteitä lähdekritiikki, yksityisyys, vastuu, disinformaatio ja luotettavuus.\n\nMuistilause kontrolliin: sananvapaus mahdollistaa keskustelun, kritiikin ja osallistumisen, mutta siihen liittyy vastuu. Muista lähdekritiikki, yksityisyys, disinformaatio, luotettavuus ja seuraukset. Tarkista kuka julkaisi tiedon, milloin ja mihin väite perustuu. Hyvä kontrollivastaus osoittaa, että osaat puolustaa sananvapautta samalla kun huomioit muiden oikeudet ja mahdollisen vahingon."],["ET 6","Ihmissuhteiden etiikka","Ihmissuhteiden etiikka käsittelee sitä, miten ihmisiä pitäisi kohdella ystävyydessä, perheessä, seurustelussa ja muissa läheisissä suhteissa. Tärkeitä periaatteita ovat ihmisarvon kunnioittaminen, luottamus, rehellisyys, tasavertaisuus, turvallisuus ja toisen rajojen huomioiminen. Hyvä ihmissuhde ei tarkoita sitä, että ihmiset ovat aina samaa mieltä. Eri mieltä voi olla kunnioittavasti.\n\nLuottamus syntyy yleensä ajan ja tekojen kautta. Jos ihminen lupaa jotakin ja pitää lupauksensa, luottamus voi vahvistua. Toistuva valehtelu tai toisen yksityisten asioiden levittäminen voi rikkoa luottamusta. Anteeksipyyntö ei myöskään automaattisesti korjaa kaikkea, vaan tärkeää on halu muuttaa toimintaa.\n\nSuostumus tarkoittaa vapaaehtoista ja ymmärrettyä suostumista. Painostus, uhkailu, manipulointi tai pelko eivät tee suostumuksesta aidosti vapaata. Omien rajojen tunnistaminen on yhtä tärkeää kuin toisen rajojen kunnioittaminen. Tämä koskee esimerkiksi fyysistä läheisyyttä, yksityisiä kuvia, viestejä ja sitä, miten toista puhutellaan.\n\nIhmissuhteissa voi syntyä myös vallan epätasapainoa. Jos toinen kontrolloi jatkuvasti toisen kavereita, rahaa, pukeutumista tai yhteydenpitoa, kyse ei ole vain tavallisesta erimielisyydestä. Eettisesti on tärkeää huomata, onko molemmilla todellinen mahdollisuus sanoa ei ja tehdä omia valintoja.\n\nKontrollissa analysoi tilanne viiden kysymyksen avulla: toteutuvatko kunnioitus, vapaaehtoisuus, turvallisuus, tasavertaisuus ja luottamus? Perustele sitten, mikä olisi oikeudenmukainen toimintatapa.\n\nMuistilause kontrolliin: ihmissuhteiden etiikassa keskeisiä ovat kunnioitus, luottamus, vapaaehtoisuus, turvallisuus ja tasavertaisuus. Suostumus pitää olla vapaaehtoista ja ymmärrettyä. Painostus ei ole aitoa suostumusta. Riidassa arvioi myös valtasuhteita ja sitä, onko molemmilla mahdollisuus sanoa ei. Hyvä vastaus ei syytä vain yhtä osapuolta, vaan perustelee, mikä toimintatapa suojaa ihmisarvoa ja rajoja."],["ET 7","Elämän ja kuoleman kysymykset","Elämän ja kuoleman kysymyksissä etiikka joutuu pohtimaan ihmisarvoa, itsemääräämisoikeutta, kärsimyksen vähentämistä ja elämän suojelemista. Aiheisiin voivat kuulua abortti, saattohoito, eutanasia, itsemurha ja lääketieteelliset päätökset elämän loppuvaiheessa. Näissä keskusteluissa ei yleensä ole hyödyllistä esittää asiaa vain kahden mielipiteen taisteluna. Parempi tapa on tunnistaa eri arvoja ja perusteluja.\n\nAborttia koskevassa eettisessä keskustelussa voidaan pohtia syntymättömän elämän moraalista asemaa, raskaana olevan henkilön itsemääräämisoikeutta, terveyttä ja elämäntilannetta. Saattohoidossa tavoitteena on lievittää kärsimystä ja tukea ihmistä tilanteessa, jossa parantavaa hoitoa ei enää ole. Eutanasia tarkoittaa tarkoituksellista elämän päättämistä potilaan pyynnöstä tietyissä tilanteissa. Saattohoitoa ja eutanasiaa ei pidä sekoittaa: saattohoidossa tarkoitus on hoitaa ja lievittää kärsimystä, vaikka kuolema olisi lähellä.\n\nEri eettiset teoriat voivat painottaa eri asioita. Velvollisuusetiikka voi korostaa elämän suojelemista tai periaatetta, jonka mukaan ihmistä ei saa käyttää välineenä. Seurausetiikka voi tarkastella kärsimyksen määrää ja päätöksen vaikutuksia. Hyve-etiikka voi kysyä, millainen toiminta ilmaisee myötätuntoa, viisautta ja vastuullisuutta.\n\nKontrollissa määrittele ensin käsite. Esittele vähintään kaksi perusteltua näkökulmaa, kerro niiden taustalla olevat arvot ja arvioi seurauksia. Lopuksi voit esittää oman kantasi, mutta tärkeintä on osoittaa, että ymmärrät ongelman monimutkaisuuden.\n\nMuistilause kontrolliin: elämän ja kuoleman kysymyksissä osaa erottaa abortin, saattohoidon ja eutanasian. Tunnista ihmisarvo, itsemääräämisoikeus, elämän suojeleminen ja kärsimyksen vähentäminen. Esitä vähintään kaksi näkökulmaa ja kerro niiden taustalla olevat arvot. Älä väitä, että vaikeassa bioeettisessä kysymyksessä on aina vain yksi helppo vastaus. Perustelu ratkaisee enemmän kuin mielipiteen voimakkuus."],["ET 8","Terveyden ja hyvinvoinnin etiikka","Terveyden ja hyvinvoinnin etiikassa tarkastellaan sitä, mitä tarkoittaa hyvä elämä ja miten terveyttä pitäisi edistää oikeudenmukaisesti. Hyvinvointi on laajempi asia kuin pelkkä sairauden puuttuminen. Siihen liittyvät fyysinen terveys, psyykkinen hyvinvointi, ihmissuhteet, turvallisuus, lepo, mahdollisuus osallistua ja kokemus siitä, että omalla elämällä on merkitystä.\n\nTerveydenhuollossa syntyy eettisiä kysymyksiä esimerkiksi silloin, kun resursseja on rajallisesti. Jos kaikille ei voida tarjota kaikkea heti, pitää pohtia, millä perusteella hoitoa priorisoidaan. Tärkeitä periaatteita ovat potilaan itsemääräämisoikeus, hyvän tekeminen, vahingon välttäminen ja oikeudenmukaisuus. Potilaan tietoja pitää käsitellä luottamuksellisesti.\n\nTieteellinen tutkimus on tärkeää, koska lääketieteellisiä väitteitä pitää voida testata. Samalla tutkimukseen osallistuvien oikeudet ja turvallisuus on suojattava. Terveystiedon arvioinnissa lähdekritiikki on välttämätöntä. Pelkkä sosiaalisen median video tai yksittäinen kokemus ei todista, että jokin hoito toimii kaikille.\n\nUrheilun etiikkaan liittyvät reilu peli, doping, kilpailupaineet, loukkaantumisriskit ja alaikäisten suojaaminen. Voiton tavoittelu ei oikeuta vaarantamaan terveyttä tai huijaamaan. Vastuu kuuluu urheilijan lisäksi valmentajille, seuroille ja järjestöille.\n\nKontrollissa käytä käsitteitä ihmisarvo, itsemääräämisoikeus, oikeudenmukaisuus, hyvinvointi ja vastuu. Hyvä vastaus yhdistää käsitteen konkreettiseen tilanteeseen ja näyttää, miksi ratkaisu on eettisesti perusteltu.\n\nMuistilause kontrolliin: hyvinvointi on fyysistä, psyykkistä ja sosiaalista. Terveydenhuollossa muista itsemääräämisoikeus, hyvän tekeminen, vahingon välttäminen ja oikeudenmukaisuus. Terveystiedossa arvioi lähteen luotettavuutta. Urheilussa muista reilu peli, doping, turvallisuus ja vastuu. Hyvä vastaus yhdistää käsitteen käytännön tilanteeseen ja selittää, miksi ratkaisu tukee ihmisen hyvinvointia ja ihmisarvoa."]]};const CONCEPTS={"US":[["Moraali","käsitykset hyvästä ja pahasta","Arvot","asiat, joita pidetään tärkeinä","Normit","toimintaa ohjaavat säännöt","Itsekritiikki","omien ajatusten tutkimista"],["Elämän tarkoitus","kysymys siitä, mikä tekee elämästä merkityksellistä","Kärsimys","fyysinen tai psyykkinen kokemus","Rakkaus","luottamus, kunnioitus, välittäminen ja vastuu","Merkitys","sitä voidaan löytää ihmisistä, luonnosta tai tavoitteista"],["Vanha testamentti","korostaa käskyjä ja oikeudenmukaisuutta","Armo","Jeesuksen opetuksissa korostuva teema","Kultainen sääntö","muita kohdellaan kuten itseä toivottaisiin","Moraalinen vastuu","vastuu omista valinnoista"],["Monoteismi","usko yhteen Jumalaan","Hyve","hyvä luonteenpiirre tai toimintatapa","Pahe","hyveen vastakohta","Yhteisö","eettisen toiminnan sosiaalinen ympäristö"],["Karma","tekojen seurauksiin liittyvä ajatus","Buddhalaisuus","kärsimyksen vähentämistä korostava perinne","Konfutselaisuus","perhettä ja yhteisöä korostava perinne","Bushido","kunniaan, uskollisuuteen ja velvollisuuteen liittyvä ihanne"],["Ihmisarvo","kaikkien ihmisten yhtäläisen arvon perusta","Ihmisoikeudet","kaikille kuuluvat perusoikeudet","YK:n julistus","ihmisoikeuksien yleismaailmallinen julistus","Lapsen oikeudet","oikeus erityiseen suojeluun ja kehitykseen"],["Luottamus","ihmissuhteiden tärkeä perusta","Kunnioitus","toisen arvon ja rajojen huomioiminen","Ennakkoluulottomuus","erilaisten ihmisten kohtaamista ilman perusteettomia oletuksia","Hyvä elämä","turvallisuutta, suhteita ja merkityksellisyyttä"],["Suostumus","seksuaalisuuden eettinen perusta","Itsemääräämisoikeus","oikeus päättää itseään koskevista asioista","Tasa-arvo","yhtäläisen kohtelun periaate","Saattohoito","oireiden lievittämistä elämän lopussa"],["Lähdekritiikki","tiedon luotettavuuden arviointia","Yksityisyys","henkilökohtaisten tietojen ja elämän suojaa","Vallankäyttö","päätöksiin vaikuttamista, johon liittyy vastuu","Eriarvoisuus","ihmisten erilaisten mahdollisuuksien ongelma"],["Ympäristöetiikka","ihmisen ja luonnon suhteen moraalista tarkastelua","Kestävä elämäntapa","tulevat sukupolvet huomioiva elämäntapa","Luonnon monimuotoisuus","elollisen luonnon moninaisuus","Eläinten arvo","eläinten oman arvon ja kärsimyksen kysymys"]],"ET":[["Itsenäinen ajattelu","omien perusteltujen mielipiteiden muodostamista","Sokrates","kysymysten esittämistä ja omien käsitysten tutkimista","Itsekritiikki","omien ajatusten virheiden tunnistamista","Eettinen harkinta","tilanteen, vaihtoehtojen ja vaikutusten arviointia"],["Arvo","asia, jota pidetään tärkeänä","Normi","toimintaa ohjaava sääntö","Hyve","hyvä luonteenpiirre tai toimintatapa","Arvoristiriita","tilanne, jossa tärkeät arvot joutuvat vastakkain"],["Vapaus","mahdollisuus vaikuttaa omiin valintoihin","Vastuu","velvollisuus vastata oman toiminnan seurauksista","Moraali","käsityksiä oikeasta ja väärästä","Kultainen sääntö","toisten kunnioittaminen kuten itseä toivottaisiin kohdeltavan"],["Seurausetiikka","tekojen arviointia vaikutusten perusteella","Utilitarismi","mahdollisimman suuren kokonais-hyvinvoinnin tavoittelu","Dilemma","vaikea eettinen valintatilanne","Tahallisuus","teon tarkoituksen huomioiminen"],["Sananvapaus","oikeus ilmaista mielipiteitä ja vastaanottaa tietoa","Media","julkiseen keskusteluun vaikuttava tiedonvälitys","Lähdekritiikki","tiedon luotettavuuden arviointia","Yksityisyys","henkilökohtaisten tietojen ja elämän suojaa"],["Suostumus","seksuaalisuuden eettinen perusta","Vastavuoroisuus","ystävyyden vastavuoroista toimintaa","Rajojen kunnioittaminen","toisen oikeuksien ja rajojen huomioimista","Identiteetti","käsitys siitä, kuka ihminen on"],["Abortti","raskauden keskeyttämiseen liittyvä eettinen kysymys","Ihmisarvo","ihmisen arvon säilyminen elämän eri vaiheissa","Saattohoito","oireiden lievittämistä ja ihmisarvon tukemista","Eutanasia","eettisesti kiistanalainen kysymys kuolemasta ja hoidosta"],["Fyysinen hyvinvointi","kehon terveyttä ja toimintakykyä","Psyykkinen hyvinvointi","mielen hyvinvointia","Sosiaalinen hyvinvointi","ihmissuhteisiin ja yhteisöön liittyvää hyvinvointia","Reilu peli","urheilun oikeudenmukaisuuden periaate"]]};
+const app=document.getElementById('app'),drawerEl=document.getElementById('drawer'),shade=document.getElementById('shade');
+function esc(x){return String(x??'').replace(/[&<>\"']/g,m=>({'&':'&amp;','<':'&lt;','>':'&gt;','\"':'&quot;',"'":'&#039;'}[m]))}
+function drawer(){drawerEl.classList.toggle('open');shade.classList.toggle('open')}
+function nav(sec){document.getElementById('nav'+sec).innerHTML='<div class="list">'+DATA[sec].map((c,i)=>`<button class="chapter" onclick="chapter('${sec}',${i});drawer()"><b>${c[0]}</b><span>${c[1]}</span></button>`).join('')+'</div>'}
+function openSection(sec){let id=sec==='US'?'homeUS':'homeET';document.getElementById(id).innerHTML='<div class="list">'+DATA[sec].map((c,i)=>`<button class="chapter" onclick="chapter('${sec}',${i})"><b>${c[0]}</b><span>${c[1]}</span></button>`).join('')+'</div>'}
+function art(sec,i){let a=sec==='US'?['⚖','✦','✝','☀','☯','⚑','◎','∞','▦','♧']:['?','⌖','↔','→','◉','♡','◌','✚'];return 'data:image/svg+xml;utf8,'+encodeURIComponent(`<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1000 450"><rect width="1000" height="450" fill="#385d4d"/><circle cx="780" cy="120" r="75" fill="#f5e5b5"/><text x="500" y="300" text-anchor="middle" font-size="110" fill="white">${a[i]}</text></svg>`)}
+function home(){app.innerHTML=`<section class="hero"><div class="heroCard"><div class="eyebrow">OPISKELU • US & ET</div><h1>Opiskele rauhassa.<br>Valmistaudu hyvin.</h1><p>Harjoittele ilman rekisteröitymistä, profiileja tai kommentteja. Jokaisessa luvussa on erilaisia tehtäviä.</p><button class="btn" onclick="document.getElementById('study').scrollIntoView()">ALOITA OPISKELU ↓</button></div></section><section id="study" class="page"><h2 class="title">OPISKELE</h2><p class="muted">Valitse osio ja luku.</p><div class="books"><div class="book"><div class="eyebrow">US</div><h2>USKONTO</h2><p class="muted">10 lukua.</p><button class="btn" onclick="openSection('US')">Avaa USKONTO</button><div id="homeUS"></div></div><div class="book"><div class="eyebrow">ET</div><h2>ETIIKAN PERUSTEET</h2><p class="muted">8 lukua.</p><button class="btn" onclick="openSection('ET')">Avaa ETIIKAN PERUSTEET</button><div id="homeET"></div></div></div></section>
+<section class="rights-section"><div class="rights-header"><div class="eyebrow">IHMISOIKEUDET & YHTEISKUNTA</div><h2>🌍 Ihmisoikeudet – tärkeät perusasiat</h2><p>Oikeudet kuuluvat jokaiselle ihmiselle. Tämä osio auttaa kertaamaan ET:n ja US:n yhteiskunta- ja etiikka-aiheita. Lue kortit ja opettele niiden ydinsanoma ennen kontrollia.</p></div><div class="rights-grid">
+<article class="right-card"><h3>⚖️ Yhdenvertaisuus</h3><p>Kaikilla ihmisillä on sama ihmisarvo. Ketään ei saa perusteettomasti syrjiä esimerkiksi taustan, vakaumuksen tai muun henkilöön liittyvän syyn vuoksi.</p></article>
+<article class="right-card"><h3>💬 Sananvapaus</h3><p>Ihmisellä on oikeus ilmaista ja vastaanottaa tietoa ja mielipiteitä. Vapauteen liittyy vastuu muiden oikeuksien ja lain kunnioittamisesta.</p></article>
+<article class="right-card"><h3>🕊️ Vakaumuksen vapaus</h3><p>Jokaisella on oikeus omaan uskontoon tai vakaumukseen sekä oikeus olla kuulumatta uskonnolliseen yhteisöön.</p></article>
+<article class="right-card"><h3>🏠 Yksityiselämän suoja</h3><p>Yksityiselämää, kotia ja henkilötietoja suojataan. Toisten henkilökohtaisten tietojen jakamiseen pitää suhtautua vastuullisesti.</p></article>
+<article class="right-card"><h3>🧑‍⚖️ Oikeusturva</h3><p>Jokaisella tulee olla oikeus oikeudenmukaiseen käsittelyyn ja mahdollisuus saada apua, jos hänen oikeuksiaan loukataan.</p></article>
+<article class="right-card"><h3>❤️ Ihmisarvo</h3><p>Jokainen ihminen on arvokas riippumatta ominaisuuksista, asemasta tai mielipiteistä. Ihmisarvo on monien ihmisoikeuksien perusta.</p></article>
+</div></section>`}
+
+const CHAPTER_INFO={"US 1":["### Etiikka, moraali ja arvot","Etiikka on filosofinen tapa tutkia moraalia: se kysyy, mikä on oikein tai väärin, miksi jokin teko olisi hyvä tai huono ja millä perusteilla väitettä voidaan puolustaa. Moraali taas tarkoittaa käytännön käsityksiä ja toimintatapoja, joita ihmisellä tai yhteisöllä on hyvästä ja pahasta. Arvot kertovat, mitä pidämme tärkeänä, esimerkiksi oikeudenmukaisuutta, vapautta, turvallisuutta tai rehellisyyttä.","### Miten eettistä ongelmaa tutkitaan?","Kun kohtaat eettisen ongelman, erottele ensin tosiasiat mielipiteistä. Sen jälkeen tunnista, ketkä tilanteessa ovat osapuolia, mitä arvoja ja oikeuksia tilanteeseen liittyy ja millaisia vaihtoehtoja on olemassa. Lopuksi arvioi vaihtoehtojen seurauksia ja perustele oma johtopäätöksesi. Hyvä koevastaus ei ole vain mielipide, vaan mielipide, jota tuetaan käsitteillä ja perusteluilla.","### Maailmankuva ja maailmankatsomus","Maailmankuva tarkoittaa käsityksiä siitä, millainen maailma ja ihminen ovat. Maailmankatsomus on laajempi kokonaisuus, johon kuuluu myös käsitys siitä, mikä elämässä on tärkeää ja miten pitäisi elää. Uskonto voi vaikuttaa maailmankatsomukseen, mutta maailmankatsomus voi olla myös uskonnollinen, ateistinen tai esimerkiksi agnostinen.","### Kokeessa muista","Tärkeää on osata erottaa toisistaan moraali, etiikka, arvot ja normit. Muista myös, että eettisessä pohdinnassa voi olla useita perusteltuja näkökulmia. Eri mieltä oleminen ei itsessään tee vastauksesta väärää, jos perustelut ovat selkeitä ja liittyvät kysymykseen.","### Arjen esimerkki","Eettisiä kysymyksiä tulee vastaan tavallisissa tilanteissa: koulussa, kaverisuhteissa, somessa ja silloin, kun joku tarvitsee apua. Esimerkiksi jos huomaat luokkakaverin joutuvan kiusatuksi, voit pohtia sekä omaa toimintavapauttasi että vastuutasi muita kohtaan. Eettinen arviointi ei tarkoita sitä, että kaikesta pitäisi olla samaa mieltä. Olennaista on tunnistaa perustelut, kuunnella muita ja arvioida, ovatko omat perustelut johdonmukaisia. Tunne voi olla tärkeä lähtökohta, mutta pelkkä tunne ei vielä kerro, mikä ratkaisu on oikeudenmukainen.","### Kokeessa muista","Kun vastaat eettiseen kysymykseen, käytä käsitteitä täsmällisesti. Kerro ensin, mistä ongelmassa on kyse. Nimeä sen jälkeen vähintään yksi arvo, oikeus tai moraalinen periaate. Esittele vaihtoehtoja ja niiden seurauksia ja tee lopuksi perusteltu johtopäätös. Hyvä vastaus voi tunnistaa myös vastakkaisen näkökulman. Muista erottaa toisistaan laillinen ja moraalisesti hyvä toiminta: jokin teko voi olla laillinen, mutta siitä voidaan silti keskustella eettisesti."],"US 2":["### Elämän tarkoitus ja merkityksellisyys","Elämän tarkoitusta koskeva kysymys on filosofinen ja maailmankatsomuksellinen. Jotkut löytävät tarkoituksen ihmissuhteista, uskonnosta, työstä, oppimisesta, auttamisesta tai tavoitteista. Toiset ajattelevat, ettei elämälle ole valmiiksi annettua tarkoitusta, vaan ihminen rakentaa merkitystä itse. Kokeessa kannattaa erottaa kysymys siitä, mitä elämä merkitsee ihmiselle, kysymyksestä siitä, onko olemassa jokin kaikille yhteinen tarkoitus.","### Kärsimys ja kuolema","Kärsimystä voidaan tarkastella fyysisenä kipuna, psyykkisenä kokemuksena tai sosiaalisena vaikeutena. Uskonnot voivat antaa kärsimykselle erilaisia selityksiä ja tapoja käsitellä sitä. Kuolemaan liittyy sekä käytännöllisiä että maailmankatsomuksellisia kysymyksiä: mitä kuolema merkitsee, onko kuoleman jälkeen jotakin ja miten kuolevaa ihmistä pitäisi kohdella?","### Rakkaus ja ihmissuhteet","Rakkauteen liittyy tunteen lisäksi vastuuta, luottamusta, kunnioitusta ja toisen rajojen huomioimista. Eettisessä tarkastelussa voidaan kysyä, ovatko osapuolet tasavertaisia, voiko jokainen ilmaista tahtonsa vapaasti ja kohdellaanko kaikkia kunnioittavasti.","### Kokeessa muista","Osaa antaa ainakin kaksi erilaista näkökulmaa samaan elämänkysymykseen. Hyvä vastaus kertoo ensin käsitteen, sitten näkökulmat ja lopuksi oman perustellun johtopäätöksen.","### Elämän tarkoitus ja merkitys","Kysymys elämän tarkoituksesta liittyy siihen, mitä ihminen pitää arvokkaana ja merkityksellisenä. Uskonnot voivat tarjota vastauksia esimerkiksi Jumalasta, pelastuksesta, jälleensyntymästä tai elämästä osana suurempaa kokonaisuutta. Myös ei-uskonnollinen ihminen voi löytää merkitystä läheisistä ihmissuhteista, oppimisesta, luonnosta, työstä tai muiden auttamisesta. On tärkeää ymmärtää, että merkityksellinen elämä ei tarkoita kaikille samaa asiaa. Ihmisen käsitys voi myös muuttua elämän aikana kokemusten ja elämäntilanteen muuttuessa.","### Kärsimys ja kuolema","Kärsimys herättää vaikeita kysymyksiä oikeudenmukaisuudesta, vastuusta ja elämän arvosta. Uskonnollisissa perinteissä kärsimystä voidaan tulkita esimerkiksi koettelemuksena, osana ihmisen rajallisuutta tai kysymyksenä, johon ei ole yksinkertaista vastausta. Kuolemaan liittyvät näkemykset vaihtelevat suuresti: jotkut uskovat kuolemanjälkeiseen elämään, toiset jälleensyntymään ja toiset siihen, että tietoisuus päättyy kuolemaan. Kontrollissa tärkeää on osata vertailla näkemyksiä ilman, että niitä sekoitetaan toisiinsa."],"US 3":["### Raamatun rakenne","Raamattu on kristinuskon pyhä kirjakokoelma. Se jakautuu Vanhaan ja Uuteen testamenttiin. Vanha testamentti sisältää Israelin kansan historiaan, uskoon, viisausperinteeseen ja profeettoihin liittyviä tekstejä. Uusi testamentti keskittyy Jeesuksen elämään ja opetuksiin sekä varhaisen kristinuskon syntyyn.","### Eettiset periaatteet","Raamatun eettisissä teksteissä esiintyvät esimerkiksi oikeudenmukaisuus, lähimmäisenrakkaus, heikommista huolehtiminen, anteeksianto ja vastuu omista teoista. Jeesuksen opetuksissa korostuu ajatus siitä, että ulkoisen toiminnan lisäksi myös ihmisen asenne ja tarkoitus ovat moraalisesti merkityksellisiä.","### Kultainen sääntö","Kultainen sääntö voidaan tiivistää ajatukseen, että muita ihmisiä tulee kohdella niin kuin itse toivoisi tulevansa kohdelluksi. Se tarjoaa käytännöllisen tavan tarkastella arkisia tilanteita: ennen omaa toimintaa voi kysyä, hyväksyisinkö saman toiminnan, jos olisin itse toinen osapuoli.","### Kokeessa muista","Osaa selittää, mitä tarkoittavat armo, anteeksianto, lähimmäisenrakkaus ja kultainen sääntö. Älä sekoita Raamatun eri osia keskenään: Vanha ja Uusi testamentti muodostavat yhdessä Raamatun.","### Vanha ja Uusi testamentti","Raamatun kaksi pääosaa muodostavat historiallisen ja uskonnollisen kokonaisuuden, mutta niiden tekstit ovat syntyneet eri aikoina ja eri tilanteissa. Vanhan testamentin keskeisiä aiheita ovat liitto, käskyt, oikeudenmukaisuus ja ihmisen suhde Jumalaan. Uudessa testamentissa Jeesuksen elämä ja opetukset ovat keskeisiä. Evankeliumit kertovat Jeesuksesta, ja muut Uuden testamentin tekstit käsittelevät varhaisen kristinuskon uskoa ja elämää. Eettisiä opetuksia tulee tarkastella myös tekstien asiayhteydessä.","### Jeesuksen etiikka","Jeesuksen opetuksissa korostuvat lähimmäisenrakkaus, anteeksianto, armo ja heikommassa asemassa olevien huomioiminen. Vuorisaarnassa käsitellään esimerkiksi vihamielisyyttä, kostoa, vihollisen rakastamista ja toisten tuomitsemista. Kultainen sääntö tiivistää yhden keskeisen ajatuksen: toista ihmistä tulisi kohdella tavalla, jolla itse toivoisi tulevansa kohdelluksi. Kontrollivastauksessa kannattaa antaa konkreettinen esimerkki siitä, miten periaate voisi näkyä nykyajan koulussa tai yhteiskunnassa."],"US 4":["### Kolme Lähi-idästä lähtöisin olevaa uskontoa","Juutalaisuus, kristinusko ja islam ovat monoteistisia uskontoja, eli niissä uskotaan yhteen Jumalaan. Niillä on historiallisia yhteyksiä ja yhteisiä hahmoja ja kertomusperinteitä, mutta niiden opetukset, rituaalit ja painotukset eivät ole samoja.","### Etiikan yhteisiä teemoja","Oikeudenmukaisuus, rehellisyys, lähimmäisestä huolehtiminen ja yhteisön vastuu ovat esimerkkejä teemoista, joita voidaan löytää kaikista kolmesta perinteestä. Yhteinen teema ei kuitenkaan tarkoita, että kaikki uskonnot ratkaisisivat eettiset kysymykset samalla tavalla.","### Hyveet ja paheet","Hyve on hyväksi katsottu luonteenpiirre tai toimintatapa, esimerkiksi rehellisyys, rohkeus tai oikeudenmukaisuus. Pahe tarkoittaa hyveen vastakohtaa. Hyve-etiikassa huomio kiinnittyy erityisesti siihen, millaiseksi ihmiseksi tekojen toistaminen tekee meistä.","### Kokeessa muista","Kun vertailet uskontoja, käytä rakennetta: yhteinen piirre → ero → esimerkki. Näin vastaus on tarkempi kuin pelkkä luettelo.","### Kolmen monoteistisen uskonnon yhteisiä piirteitä","Juutalaisuus, kristinusko ja islam ovat historiallisesti toisiinsa liittyviä uskontoja. Niissä uskotaan yhteen Jumalaan, mutta käsitykset Jumalasta, profeetoista, pyhistä teksteistä ja uskonnollisesta elämästä eivät ole samanlaisia. Juutalaisuudessa Toora ja liitto ovat keskeisiä. Kristillisyydessä Jeesus Kristus on uskon keskus. Islamissa Koraani ja profeetta Muhammad ovat keskeisiä. Kaikkien kolmen perinteissä esiintyy eettisiä opetuksia esimerkiksi oikeudenmukaisuudesta, hyvän tekemisestä ja lähimmäisen huomioimisesta.","### Vertailu","Uskontoja verrattaessa vältä liian yleisiä väitteitä, kuten että kaikki niiden kannattajat ajattelisivat samalla tavalla. Uskontojen sisällä on erilaisia suuntauksia ja tulkintoja. Kontrollissa kannattaa ensin kertoa yhteinen piirre ja sen jälkeen yksi selkeä ero. Esimerkiksi hyvän tekeminen on yhteinen teema, mutta sen perustelut ja uskonnollinen toteutus voivat vaihdella. Vertailu tarkoittaa siis sekä yhtäläisyyksien että erojen tunnistamista."],"US 5":["### Kaukoidän perinteiden näkökulma","Hindulaisuus ja buddhalaisuus ovat Intian alueelta lähtöisin olevia uskonnollisia perinteitä, kun taas konfutselaisuus liittyy Kiinan filosofiseen ja yhteiskunnalliseen perinteeseen. Näissä perinteissä eettistä elämää voidaan tarkastella esimerkiksi tekojen seurausten, kärsimyksen vähentämisen, itsekurin, ihmissuhteiden ja yhteisön tasapainon kautta.","### Karma ja toiminnan seuraukset","Karma liittyy ajatukseen siitä, että teoilla on seurauksia. Koulutasolla on tärkeää ymmärtää, ettei sana tarkoita vain sattumaa tai kohtaloa, vaan liittyy moraalisesti merkitykselliseen toimintaan ja sen seurauksiin uskonnollisessa ajattelussa.","### Buddhalainen näkökulma","Buddhalaisuudessa keskeinen kysymys on kärsimys ja siitä vapautuminen. Eettinen elämä liittyy haitallisen toiminnan vähentämiseen, myötätuntoon ja oman toiminnan tarkasteluun. Tavoitteena on vähentää kärsimystä eikä lisätä sitä.","### Konfutselaisuus ja bushido","Konfutselaisuudessa korostuvat ihmissuhteet, perhe, vastuu ja yhteiskunnallinen järjestys. Bushido on japanilaiseen samurai-kulttuuriin liittynyt ihanne, jossa korostuivat esimerkiksi kunnia, uskollisuus, rohkeus, itsehillintä ja velvollisuus.","### Kokeessa muista","Osaa yhdistää jokaisen perinteen tärkeimpään eettiseen ajatukseen ja anna yksi konkreettinen esimerkki.","### Karma ja toiminnan seuraukset","Karman käsite liittyy erityisesti intialaisiin uskonnollisiin perinteisiin, mutta sen merkitys vaihtelee traditioittain. Yksinkertaistettuna sillä tarkoitetaan tekojen ja niiden seurausten välistä yhteyttä. Hindulaisuudessa karma liittyy esimerkiksi jälleensyntymään ja ihmisen asemaan samsaran eli jälleensyntymien kiertokulussa. Buddhalaisuudessa karmalla tarkoitetaan erityisesti tahdonalaisten tekojen moraalisia seurauksia. Käsitettä ei siksi pidä kuvata pelkkänä ajatuksena siitä, että 'hyvä ihminen saa aina hyvää takaisin'.","### Buddhalaisuus, hindulaisuus ja konfutselaisuus","Buddhalaisuudessa keskeisiä ovat kärsimyksen ymmärtäminen ja siitä vapautumisen tie, mukaan lukien kahdeksanosainen polku. Hindulaisuus on monimuotoinen perinne, jossa esiintyy erilaisia jumalakäsityksiä, rituaaleja ja filosofisia suuntauksia. Konfutselaisuus painottaa yhteiskunnallisia suhteita, perhettä, kasvatusta ja hyvää käytöstä. Kaukoidän perinteitä vertaillessa kannattaa huomioida, että uskonto, filosofia ja kulttuuri voivat limittyä toisiinsa."],"US 6":["### Ihmisarvo on lähtökohta","Ihmisoikeuksien perusajatus on, että jokaisella ihmisellä on ihmisarvo riippumatta esimerkiksi iästä, taustasta, mielipiteistä tai asemasta. Oikeuksia ei pitäisi joutua ansaitsemaan olemalla tietynlainen ihminen.","### Oikeudet ja velvollisuudet","Ihmisoikeudet suojaavat yksilöä ja luovat yhteiskunnalle velvollisuuksia. Esimerkiksi oikeus koulutukseen tarkoittaa, että yhteiskunnan tulee luoda edellytyksiä koulutukselle. Oikeuksien käyttäminen ei kuitenkaan tarkoita, että muiden oikeudet voisi unohtaa.","### Lapsen oikeudet","Lapsella on oikeus erityiseen suojeluun, huolenpitoon, koulutukseen ja kehitykseen. Lapsen näkökulman huomioiminen on tärkeää, koska lapsella ei aina ole samoja mahdollisuuksia puolustaa omia oikeuksiaan kuin aikuisella.","### Kokeessa muista","Osaa selittää ihmisarvon, ihmisoikeuden ja tasa-arvon erot. Hyvä esimerkki tekee vastauksesta konkreettisen.","### Ihmisarvo ja oikeudet","Ihmisoikeuksien perusajatus on, että jokaisella ihmisellä on arvo riippumatta esimerkiksi kansallisuudesta, uskonnosta, sukupuolesta, varallisuudesta tai mielipiteistä. Oikeudet suojaavat ihmisen vapautta ja turvallisuutta sekä mahdollistavat osallistumisen yhteiskuntaan. Oikeuksiin liittyy myös kysymys vastuusta: omien oikeuksien käyttäminen ei saa tarkoittaa muiden oikeuksien perusteetonta loukkaamista. Ihmisoikeudet ovat universaali periaate, vaikka niiden toteutumisesta voidaan käydä yhteiskunnallista keskustelua.","### Lapsen oikeudet","Lapsella on oikeus esimerkiksi turvallisuuteen, huolenpitoon, koulutukseen ja kehitykseen. Aikuisilla ja yhteiskunnalla on vastuu luoda olosuhteet, joissa lapsen oikeudet toteutuvat. Kokeessa voi olla hyödyllistä erottaa oikeus, laki ja moraalinen velvollisuus. Oikeus kertoo, mitä ihmisellä tulee olla mahdollisuus saada tai tehdä; laki on yhteiskunnan säätämä sääntö; moraalinen velvollisuus perustuu eettiseen arvioon siitä, miten pitäisi toimia."],"US 7":["### Ihminen suhteissa muihin","Ihminen tekee eettisiä valintoja aina suhteessa muihin ihmisiin ja ympäristöön. Siksi etiikka ei koske vain suuria yhteiskunnallisia päätöksiä, vaan myös arjen tilanteita: miten puhumme toisille, pidämmekö lupauksemme ja kunnioitammeko toisen rajoja.","### Kunnioitus ja luottamus","Luottamus syntyy siitä, että toisen voi olettaa toimivan rehellisesti ja kunnioittavasti. Kunnioitus tarkoittaa toisen ihmisarvon, mielipiteiden ja rajojen huomioimista, vaikka olisimme eri mieltä.","### Kulttuurien kohtaaminen","Kulttuurien kohtaamisessa ennakkoluulottomuus ei tarkoita, että kaikesta pitäisi olla samaa mieltä. Se tarkoittaa halua kuunnella, tarkistaa omia oletuksia ja erottaa yksittäinen ihminen häntä koskevista stereotypioista.","### Kokeessa muista","Käytä sanoja ihmisarvo, kunnioitus, luottamus, vastuu ja rajat, kun ne sopivat tilanteeseen. Muista perustella, miksi jokin toimintatapa on eettisesti hyvä.","### Ihminen suhteessa muihin","Ihmisen moraalinen toiminta tapahtuu aina jossain sosiaalisessa ympäristössä. Perhe, ystävät, koulu, harrastukset, media ja kulttuuri vaikuttavat siihen, miten opimme suhtautumaan muihin. Tämä ei kuitenkaan tarkoita, että ihminen olisi täysin muiden määrittelemä. Itsenäinen ajattelu antaa mahdollisuuden arvioida omaksuttuja tapoja kriittisesti. Hyvä ihmissuhde perustuu vastavuoroisuuteen: molempien tarpeita, rajoja ja ihmisarvoa pitää kunnioittaa.","### Kulttuurien kohtaaminen","Kulttuurien välisessä kohtaamisessa on tärkeää erottaa ennakkoluulo, stereotypia ja todellinen tieto. Yksittäisen ihmisen käyttäytymisestä ei voi tehdä päätelmiä kokonaisesta kulttuurista tai uskonnosta. Eettisesti kestävä toiminta tarkoittaa kuuntelemista, kunnioittavaa kysymistä ja valmiutta korjata omia käsityksiä. Samalla muiden kulttuurien kunnioittaminen ei tarkoita sitä, että kaikkea toimintaa pitäisi hyväksyä: myös kulttuurisiin käytäntöihin voidaan soveltaa ihmisoikeuksia ja eettistä arviointia."],"US 8":["### Elämänkaari","Elämänkaarien etiikka tarkastelee moraalisia kysymyksiä eri elämänvaiheissa. Kysymykset muuttuvat iän ja tilanteen mukaan, mutta ihmisarvon periaate pysyy keskeisenä alusta loppuun.","### Seksuaalietiikka","Seksuaalietiikassa keskeisiä ovat vapaaehtoinen suostumus, turvallisuus, vastuu ja omien sekä muiden rajojen kunnioittaminen. Suostumuksen tulee olla vapaaehtoista eikä painostus tee tilanteesta eettisesti hyväksyttävää.","### Terveydenhuollon etiikka","Itsemääräämisoikeus tarkoittaa, että ihmisellä on oikeus osallistua itseään koskeviin päätöksiin. Tasa-arvo liittyy siihen, että ihmisiä kohdellaan oikeudenmukaisesti. Luottamuksellisuus suojaa potilaan yksityisiä tietoja. Hyvän tekeminen tarkoittaa pyrkimystä edistää potilaan hyvinvointia.","### Elämän loppu","Saattohoidossa tavoitteena on lievittää oireita ja tukea ihmistä hänen elämänsä lopussa. Eettisessä keskustelussa erotellaan usein aktiiviset hoitotoimet, hoidon rajaaminen, oireiden lievitys ja eutanasia.","### Kokeessa muista","Kun vastaat elämän alkuun tai loppuun liittyvään kysymykseen, esitä vähintään kaksi näkökulmaa ja perustele, mitä arvoja tai oikeuksia ne suojaavat.","### Elämän alku ja loppu","Elämänkaaren etiikassa kysytään, miten ihmisarvoa ja oikeuksia tulisi suojella elämän eri vaiheissa. Elämän alkuun liittyvissä keskusteluissa voidaan pohtia syntymättömän elämän moraalista asemaa sekä raskaana olevan henkilön itsemääräämisoikeutta. Elämän loppuun liittyvissä kysymyksissä keskustellaan esimerkiksi hyvästä kuolemasta, saattohoidosta ja itsemääräämisestä. Näissä kysymyksissä on tärkeää tunnistaa, että ihmisillä voi olla erilaisia uskonnollisia, filosofisia ja juridisia perusteluja.","### Eettinen perustelu","Vaikeissa elämänkaarikysymyksissä pelkkä mielipide ei riitä hyvään koevastaukseen. Voit tarkastella esimerkiksi ihmisarvoa, autonomiaa, elämän suojelemista, kärsimyksen vähentämistä ja yhdenvertaisuutta. Sen jälkeen vertaile, mitä eri periaatteet tarkoittavat käytännössä. Muista, että juridinen kysymys ja eettinen kysymys eivät ole sama asia: laki kertoo, mitä yhteiskunnassa on sallittu tai kielletty, kun taas etiikka tutkii, mitä pitäisi pitää oikeana tai vääränä."],"US 9":["### Etiikka yhteiskunnassa","Yhteiskunnassa ihmisten toimintaa ohjaavat lait, säännöt, instituutiot ja yhteiset käytännöt. Laki ja moraali eivät kuitenkaan ole sama asia: jokin voi olla laillista mutta silti moraalisesti kyseenalaista, tai moraalisesti perusteltua mutta lain mukaan kiellettyä.","### Valta ja vastuu","Vallankäyttö tarkoittaa mahdollisuutta vaikuttaa ihmisten toimintaan tai päätöksiin. Mitä enemmän valtaa ihmisellä tai instituutiolla on, sitä tärkeämpää on läpinäkyvyys, vastuu ja muiden oikeuksien suojaaminen.","### Media ja teknologia","Lähdekritiikki auttaa arvioimaan, kuka tiedon on tuottanut, mihin väite perustuu, milloin se on julkaistu ja onko muita luotettavia lähteitä. Teknologia tuo uusia mahdollisuuksia mutta myös yksityisyyteen, tekoälyyn ja väärään tietoon liittyviä eettisiä kysymyksiä.","### Kokeessa muista","Erota toisistaan laki, moraali ja yhteiskunnallinen mielipide. Kun käsittelet mediaa, mainitse lähdekritiikki ja yksityisyys, jos ne liittyvät tilanteeseen.","### Laki, valta ja vastuu","Yhteiskunta tarvitsee yhteisiä sääntöjä, jotta ihmisten oikeudet ja turvallisuus voidaan turvata. Demokratiaan liittyy ajatus siitä, että kansalaiset voivat osallistua päätöksentekoon esimerkiksi äänestämällä ja keskustelemalla. Vallankäyttöön liittyy kuitenkin aina vastuu: päätösten vaikutuksia pitää arvioida myös niiden kannalta, joilla on vähemmän valtaa. Oikeudenmukaisuus voi tarkoittaa esimerkiksi yhdenvertaista kohtelua, mutta joskus heikommassa asemassa olevien erityinen tukeminen voi olla tarpeen.","### Talouden etiikka","Taloudellisiin päätöksiin liittyy kysymyksiä oikeudenmukaisuudesta, työn arvosta, kuluttamisesta ja luonnonvarojen käytöstä. Kuluttaja voi pohtia, miten tuotteen hinta, tuotanto-olosuhteet ja ympäristövaikutukset liittyvät toisiinsa. Yrityksillä on myös vastuuta työntekijöistä, asiakkaista ja ympäristöstä. Kontrollissa kannattaa erottaa toisistaan kuvaus siitä, miten talous toimii, ja eettinen arvio siitä, miten talouden pitäisi toimia."],"US 10":["### Ihmisen suhde luontoon","Ympäristöetiikka kysyy, millainen moraalinen suhde ihmisellä pitäisi olla luontoon, eläimiin ja tuleviin sukupolviin. Luonto voidaan nähdä välineenä ihmisille, mutta myös itsessään arvokkaana kokonaisuutena.","### Kestävyys","Kestävä elämäntapa pyrkii tyydyttämään nykyiset tarpeet vaarantamatta tulevien sukupolvien mahdollisuuksia. Käytännössä tämä voi liittyä kulutukseen, energiaan, liikkumiseen, ruokaan ja luonnonvarojen käyttöön.","### Luonnon monimuotoisuus ja eläimet","Luonnon monimuotoisuuden väheneminen vaikuttaa ekosysteemeihin ja niiden toimintaan. Eläinten kohdalla voidaan kysyä, onko niillä itseisarvoa ja kuinka paljon niiden kärsimystä pitäisi huomioida ihmisten päätöksissä.","### Kokeessa muista","Hyvä ympäristöetiikan vastaus yhdistää oman toiminnan, ympäristön vaikutukset ja tulevien sukupolvien näkökulman.","### Ihminen osana luontoa","Ympäristöetiikka kysyy, onko luonnolla arvoa itsessään vai ennen kaikkea siksi, että se on ihmiselle hyödyllinen. Ihmiskeskeisessä näkökulmassa painottuvat ihmisten tarpeet, kun taas luontokeskeisemmissä näkökulmissa myös eläimillä, ekosysteemeillä tai luonnolla voidaan katsoa olevan omaa arvoa. Näkökulmat vaikuttavat siihen, miten suhtaudumme metsien hakkuisiin, eläinten käyttöön, luonnonsuojeluun ja luonnonvarojen kulutukseen.","### Ilmastonmuutos ja vastuu","Ilmastonmuutos on sekä ympäristöön että yhteiskuntaan liittyvä eettinen kysymys. Vastuun jakamista voidaan tarkastella yksilön, yritysten ja valtioiden näkökulmasta. Kysymys on myös sukupolvien välisestä oikeudenmukaisuudesta: nykyiset päätökset vaikuttavat ihmisiin, jotka elävät tulevaisuudessa. Kokeessa hyvä vastaus yhdistää ympäristövaikutuksen ja eettisen periaatteen, esimerkiksi vastuun, oikeudenmukaisuuden tai kestävyyden."],"ET 1":["### Itsenäinen ajattelu","Itsenäinen ajattelu ei tarkoita sitä, että jokainen mielipide olisi yhtä hyvä. Se tarkoittaa kykyä muodostaa kanta itse, tarkistaa perustelut ja muuttaa mielipidettä, jos uudet perustelut tai todisteet sitä vaativat.","### Kriittinen ajattelu","Kriittinen ajattelu kysyy esimerkiksi: Mihin väite perustuu? Onko lähde luotettava? Onko päättelyssä virhe? Mitä vastakkaisesta näkökulmasta voisi sanoa? Filosofinen keskustelu harjoittaa juuri tätä taitoa.","### Sokrates","Sokrates tunnetaan kysymysten esittämisestä ja siitä, että hän haastoi ihmisiä tutkimaan omia käsityksiään. Hänen menetelmästään voi oppia, että hyvä kysymys voi paljastaa, ettei omaa väitettä ole vielä perusteltu riittävästi.","### Kokeessa muista","Erota mielipide, perustelu ja fakta. Perusteltu mielipide sisältää väitteen lisäksi syyn, joka tukee sitä.","### Miten kriittinen ajattelu toimii?","Kriittinen ajattelu ei tarkoita kaiken epäilemistä, vaan väitteiden tutkimista ennen niiden hyväksymistä. Kysy, mikä väite tarkalleen on, mihin se perustuu ja onko perustelu looginen. Erota fakta, tulkinta, mielipide ja ennustus. Mieti myös, voisiko samaa aineistoa tulkita toisella tavalla. Hyvä ajattelija pystyy muuttamaan kantaansa, jos uudet perustelut ovat parempia.","### Argumentointi","Argumentissa on yleensä väite ja sitä tukevat perustelut. Esimerkiksi 'Koulussa pitäisi olla enemmän liikuntaa' on väite, mutta sen tueksi tarvitaan perusteluja ja mahdollisesti näyttöä. Vastaväitteiden huomioiminen tekee argumentista vahvemman. Kontrollissa kannattaa kirjoittaa kokonaisia perusteluja eikä vain 'olen samaa mieltä'."],"ET 2":["### Arvot, normit ja hyveet","Arvot ilmaisevat, mitä pidämme tärkeänä. Normit ovat sääntöjä tai odotuksia siitä, miten pitäisi toimia. Hyve on hyvä luonteenpiirre tai toimintatapa, jota ihminen pyrkii harjoittamaan toistuvasti.","### Arvoristiriita","Joskus kaksi tärkeää arvoa joutuu ristiriitaan. Esimerkiksi vapaus ja turvallisuus voivat vetää eri suuntiin. Eettisessä pohdinnassa ei riitä sanoa, että molemmat ovat tärkeitä, vaan pitää arvioida, kumpaa tilanteessa painotetaan ja miksi.","### Merkityksellinen elämä","Hyvä elämä voidaan ymmärtää monella tavalla. Jollekin tärkeintä on läheiset ihmiset, toiselle oppiminen, auttaminen, luovuus tai itsenäisyys. ET:n näkökulmasta olennaista on osata perustella oma näkemys ja ymmärtää myös muiden perusteltuja näkemyksiä.","### Kokeessa muista","Osaa antaa omat esimerkit arvosta, normista ja hyveestä sekä selittää, miten ne eroavat toisistaan.","### Arvot ja hyveet","Arvo kertoo, mitä pidämme tärkeänä. Arvoja voivat olla esimerkiksi vapaus, turvallisuus, tasa-arvo, rehellisyys ja yhteisöllisyys. Arvot voivat joutua ristiriitaan: esimerkiksi täydellinen vapaus ja kaikkien turvallisuus eivät aina toteudu samassa tilanteessa. Hyve tarkoittaa hyvänä pidettyä luonteenpiirrettä tai toimintatapaa, kuten rohkeutta, kohtuullisuutta tai oikeudenmukaisuutta. Hyve-etiikka kysyy, millainen ihminen meidän pitäisi olla.","### Merkityksellinen elämä","Merkityksellisyys ei ole sama asia kuin jatkuva onnellisuus. Ihmisen elämässä voi olla vaikeuksia ja silti kokemus siitä, että elämässä on tarkoitus. Merkitystä voidaan löytää ihmissuhteista, tavoitteista, vastuusta, oppimisesta, luovuudesta tai muiden auttamisesta. ET:ssä on tärkeää osata tarkastella useita mahdollisia vastauksia ja perustella oma näkemys."],"ET 3":["### Vapaus ja vastuu","Vapaus liittyy mahdollisuuteen tehdä valintoja, mutta täydellistä vapautta ei käytännössä ole. Ihmisen toimintaan vaikuttavat esimerkiksi lait, muiden oikeudet, oma elämäntilanne ja ympäristö. Eettinen vastuu liittyy siihen, kuinka paljon ihminen pystyy vaikuttamaan omaan toimintaansa.","### Valinnan arviointi","Kun arvioit päätöstä, tarkastele vaihtoehtoja, tarkoitusta, seurauksia ja sitä, miten päätös vaikuttaa muihin. Hyvä vastaus osoittaa, että olet huomannut tilanteen monimutkaisuuden.","### Kokeessa muista","Älä kirjoita vain \"ihminen on vapaa\" tai \"ihminen ei ole vapaa\". Selitä, missä mielessä ihminen on vapaa ja mitkä tekijät rajoittavat vapautta.","### Vapaus ei tarkoita rajattomuutta","Vapaus voidaan ymmärtää mahdollisuutena tehdä valintoja ilman tarpeetonta pakkoa. Samalla ihmisen toiminta tapahtuu aina muiden ihmisten kanssa, joten vapaudella on rajansa. Esimerkiksi sananvapaus ei tarkoita, että toista ihmistä saa vahingoittaa miten tahansa. Vastuu liittyy siihen, että ihminen joutuu arvioimaan tekojensa seurauksia ja vaikutuksia muihin.","### Vaikuttavat tekijät","Päätöksiin vaikuttavat biologiset tarpeet, tunteet, kasvatus, ympäristö, taloudellinen tilanne, kaverit ja media. Näiden vaikutusten tunnistaminen auttaa arvioimaan, kuinka itsenäinen jokin päätös todella on. Kokeessa kannattaa välttää liian yksinkertaista ajatusta, että ihminen on joko täysin vapaa tai täysin muiden ohjaama."],"ET 4":["### Seurausetiikka","Seurausetiikassa teon moraalista arvoa arvioidaan sen seurausten perusteella. Utilitarismissa tavoitteena on mahdollisimman suuri kokonais-hyvinvointi. Käytännössä tämä tarkoittaa, että päätöksessä huomioidaan mahdollisimman monen ihmisen hyvinvointi.","### Dilemmat","Eettisessä dilemmassa vaihtoehdot voivat olla ristiriidassa: yhden vaihtoehdon hyöty voi tarkoittaa toisen haittaa. Siksi päätöstä pitää tarkastella useasta näkökulmasta eikä vain ensimmäisenä mieleen tulevan seurauksen perusteella.","### Kokeessa muista","Kirjoita selkeästi: teko → seuraukset → keihin vaikutus kohdistuu → kokonaisarvio → oma johtopäätös.","### Seurausten vertailu","Seurausetiikassa tekoa arvioidaan sen vaikutusten perusteella. Yksi vaihtoehto voi tuottaa hyvää yhdelle mutta haittaa monelle muulle. Siksi seurauksia kannattaa tarkastella usean henkilön ja usean aikavälin näkökulmasta. Utilitaristisessa ajattelussa tavoitteena on mahdollisimman suuri kokonaismäärä hyvää tai hyvinvointia. Käytännössä kaikkia seurauksia ei kuitenkaan aina voida tietää etukäteen.","### Esimerkkitilanne","Jos päätöksellä voidaan säästää aikaa mutta samalla aiheuttaa haittaa toiselle, seurausetiikka kysyy, ovatko hyödyt suurempia kuin haitat. Hyvässä vastauksessa ei vain luetella seurauksia, vaan verrataan niiden merkitystä ja todennäköisyyttä. Myös epävarmuus on hyvä mainita."],"ET 5":["### Sananvapaus","Sananvapaus suojaa oikeutta ilmaista mielipiteitä ja vastaanottaa tietoa. Se ei kuitenkaan tarkoita, että jokainen julkaisu olisi automaattisesti hyväksyttävä tai että muiden oikeuksia voisi loukata ilman seurauksia.","### Lähdekritiikki verkossa","Verkossa tietoa julkaisee suuri joukko ihmisiä ja organisaatioita. Tarkista kirjoittaja, lähde, päivämäärä, tarkoitus ja se, löytyykö väitteelle tukea muualta. Erityisesti vahvoja tunteita herättävät väitteet kannattaa tarkistaa useasta lähteestä.","### Yksityisyys","Kuvien, nimien ja henkilötietojen jakamiseen liittyy vastuu. Toisen ihmisen yksityisyyttä ei pidä sivuuttaa vain siksi, että materiaali on helppo julkaista.","### Kokeessa muista","Kun vertaat sananvapautta ja vastuuta, osoita molemmat puolet. Hyvä vastaus ei puolusta vain yhtä arvoa, vaan selittää niiden välisen jännitteen.","### Sananvapaus käytännössä","Sananvapaus mahdollistaa mielipiteiden, tiedon ja kritiikin ilmaisemisen. Se on tärkeä demokraattiselle yhteiskunnalle, mutta siihen liittyy myös vastuuta. Verkossa julkaistu sisältö voi levitä nopeasti ja vaikuttaa toisiin ihmisiin pitkään. Siksi ennen jakamista kannattaa arvioida lähde, väitteen perustelut ja mahdolliset seuraukset.","### Media ja disinformaatio","Medianlukutaito tarkoittaa kykyä arvioida tietoa kriittisesti. Tarkista esimerkiksi kuka tiedon julkaisi, milloin se julkaistiin, mihin väite perustuu ja löytyykö sama tieto luotettavista lähteistä. Otsikko voi olla tarkoituksella provosoiva, eikä yksittäinen kuva tai video aina kerro koko asiayhteyttä. Kontrollissa kannattaa käyttää käsitteitä kuten lähdekritiikki, disinformaatio, yksityisyys ja vastuu."],"ET 6":["### Kunnioittavat ihmissuhteet","Luottamus, rehellisyys, kuunteleminen ja rajojen kunnioittaminen ovat ihmissuhteiden eettisiä perusteita. Kunnioitus ei tarkoita, että kaikesta pitää olla samaa mieltä, vaan että toista kohdellaan ihmisarvoisesti.","### Suostumus ja rajat","Suostumus tarkoittaa vapaaehtoista ja ymmärrettyä suostumista. Painostus, uhkailu tai manipulointi eivät tee suostumuksesta aidosti vapaata. Omien rajojen tunnistaminen ja toisen rajojen kunnioittaminen ovat keskeisiä eettisiä taitoja.","### Kokeessa muista","Kun arvioit ihmissuhdetilannetta, kysy: toteutuvatko kunnioitus, luottamus, vapaaehtoisuus, turvallisuus ja tasavertaisuus?","### Hyvät ihmissuhteet","Terveessä ihmissuhteessa osapuolten rajoja kunnioitetaan. Luottamus syntyy vähitellen teoista, avoimuudesta ja siitä, että toinen voi sanoa ei ilman painostusta. Riidat eivät automaattisesti tarkoita huonoa suhdetta; tärkeää on se, miten ristiriitoja käsitellään. Kuunteleminen, anteeksipyyntö ja halu korjata omaa toimintaa ovat eettisesti merkittäviä.","### Suostumus ja rajat","Suostumus tarkoittaa vapaaehtoista ja selkeää suostumista. Toisen hiljaisuus, pelko tai painostaminen eivät ole sama asia kuin vapaa suostumus. Ihmissuhteiden etiikassa korostuvat yhdenvertaisuus, itsemääräämisoikeus ja toisen ihmisarvon kunnioittaminen. Näitä periaatteita voidaan soveltaa ystävyyteen, seurusteluun ja muihin läheisiin suhteisiin."],"ET 7":["### Elämän arvo ja ihmisarvo","Elämän ja kuoleman kysymyksissä voidaan pohtia, mitä tarkoittaa ihmiselämän arvo ja miten vaikeissa tilanteissa pitäisi toimia. Näihin kysymyksiin liittyy sekä yksilön oikeuksia että yhteiskunnan vastuuta.","### Abortti, saattohoito ja eutanasia","Aborttia koskevassa eettisessä keskustelussa voidaan tarkastella syntymättömän elämän moraalista asemaa, raskaana olevan henkilön itsemääräämisoikeutta ja erilaisia elämäntilanteita. Saattohoidossa keskeisiä ovat kärsimyksen lievittäminen ja ihmisarvo. Eutanasia tarkoittaa tarkoituksellista elämän päättämistä potilaan pyynnöstä tietyissä keskusteluissa määritellyissä tilanteissa, ja siihen liittyy erilaisia eettisiä kantoja.","### Kokeessa muista","Esitä vaikeissa bioeettisissä kysymyksissä useampi perusteltu näkökulma. Älä sekoita saattohoitoa ja eutanasiaa toisiinsa.","### Elämän arvo ja ihmisarvo","Elämän ja kuoleman kysymyksissä vastakkain voivat olla esimerkiksi elämän suojeleminen, itsemääräämisoikeus ja kärsimyksen vähentäminen. Eri maailmankatsomukset painottavat näitä periaatteita eri tavoin. Ihmisarvon ajatukseen kuuluu, että ihmisen arvo ei riipu hänen terveydestään, iästään tai toimintakyvystään.","### Vaikean kysymyksen rakenne","Kun kirjoitat vastauksen abortista, eutanasiaan, saattohoitoon tai muusta elämän loppuun liittyvästä aiheesta, määrittele ensin kysymys. Esittele vähintään kaksi perusteltua näkökulmaa, kerro niiden taustalla olevat arvot ja arvioi seurauksia. Lopuksi voit esittää oman kantasi, mutta perustele se. Tavoitteena ei ole löytää yhtä 'oikeaa mielipidettä', vaan osoittaa, että osaat ajatella eettisesti."],"ET 8":["### Hyvinvoinnin kokonaisuus","Terveys ei ole vain sairauden puuttumista. Hyvinvointiin liittyvät fyysinen, psyykkinen ja sosiaalinen ulottuvuus. Uni, lepo, turvallisuus, liikunta, ravinto ja ihmissuhteet voivat tukea hyvinvointia eri tavoin.","### Tutkimus ja terveystieto","Tieteellinen tutkimus perustuu menetelmiin, joilla väitteitä voidaan testata. Verkossa oleva terveystieto ei automaattisesti ole luotettavaa. On tärkeää arvioida lähde, kirjoittajan asiantuntemus ja se, perustuuko väite tutkimukseen.","### Urheilun etiikka","Reilu peli, turvallisuus, paineet ja suorituskykyyn vaikuttavat keinot ovat urheilun eettisiä kysymyksiä. Urheilijan hyvinvointi voi joutua ristiriitaan menestyspaineiden kanssa.","### Kokeessa muista","Hyvä vastaus yhdistää hyvinvoinnin eri ulottuvuudet ja käyttää konkreettista esimerkkiä. Muista myös, ettei hyvä elämä tarkoita jatkuvaa onnellisuutta.","### Hyvinvoinnin kokonaisuus","Hyvinvointi koostuu useista toisiinsa liittyvistä tekijöistä. Fyysinen terveys liittyy esimerkiksi uneen, ravintoon ja liikuntaan. Psyykkiseen hyvinvointiin kuuluvat tunteet, stressinhallinta ja turvallisuuden kokemus. Sosiaalinen hyvinvointi liittyy ihmissuhteisiin ja kokemukseen kuulumisesta yhteisöön. Yksi osa voi vaikuttaa muihin: esimerkiksi jatkuva unenpuute voi heikentää keskittymistä ja mielialaa.","### Urheilun etiikka","Urheilussa eettisiä kysymyksiä ovat esimerkiksi reilu peli, doping, kilpailupaineet, loukkaantumisriskit ja alaikäisten urheilijoiden kohtelu. Hyvä kilpailu perustuu sääntöjen noudattamiseen ja muiden kunnioittamiseen. Jos voiton tavoittelu johtaa terveyden vaarantamiseen tai epärehelliseen toimintaan, syntyy selkeä eettinen ongelma. Kontrollissa kannattaa erottaa toisistaan urheilijan henkilökohtainen vastuu ja valmentajien, seurojen sekä järjestöjen vastuu."]};function studyBlocks(sec,i,c,p){
+  const key=c[0];
+  const raw=c[2].split(/\n\s*\n/).filter(Boolean);
+  const wordCount=c[2].trim().split(/\s+/).length;
+  const add=CHAPTER_INFO[key]||[];
+  const blocks=[];
+  blocks.push(`<div class="study-length">📚 Kontrolliin valmistava teksti · ${wordCount}+ sanaa</div><h2 class="serif">📖 Perustiedot ja selitys</h2>`+raw.map(x=>`<p>${esc(x)}</p>`).join(''));
+  for(let j=0;j<add.length;j+=2){
+    if(add[j] && add[j+1]) blocks.push(`<h2>${esc(add[j].replace(/^###\s*/,''))}</h2><p>${esc(add[j+1])}</p>`);
+  }
+  blocks.push(`<h2>🔎 Keskeiset käsitteet tässä luvussa</h2><div class="concept-notes">${p.map(x=>`<div class="concept-note"><h3>${esc(x[0])}</h3><p>${esc(x[1])}</p></div>`).join('')}</div>`);
+  blocks.push('<div class="study-summary"><h2>🧠 Kertaa ennen tehtäviä</h2><p>Varmista, että osaat selittää luvun pääajatuksen omin sanoin, määritellä tärkeimmät käsitteet ja antaa ainakin yhden oman esimerkin. Jos vertaat näkökulmia, kerro aina myös, miksi ne eroavat toisistaan.</p></div>');
+  return blocks.join('');
+}
+function chapter(sec,i){
+ let c=DATA[sec][i],p=CONCEPTS[sec][i],s=c[2].split(/(?<=[.!?])\s+/).filter(Boolean),truth=s[0]||c[2],mix=[...p].sort(()=>Math.random()-.5);
+ let tasks=`<div class="score-box">🎯 Tee ensin itse. Tarkista vasta lopuksi.</div><div class="task-grid"><div class="task-card"><h3>1. Monivalinta</h3><p>Mikä käsite liittyy suoraan tähän lukuun?</p><div class="option-list"><button class="option-btn" onclick="choice(this,true)">${esc(p[0][0])}</button><button class="option-btn" onclick="choice(this,false)">Sattumanvarainen käsite</button><button class="option-btn" onclick="choice(this,false)">Matemaattinen kaava</button></div><div class="task-feedback" hidden>Oikea: ${esc(p[0][0])} — ${esc(p[0][1])}</div></div><div class="task-card"><h3>2. Totta vai tarua?</h3><p>${esc(truth)}</p><div class="option-list"><button class="option-btn" onclick="choice(this,true)">Totta</button><button class="option-btn" onclick="choice(this,false)">Tarua</button></div><div class="task-feedback" hidden>Väite perustuu luvun tekstiin. Perustele vastaus omin sanoin.</div></div><div class="task-card"><h3>3. Täydennä itse</h3><p><b>${esc(p[1][0])}</b> tarkoittaa:</p><input placeholder="Kirjoita oma selitys"><button class="btn" onclick="reveal(this)">Näytä mallivastaus</button><div class="task-feedback" hidden>${esc(p[1][1])}</div></div><div class="task-card"><h3>4. Yhdistä vastaukset</h3><p>Yhdistä käsite oikeaan selitykseen.</p><div class="match-grid">${p.map((x,k)=>`<div class="match-row"><b>${esc(x[0])}</b><select data-answer="${k}"><option value="">Valitse…</option>${mix.map(x=>`<option value="${p.indexOf(x)}">${esc(x[1])}</option>`).join('')}</select></div>`).join('')}</div><button class="btn" onclick="match(this)">Tarkista yhdistäminen</button><div class="task-feedback" hidden></div></div><div class="task-card"><h3>5. Valitse oikeat väitteet</h3><p>Valitse väitteet, jotka sopivat luvun sisältöön.</p><div class="option-list"><label><input type="checkbox" data-correct="1"> ${esc(truth)}</label><label><input type="checkbox" data-correct="0"> Tämä aihe ei liity lainkaan lukuun.</label><label><input type="checkbox" data-correct="1"> ${esc(s[1]||p[2][1])}</label></div><button class="btn" onclick="checks(this)">Tarkista</button><div class="task-feedback" hidden></div></div><div class="task-card"><h3>6. Selitä omin sanoin</h3><p>Selitä <b>${esc(c[1])}</b> 2–4 virkkeellä.</p><textarea class="open-answer" placeholder="Kirjoita oma vastaus..."></textarea><button class="btn" onclick="reveal(this)">Näytä tarkistuslista</button><div class="task-feedback" hidden>Pääajatus + tärkeä käsite + perustelu + esimerkki.</div></div><div class="task-card"><h3>7. Soveltamistehtävä</h3><p>Keksi arjesta tilanne, jossa tämän luvun asia näkyy. Mitä tekisit ja miksi?</p><textarea class="open-answer" placeholder="Kirjoita oma ratkaisu ja perustelu..."></textarea><button class="btn" onclick="reveal(this)">Näytä vastausrakenne</button><div class="task-feedback" hidden>Tilanne → vaihtoehdot → oma ratkaisu → perustelu → toinen näkökulma.</div></div><div class="task-card"><h3>8. Muistikortti</h3><p>Kirjoita kolme tärkeintä käsitettä ja selitä ne.</p><input placeholder="1. käsite"><input placeholder="2. käsite"><input placeholder="3. käsite"><button class="btn" onclick="reveal(this)">Näytä avainsanat</button><div class="task-feedback" hidden>${esc(p.map(x=>x[0]).join(' • '))}</div></div><div class="task-card"><h3>9. Kokeen harjoitus</h3><p>Kirjoita koevastaus: <b>Miksi ${esc(c[1].toLowerCase())} on tärkeä eettinen aihe?</b></p><textarea class="open-answer" placeholder="Perustele oma vastauksesi..."></textarea><button class="btn" onclick="reveal(this)">Näytä arviointikriteerit</button><div class="task-feedback" hidden>Selkeä väite, vähintään kaksi perustelua, käsite ja konkreettinen esimerkki.</div></div></div>`;
+ app.innerHTML=`<div class="reader"><button class="rail" onclick="home()">← TAKAISIN PÄÄVALIKKOON</button><div class="head"><div class="eyebrow">${esc(c[0])} • ${sec}</div><h1>${esc(c[1])}</h1><p class="chapter-lead">Opiskele tämä luku rauhassa. Teksti on kirjoitettu kokeeseen valmistautumista varten: ensin perusasiat, sitten tarkempi selitys ja lopuksi käsitteet, jotka kannattaa osata omin sanoin.</p><img class="illustration" src="${art(sec,i)}" alt="${esc(c[1])}"></div><nav class="toc"><button onclick="go('text')">📖 TEKSTI</button><button onclick="go('memory')">⭐ TÄRKEINTÄ</button><button onclick="go('tasks')">📝 TEHTÄVÄT</button></nav><article id="text" class="article study-article">${studyBlocks(sec,i,c,p)}</article><article id="memory" class="article memory"><h2 class="serif">⭐ TÄRKEINTÄ MUISTAA</h2><p class="memory-intro">Nämä ovat luvun ydinkohdat. Opettele ensin käsitteet ja niiden merkitys. Sen jälkeen harjoittele selittämään ne ilman kirjaa.</p><div class="memory-grid">${p.map(x=>`<div class="memory-item"><strong>${esc(x[0])}</strong><span>${esc(x[1])}</span></div>`).join('')}</div><div class="exam-box"><h3>🎓 Mitä osata kontrolliin?</h3><ul><li>Osaa määritellä luvun tärkeimmät käsitteet.</li><li>Osaa selittää asian omin sanoin ilman että kopioit oppikirjan lausetta.</li><li>Osaa antaa vähintään yhden konkreettisen esimerkin.</li><li>Osaa vertailla kahta näkökulmaa ja perustella oman vastauksesi.</li></ul></div></article><article id="tasks" class="article"><h2 class="serif">📝 MONIPUOLISET TEHTÄVÄT</h2>${tasks}</article></div>`;scrollTo(0,0)
+}
+function choice(b,ok){b.parentElement.querySelectorAll('button').forEach(x=>x.classList.remove('correct','wrong'));b.classList.add(ok?'correct':'wrong');b.parentElement.nextElementSibling.hidden=false}function reveal(b){b.nextElementSibling.hidden=false}function match(b){let ss=b.previousElementSibling.querySelectorAll('select'),n=0;ss.forEach(s=>{let ok=s.value===s.dataset.answer;s.classList.toggle('correct',ok);if(ok)n++});let f=b.nextElementSibling;f.hidden=false;f.textContent=`Oikein ${n}/${ss.length}.`}function checks(b){let xs=b.previousElementSibling.querySelectorAll('input'),ok=[...xs].every(x=>x.checked===(x.dataset.correct==='1'));let f=b.nextElementSibling;f.hidden=false;f.textContent=ok?'Kaikki valinnat oikein!':'Tarkista valinnat vielä kerran.'}function go(id){document.getElementById(id).scrollIntoView({behavior:'smooth'})}
+(function(){let k='opiskelu-theme';function set(t){document.body.classList.toggle('dark',t==='dark');document.documentElement.classList.toggle('dark',t==='dark');localStorage.setItem(k,t)}set(localStorage.getItem(k)==='dark'?'dark':'light');document.querySelectorAll('.theme-switcher button').forEach(b=>b.onclick=()=>set(b.dataset.theme))})();home();
+/* V21 — final study version: clear text, reliable menu, anonymous forum */
+function conceptPairs(sec,i){
+  const raw=(CONCEPTS[sec]&&CONCEPTS[sec][i])||[];
+  const out=[];
+  for(let n=0;n<raw.length;n+=2) if(raw[n]&&raw[n+1]) out.push([raw[n],raw[n+1]]);
+  return out;
+}
+function drawer(){
+  const isOpen=drawerEl.classList.toggle('open');
+  shade.classList.toggle('open',isOpen);
+}
+function closeDrawer(){drawerEl.classList.remove('open');shade.classList.remove('open')}
+function nav(sec){
+  const el=document.getElementById('nav'+sec);
+  const other=document.getElementById(sec==='US'?'navET':'navUS');
+  if(other) other.classList.remove('open');
+  if(el.classList.contains('open')){el.classList.remove('open');return}
+  el.innerHTML='<div class="list">'+DATA[sec].map((c,i)=>
+    `<button class="chapter sub" onclick="chapter('${sec}',${i});closeDrawer()"><b>${esc(c[0])}</b><span>${esc(c[1])}</span></button>`
+  ).join('')+'</div>';
+  el.classList.add('open');
+}
+function home(){
+  app.innerHTML=`<section class="hero"><div class="heroCard"><div class="eyebrow">OPISKELU • US & ET</div>
+  <h1>Opiskele selkeästi.<br>Valmistaudu kokeeseen.</h1>
+  <p>Selkeät tekstit, tärkeimmät asiat ja monipuoliset tehtävät. Ei rekisteröitymistä eikä profiilia. Harjoittele ensin itse ja tarkista vastaus vasta sen jälkeen.</p>
+  <button class="btn" onclick="document.getElementById('study').scrollIntoView({behavior:'smooth'})">ALOITA OPISKELU ↓</button></div></section>
+  <section id="study" class="page"><h2 class="title">OPISKELU</h2>
+  <p class="muted">Valitse oppiaine ja sen luku. Kokeeseen valmistautuessa lue ensin teksti, opettele tärkeät asiat ja tee sitten tehtävät ilman apua.</p>
+  <div class="books">
+   <div class="book"><div class="eyebrow">US</div><h2>USKONTO</h2><p class="muted">10 lukua • käsitteet, uskonnot, etiikka ja yhteiskunta.</p><button class="btn" onclick="openSection('US')">Avaa USKONTO</button><div id="homeUS"></div></div>
+   <div class="book"><div class="eyebrow">ET</div><h2>ETIIKAN PERUSTEET</h2><p class="muted">8 lukua • arvot, moraali, vastuu ja arjen eettiset tilanteet.</p><button class="btn" onclick="openSection('ET')">Avaa ETIIKAN PERUSTEET</button><div id="homeET"></div></div>
+  </div></section>
+  <section class="mini-test-home"><div class="mini-test-home-card"><div class="eyebrow">KERTAUS ENNEN KONTROLLIA</div><h2>📝 Mini-kontrollit</h2><p>Valitse US tai ET ja tee kontrolli yhdestä luvusta tai kokonaisesta lukualueesta. Tehtävät vaihtuvat ja tulos näkyy lopussa.</p><button class="btn" onclick="miniTest()">Avaa mini-kontrollit</button></div></section>
+  <section class="forum-section"><div class="forum-hero"><div class="eyebrow">ANONYYMI OPISKELIJAFORUMI</div><h1>Foorumi</h1><p>Voit kysyä opiskeluun liittyviä asioita ilman nimeä. Valitse US tai ET sekä luokkasi A–D.</p></div>
+  <button class="btn" onclick="forum()">Avaa foorumi</button></section>`;
+}
+function openSection(sec){
+ const id=sec==='US'?'homeUS':'homeET';
+ const el=document.getElementById(id);
+ el.innerHTML='<div class="list">'+DATA[sec].map((c,i)=>
+ `<button class="chapter" onclick="chapter('${sec}',${i})"><b>${esc(c[0])}</b><span>${esc(c[1])}</span></button>`).join('')+'</div>';
+}
+function chapter(sec,i){
+ const c=DATA[sec][i], p=conceptPairs(sec,i);
+ const sentences=c[2].split(/(?<=[.!?])\s+/).filter(Boolean);
+ const pairs=p.length?p:[['Tärkeä käsite','Lue luvun teksti ja kirjoita omin sanoin, mitä käsite tarkoittaa.']];
+ const correct0=pairs[0][0], wrongs=['Historiallinen päivämäärä','Matemaattinen kaava','Sattumanvarainen mielipide'];
+ const matchOptions=[...pairs].reverse();
+ const matchRows=pairs.map((x,k)=>`<div class="match-row"><b>${esc(x[0])}</b><select data-answer="${pairs.length-1-k}"><option value="">Valitse selitys…</option>${matchOptions.map((y,z)=>`<option value="${z}">${esc(y[1])}</option>`).join('')}</select></div>`).join('');
+ const tasks=`
+ <div class="score-box">🎯 Harjoitteluvinkki: vastaa ensin itse. Katso mallivastaus vasta tarkistamisen jälkeen.</div>
+ <div class="task-grid">
+  <div class="task-card"><h3>1. Monivalinta</h3><p>Mikä käsite on tämän luvun keskeinen käsite?</p><div class="option-list">
+   <button class="option-btn" onclick="choice2(this,true,'Oikein! ${esc(pairs[0][1])}')">${esc(correct0)}</button>
+   ${wrongs.map(x=>`<button class="option-btn" onclick="choice2(this,false,'Ei aivan. Palaa tekstin tärkeimpiin kohtiin ja yritä uudelleen.')">${x}</button>`).join('')}
+  </div><div class="task-feedback" hidden></div></div>
+  <div class="task-card"><h3>2. Totta vai tarua?</h3><p>${esc(sentences[0]||c[2])}</p><div class="option-list">
+   <button class="option-btn" onclick="choice2(this,true,'Totta. Väite löytyy luvun sisällöstä.')">Totta</button>
+   <button class="option-btn" onclick="choice2(this,false,'Tämä väite vastaa luvun tekstiä. Lue perustelu tekstistä.')">Tarua</button>
+  </div><div class="task-feedback" hidden></div></div>
+  <div class="task-card"><h3>3. Selitä käsite omin sanoin</h3><p><b>${esc(pairs[0][0])}</b> tarkoittaa:</p><textarea class="open-answer" placeholder="Kirjoita 1–3 virkkeen oma selitys."></textarea><button class="btn" onclick="reveal(this)">Näytä mallivastaus</button><div class="task-feedback" hidden>${esc(pairs[0][1])}</div></div>
+  <div class="task-card"><h3>4. Yhdistä käsite ja selitys</h3><p>Valitse jokaiselle käsitteelle oikea selitys. Tee tehtävä itse ennen tarkistamista.</p><div class="match-grid">${matchRows}</div><button class="btn" onclick="match2(this)">Tarkista yhdistäminen</button><div class="task-feedback" hidden></div></div>
+  <div class="task-card"><h3>5. Valitse oikeat väitteet</h3><p>Valitse kaikki väitteet, jotka sopivat tämän luvun sisältöön.</p><div class="option-list">
+   ${sentences.slice(0,2).map(x=>`<label><input type="checkbox" data-correct="1"> ${esc(x)}</label>`).join('')}
+   <label><input type="checkbox" data-correct="0"> Tämä aihe ei liity mitenkään tähän lukuun.</label>
+  </div><button class="btn" onclick="checks2(this)">Tarkista</button><div class="task-feedback" hidden></div></div>
+  <div class="task-card"><h3>6. Täydennä lause</h3><p><b>${esc(pairs[0][0])}</b> on tärkeä, koska…</p><input placeholder="Jatka lausetta omin sanoin"><button class="btn" onclick="reveal(this)">Näytä mallin avainsanat</button><div class="task-feedback" hidden>${esc(pairs[0][1])}</div></div>
+  <div class="task-card"><h3>7. Soveltamistehtävä</h3><p>Keksi arjen tilanne, jossa tämän luvun asia näkyy. Kerro mitä tapahtuu, mitä vaihtoehtoja on ja mikä olisi perusteltu ratkaisu.</p><textarea class="open-answer" placeholder="Tilanne → vaihtoehdot → oma ratkaisu → perustelu"></textarea><button class="btn" onclick="reveal(this)">Näytä vastausrakenne</button><div class="task-feedback" hidden>Hyvä vastaus kertoo tilanteen, käyttää luvun käsitettä ja perustelee ratkaisun. Voit myös mainita toisen näkökulman.</div></div>
+  <div class="task-card"><h3>8. Vertaa kahta asiaa</h3><p>Valitse kaksi luvun käsitettä. Mikä on niiden ero ja mikä niitä yhdistää?</p><textarea class="open-answer" placeholder="Ero: … Yhteistä: …"></textarea><button class="btn" onclick="reveal(this)">Näytä avuksi käsitteet</button><div class="task-feedback" hidden>${esc(pairs.slice(0,2).map(x=>x[0]+': '+x[1]).join(' • '))}</div></div>
+  <div class="task-card"><h3>9. Perustele väite</h3><p><b>${esc(c[1])}</b> on tärkeä aihe uskonnon ja etiikan opiskelussa. Oletko samaa mieltä? Perustele vähintään kahdella syyllä.</p><textarea class="open-answer" placeholder="Oma kanta + 2 perustelua + esimerkki"></textarea><button class="btn" onclick="reveal(this)">Näytä koevastauksen kriteerit</button><div class="task-feedback" hidden>Selkeä kanta, vähintään kaksi perustelua, oikea käsite ja konkreettinen esimerkki.</div></div>
+  <div class="task-card"><h3>10. Muista tärkeimmät</h3><p>Kirjoita ilman oppikirjaa kolme tärkeintä asiaa tästä luvusta. Tarkista sen jälkeen alla oleva lista.</p><textarea class="open-answer" placeholder="1. …&#10;2. …&#10;3. …"></textarea><button class="btn" onclick="reveal(this)">Näytä tärkeimmät</button><div class="task-feedback" hidden>${esc(pairs.map(x=>x[0]).join(' • '))}</div></div>
+ </div>`;
+ app.innerHTML=`<div class="reader"><button class="rail" onclick="home()">← TAKAISIN PÄÄVALIKKOON</button>
+ <div class="head"><div class="eyebrow">${esc(c[0])} • ${sec}</div><h1>${esc(c[1])}</h1><img class="illustration" src="${art(sec,i)}" alt="${esc(c[1])}"></div>
+ <nav class="toc"><button onclick="go('text')">📖 TEKSTI</button><button onclick="go('memory')">⭐ TÄRKEÄÄ MUISTAA</button><button onclick="go('tasks')">📝 TEHTÄVÄT</button></nav>
+ <article id="text" class="article"><h2 class="serif">📖 Opiskele ensin</h2>${sentences.map(x=>`<p>${esc(x)}</p>`).join('')}</article>
+ <article id="memory" class="article memory"><h2 class="serif">⭐ TÄRKEÄÄ MUISTAA</h2><p><b>Kokeeseen:</b> osaa selittää käsitteet omin sanoin ja antaa niistä esimerkin.</p><ul>${pairs.map(x=>`<li><strong>${esc(x[0])}</strong> — ${esc(x[1])}</li>`).join('')}</ul></article>
+ <article id="tasks" class="article"><h2 class="serif">📝 TEHTÄVÄT</h2><p class="muted">Tehtävät harjoittavat muistamista, ymmärtämistä, vertailua ja perustelemista — samoja taitoja, joita tarvitset kokeessa.</p>${tasks}</article></div>`;
+ scrollTo(0,0);
+}
+function choice2(b,ok,msg){const box=b.parentElement;box.querySelectorAll('button').forEach(x=>x.classList.remove('correct','wrong'));b.classList.add(ok?'correct':'wrong');const f=box.nextElementSibling;f.hidden=false;f.textContent=msg}
+function match2(b){const ss=b.previousElementSibling.querySelectorAll('select');let n=0;ss.forEach(s=>{const ok=s.value===s.dataset.answer;s.classList.toggle('correct',ok);s.classList.toggle('wrong',!ok);if(ok)n++});const f=b.nextElementSibling;f.hidden=false;f.textContent=n===ss.length?'Kaikki oikein! Hyvä työ.':`Oikein ${n}/${ss.length}. Tarkista väärät kohdat ja yritä uudelleen.`}
+function checks2(b){const xs=[...b.previousElementSibling.querySelectorAll('input')];const ok=xs.every(x=>x.checked===(x.dataset.correct==='1'));const f=b.nextElementSibling;f.hidden=false;f.textContent=ok?'Kaikki valinnat oikein!':'Vähintään yksi valinta on väärin. Lue väitteet uudelleen ja kokeile vielä kerran.'}
+const ADMIN_PASSWORD = 'Aina1234!';
+
+function getForumPosts(){
+ const posts=JSON.parse(localStorage.getItem('opiskelu-forum')||'[]');
+ let changed=false;
+ let next=posts.reduce((m,x)=>Math.max(m,Number(x.number)||0),0);
+ posts.forEach(x=>{if(!x.number){x.number=++next;changed=true}});
+ if(changed)localStorage.setItem('opiskelu-forum',JSON.stringify(posts));
+ return posts;
+}
+function saveForumPosts(posts){localStorage.setItem('opiskelu-forum',JSON.stringify(posts));}
+function forum(){
+ getForumPosts();
+ app.innerHTML=`<section class="page forum-section"><div class="forum-hero"><div class="eyebrow">OPISKELIJASTA OPISKELIJALLE</div><h1>Foorumi</h1><p>Kysy tehtävistä, käsitteistä tai kokeeseen valmistautumisesta. Foorumi toimii nimettömästi: nimeä tai profiilia ei pyydetä.</p></div>
+ <div class="forum-form"><h2>Uusi julkaisu</h2><div class="forum-filter">
+ <label>Oppiaine<select id="fSubject"><option value="US">US • Uskonto</option><option value="ET">ET • Etiikan perusteet</option></select></label>
+ <label>Luokka<select id="fClass"><option>A</option><option>B</option><option>C</option><option>D</option></select></label></div>
+ <div class="forum-avatar-picker-wrap" id="forumAvatarPicker"></div>
+ <input id="fTitle" maxlength="90" placeholder="Otsikko, esim. 'Miten tämän käsitteen voi muistaa?'" aria-label="Otsikko">
+ <textarea id="fText" maxlength="700" placeholder="Kirjoita kysymys tai opiskeluvinkki…" aria-label="Viestisi"></textarea>
+ <button onclick="addForumPost()">Julkaise anonyymisti</button><div class="forum-note">Jokainen julkaisu saa oman numeron, esimerkiksi <b>#12</b>. Näytettävä tunniste on vain “Anonyymi • US • A”. Älä kirjoita viestiin nimeä, puhelinnumeroa tai muita henkilötietoja.</div></div>
+ <div class="forum-toolbar"><button class="forum-tab active" onclick="filterForum('ALL',this)">Kaikki</button><button class="forum-tab" onclick="filterForum('US',this)">US</button><button class="forum-tab" onclick="filterForum('ET',this)">ET</button><button class="forum-tab" onclick="filterForum('A',this)">A</button><button class="forum-tab" onclick="filterForum('B',this)">B</button><button class="forum-tab" onclick="filterForum('C',this)">C</button><button class="forum-tab" onclick="filterForum('D',this)">D</button></div>
+ <div id="forumList" class="forum-list"></div></section>`;
+ renderForum('ALL');
+ if(window.renderForumAvatarPicker) window.renderForumAvatarPicker(document.getElementById("forumAvatarPicker"));
+}
+function addForumPost(){
+ const title=document.getElementById('fTitle').value.trim(), text=document.getElementById('fText').value.trim(), subject=document.getElementById('fSubject').value, cls=document.getElementById('fClass').value;
+ if(!title||!text){alert('Täytä otsikko ja viesti.');return}
+ const posts=getForumPosts();
+ const number=posts.reduce((m,x)=>Math.max(m,Number(x.number)||0),0)+1;
+ posts.unshift({id:Date.now(),number,title,text,subject,cls,avatar:(window.selectedForumAvatar||"🌲")});
+ saveForumPosts(posts.slice(0,100));
+ document.getElementById('fTitle').value='';document.getElementById('fText').value='';renderForum('ALL');
+}
+function filterForum(key,b){document.querySelectorAll('.forum-tab').forEach(x=>x.classList.remove('active'));b.classList.add('active');renderForum(key)}
+function renderForum(key){
+ const list=document.getElementById('forumList');if(!list)return;
+ const posts=getForumPosts().filter(x=>key==='ALL'||x.subject===key||x.cls===key);
+ list.innerHTML=posts.length?posts.map(x=>`<article class="forum-post"><div class="forum-post-head"><span class="forum-post-number">#${esc(x.number)}</span><span class="forum-badge">${esc(x.subject)} • Luokka ${esc(x.cls)}</span><span class="forum-meta">Anonyymi</span></div><span class="forum-post-avatar">${esc(x.avatar||"🌲")}</span><h3>${esc(x.title)}</h3><p>${esc(x.text)}</p></article>`).join(''):`<div class="forum-empty">Tässä suodattimessa ei ole vielä julkaisuja. Ole ensimmäinen, joka jakaa opiskeluvinkin.</div>`;
+}
+function adminLogin(){
+ const password=prompt('Foorumin ylläpito\nSyötä salasana:');
+ if(password===null)return;
+ if(password!==ADMIN_PASSWORD){alert('Väärä salasana.');return}
+ openAdminPanel();
+}
+function openAdminPanel(){
+ const panel=document.getElementById('adminPanel');
+ panel.className='v26-admin-panel';panel.setAttribute('aria-hidden','false');
+ renderAdminPanel();
+}
+function closeAdminPanel(){
+ const panel=document.getElementById('adminPanel');
+ panel.className='v26-admin-panel hidden';panel.setAttribute('aria-hidden','true');
+}
+function renderAdminPanel(){
+ const panel=document.getElementById('adminPanel');
+ const posts=getForumPosts();
+ panel.innerHTML=`<div class="v26-admin-card"><div class="v26-admin-head"><h2>🔒 Foorumin ylläpito</h2><button class="v26-admin-close" onclick="closeAdminPanel()">Sulje</button></div><div class="v26-admin-note"><b>Moderointi:</b> valitse julkaisu ja paina “Poista”. Julkaisun numero säilyy muiden viestien tunnisteena; uusia numeroita ei käytetä uudelleen.</div><div class="v26-admin-list">${posts.length?posts.map(x=>`<article class="v26-admin-row"><div class="v26-admin-row-top"><div><div class="v26-post-number">Viesti #${esc(x.number)} • ${esc(x.subject)} • Luokka ${esc(x.cls)}</div><h3>${esc(x.title)}</h3></div><button class="v26-delete" onclick="deleteForumPost(${Number(x.id)})">Poista viesti</button></div><p>${esc(x.text)}</p><div class="forum-meta">Anonyymi</div></article>`).join(''):`<div class="forum-empty">Foorumilla ei ole viestejä.</div>`}</div></div>`;
+}
+function deleteForumPost(id){
+ const posts=getForumPosts();
+ const post=posts.find(x=>Number(x.id)===Number(id));
+ if(!post)return;
+ if(!confirm(`Poistetaanko viesti #${post.number}?\n\n${post.title}`))return;
+ saveForumPosts(posts.filter(x=>Number(x.id)!==Number(id)));
+ renderAdminPanel();
+ if(document.getElementById('forumList'))renderForum('ALL');
+}
+/* Mini-kontrollit: valitse yksi luku tai lukualue */
+function miniTest(){
+  const first=DATA.US[0], last=DATA.US[DATA.US.length-1];
+  app.innerHTML=`<section class="page mini-test-page">
+    <div class="mini-test-hero"><div class="eyebrow">KONTROLLIHARJOITTELU</div><h1 class="title">Mini-kontrollit</h1>
+    <p class="muted">Valitse oppiaine ja alue, jonka haluat kerrata. Voit tehdä kontrollin vain yhdestä luvusta tai esimerkiksi luvuista 1–5.</p></div>
+    <div class="mini-test-selector article">
+      <div class="mini-test-field"><label for="testSubject">Oppiaine</label><select id="testSubject" onchange="updateTestChapters()"><option value="US">USKONTO</option><option value="ET">ETIIKAN PERUSTEET</option></select></div>
+      <div class="mini-test-range"><div class="mini-test-field"><label for="testFrom">Alkaen luvusta</label><select id="testFrom"></select></div><div class="mini-test-field"><label for="testTo">Päättyen lukuun</label><select id="testTo"></select></div></div>
+      <div class="mini-test-presets"><span>Valitse nopeasti:</span><button type="button" onclick="setTestRange(0,0)">Vain 1. luku</button><button type="button" onclick="setTestRange(0,2)">Luvut 1–3</button><button type="button" onclick="setTestRange(0,4)">Luvut 1–5</button><button type="button" onclick="setTestRange(0,99)">Koko aine</button></div>
+      <button class="btn mini-test-start" onclick="startMiniTest()">ALOITA MINI-KONTROLLI →</button>
+      <button class="btn secondary" onclick="home()">← Takaisin päävalikkoon</button>
+    </div>
+    <div id="miniTestArea"></div>
+  </section>`;
+  updateTestChapters();
+}
+function updateTestChapters(){
+  const subject=document.getElementById('testSubject'); if(!subject)return;
+  const data=DATA[subject.value], from=document.getElementById('testFrom'), to=document.getElementById('testTo');
+  const opts=data.map((c,i)=>`<option value="${i}">${esc(c[0])} — ${esc(c[1])}</option>`).join('');
+  from.innerHTML=opts; to.innerHTML=opts; to.value=String(data.length-1);
+}
+function setTestRange(a,b){
+  const subject=document.getElementById('testSubject'); if(!subject)return;
+  const data=DATA[subject.value];
+  document.getElementById('testFrom').value=String(Math.min(a,data.length-1));
+  document.getElementById('testTo').value=String(Math.min(b,data.length-1));
+}
+function shuffleArr(a){return [...a].sort(()=>Math.random()-.5)}
+function buildMiniQuestions(sec,from,to){
+  const concepts=[];
+  for(let i=from;i<=to;i++){
+    const pairs=conceptPairs(sec,i);
+    pairs.forEach(pair=>concepts.push({term:pair[0],def:pair[1],chapter:i+1,title:DATA[sec][i][1]}));
+  }
+  if(!concepts.length)return [];
+  const qs=[];
+  const pool=shuffleArr(concepts);
+  const count=Math.min(10,pool.length*2);
+  for(let n=0;n<count;n++){
+    const x=pool[n%pool.length];
+    if(n%2===0){
+      let opts=shuffleArr([x.def,...shuffleArr(concepts.filter(y=>y.term!==x.term)).slice(0,3).map(y=>y.def)]);
+      qs.push({type:'mc',chapter:x.chapter,title:x.title,question:`Mitä käsite ”${x.term}” tarkoittaa?`,options:opts,answer:opts.indexOf(x.def),explain:`${x.term} = ${x.def}`});
+    }else{
+      const makeTrue=Math.random()>.45;
+      const other=shuffleArr(concepts.filter(y=>y.term!==x.term))[0]||x;
+      const def=makeTrue?x.def:other.def;
+      qs.push({type:'tf',chapter:x.chapter,title:x.title,question:`Onko seuraava väite oikein? ”${x.term} tarkoittaa ${def}.”`,answer:makeTrue,explain:makeTrue?`${x.term} tarkoittaa: ${x.def}`:`Oikea selitys: ${x.term} = ${x.def}`});
+    }
+  }
+  return qs.slice(0,10);
+}
+function startMiniTest(){
+  const sec=document.getElementById('testSubject').value;
+  let from=Number(document.getElementById('testFrom').value), to=Number(document.getElementById('testTo').value);
+  if(from>to){[from,to]=[to,from];document.getElementById('testFrom').value=from;document.getElementById('testTo').value=to;}
+  const qs=buildMiniQuestions(sec,from,to);
+  const area=document.getElementById('miniTestArea'); if(!area)return;
+  if(!qs.length){area.innerHTML='<div class="article">Tälle alueelle ei löytynyt vielä tarpeeksi tehtäviä.</div>';return}
+  area.innerHTML=`<div class="article mini-quiz"><div class="mini-quiz-head"><div><div class="eyebrow">${esc(sec==='US'?'USKONTO':'ETIIKAN PERUSTEET')}</div><h2 class="serif">Luvut ${from+1}–${to+1}</h2></div><span class="mini-count">${qs.length} tehtävää</span></div><p class="muted">Vastaa ensin ilman oppikirjaa. Jokaisesta oikeasta vastauksesta saat 1 pisteen.</p>
+  <div class="mini-question-list">${qs.map((q,i)=>{
+    const answers=q.type==='tf'?`<label class="mini-option"><input type="radio" name="mq${i}" value="true"> Totta</label><label class="mini-option"><input type="radio" name="mq${i}" value="false"> Tarua</label>`:q.options.map((o,k)=>`<label class="mini-option"><input type="radio" name="mq${i}" value="${k}"> ${esc(o)}</label>`).join('');
+    return `<div class="mini-question" data-answer="${q.type==='tf'?String(q.answer):q.answer}"><div class="mini-q-meta">${i+1}. tehtävä • Luku ${q.chapter}</div><h3>${esc(q.question)}</h3><div class="mini-options">${answers}</div><div class="mini-explain" hidden>💡 ${esc(q.explain)}</div></div>`;
+  }).join('')}</div><button class="btn" onclick="finishMiniTest()">TARKISTA KAIKKI VASTAUKSET</button><div id="miniResult" class="mini-result" hidden></div></div>`;
+  area.scrollIntoView({behavior:'smooth',block:'start'});
+}
+function finishMiniTest(){
+  const qs=[...document.querySelectorAll('.mini-question')]; let score=0,answered=0;
+  qs.forEach(q=>{
+    const chosen=q.querySelector('input:checked'); const expected=q.dataset.answer; const ok=chosen&&chosen.value===expected;
+    q.classList.remove('mini-correct','mini-wrong');
+    if(chosen)answered++;
+    if(ok){score++;q.classList.add('mini-correct')}else q.classList.add('mini-wrong');
+    const exp=q.querySelector('.mini-explain'); exp.hidden=false;
+  });
+  const result=document.getElementById('miniResult');
+  const pct=Math.round(score/qs.length*100);
+  const level=pct>=90?'Erinomainen! Olet hyvin valmis kontrolliin.':pct>=70?'Hyvä tulos! Kertaa vielä väärin menneet kohdat.':pct>=50?'Perusasiat ovat hallussa, mutta harjoittele vielä lisää.':'Lue valitsemasi luvut uudelleen ja tee kontrolli uudestaan.';
+  result.hidden=false;result.innerHTML=`<strong>Tulos: ${score}/${qs.length} pistettä (${pct} %)</strong><br>${level}<br><span>Vastasit ${answered}/${qs.length} tehtävään. Vihreät ovat oikein, punaiset kannattaa kerrata.</span>`;
+  result.scrollIntoView({behavior:'smooth',block:'nearest'});
+}
+closeDrawer();home();
+
+/* V29 — Mini-pelit: same subject/chapter selector as Mini-kontrollit */
+function miniGames(){
+  app.innerHTML=`<section class="page mini-games-page">
+    <div class="mini-test-hero"><div class="eyebrow">OPPIMINEN • PELAAMALLA</div><h1 class="title">🎮 Mini-pelit</h1>
+    <p class="muted">Valitse US tai ET sekä yksi luku tai lukualue. Pelit harjoittavat muistamista, käsitteiden yhdistämistä, nopeaa tunnistamista ja koevastauksen kannalta tärkeitä käsitteitä.</p></div>
+    <div class="article game-selector">
+      <div class="game-select-row"><div class="game-field"><label for="gameSubject">Oppiaine</label><select id="gameSubject" onchange="updateGameChapters()"><option value="US">USKONTO</option><option value="ET">ETIIKAN PERUSTEET</option></select></div><div class="game-field"><label for="gameFrom">Alkaen luvusta</label><select id="gameFrom"></select></div></div>
+      <div class="game-field" style="margin-top:14px"><label for="gameTo">Päättyen lukuun</label><select id="gameTo"></select></div>
+      <div class="game-buttons"><span style="font-weight:900;padding:8px 4px">Nopea valinta:</span><button onclick="setGameRange(0,0)">1. luku</button><button onclick="setGameRange(0,2)">1–3</button><button onclick="setGameRange(0,4)">1–5</button><button onclick="setGameRange(0,99)">Koko aine</button></div>
+      <div class="game-type-grid">
+        <button class="game-type" onclick="startGame('quiz')"><strong>⚡ Pikavisa</strong><span>10 kysymystä. Kerää pisteitä ja näe heti, mitä kannattaa kerrata.</span></button>
+        <button class="game-type" onclick="startGame('memory')"><strong>🧠 Muistipeli</strong><span>Yhdistä käsite ja sen oikea selitys. Harjoittaa juuri niitä käsitteitä, joita kontrollissa kysytään.</span></button>
+        <button class="game-type" onclick="startGame('scramble')"><strong>🔤 Käsite-sekoitus</strong><span>Järjestä kirjaimet oikeaksi käsitteeksi. Hyvä tapa opetella termin kirjoitusasu ja merkitys.</span></button>
+        <button class="game-type" onclick="startGame('streak')"><strong>🔥 Oikein vai väärin?</strong><span>Pidä putki käynnissä. Vastaa väitteisiin mahdollisimman tarkasti ja rakenna oma ennätys.</span></button>
+      </div>
+      <div class="game-actions"><button class="btn secondary" onclick="home()">← Takaisin päävalikkoon</button></div>
+    </div><div id="gameArea"></div></section>`;
+  updateGameChapters();
+}
+function updateGameChapters(){
+ const sub=document.getElementById('gameSubject');if(!sub)return;const data=DATA[sub.value],f=document.getElementById('gameFrom'),t=document.getElementById('gameTo');
+ const opts=data.map((c,i)=>`<option value="${i}">${esc(c[0])} — ${esc(c[1])}</option>`).join('');f.innerHTML=opts;t.innerHTML=opts;t.value=Math.min(2,data.length-1);if(!window._gameRangeInit){f.value=0;window._gameRangeInit=true}
+}
+function setGameRange(a,b){const f=document.getElementById('gameFrom'),t=document.getElementById('gameTo');if(!f||!t)return;const max=DATA[document.getElementById('gameSubject').value].length-1;f.value=Math.max(0,Math.min(a,max));t.value=Math.max(Number(f.value),Math.min(b,max))}
+function gameScope(){let sec=document.getElementById('gameSubject').value,from=Number(document.getElementById('gameFrom').value),to=Number(document.getElementById('gameTo').value);if(from>to)[from,to]=[to,from];return {sec,from,to}}
+function gamePairs(sec,from,to){let out=[];for(let i=from;i<=to;i++){const ps=CONCEPTS[sec]?.[i]||[];for(let j=0;j<ps.length;j+=2)if(ps[j]&&ps[j+1])out.push({term:ps[j],def:ps[j+1],chapter:i+1,chapterTitle:DATA[sec][i][1]})}return out}
+function gameSentences(sec,from,to){let out=[];for(let i=from;i<=to;i++){const txt=DATA[sec][i][2]||'';txt.split(/(?<=[.!?])\s+/).filter(x=>x.length>45).slice(0,5).forEach(x=>out.push({text:x,chapter:i+1,title:DATA[sec][i][1]}))}return out}
+function startGame(type){const {sec,from,to}=gameScope();const area=document.getElementById('gameArea');if(!area)return;if(type==='memory')return memoryGame(sec,from,to);if(type==='scramble')return scrambleGame(sec,from,to);if(type==='streak')return streakGame(sec,from,to);return quizGame(sec,from,to)}
+function gameShell(title,sub,body){return `<div class="article game-board"><div class="game-head"><div><div class="eyebrow">PELIALUE</div><h2 class="serif">${title}</h2><p class="game-note">${sub}</p></div><button class="btn secondary" onclick="miniGames()">Vaihda peliä</button></div>${body}</div>`}
+function quizGame(sec,from,to){
+ const pairs=gamePairs(sec,from,to);if(!pairs.length){document.getElementById('gameArea').innerHTML=gameShell('Ei vielä tarpeeksi käsitteitä','Valitse suurempi lukualue.','<p>Valitsemallasi alueella ei ole tarpeeksi käsitepareja tähän peliin.</p>');return}
+ const qs=shuffleArr(pairs).slice(0,10).map((p,i)=>{let wrong=shuffleArr(pairs.filter(x=>x.term!==p.term)).slice(0,3).map(x=>x.def);return {p,options:shuffleArr([p.def,...wrong])}});let n=0,score=0,locked=false;
+ const render=()=>{if(n>=qs.length){const pct=Math.round(score/qs.length*100);document.getElementById('gameArea').innerHTML=gameShell('🏁 Peli valmis',`Alue: ${sec} ${from+1}–${to+1}`,`<div class="game-result"><div class="big">${score}/${qs.length}</div><p>${pct>=90?'Mahtavaa! Käsitteet ovat hyvin hallussa.':pct>=70?'Hyvä tulos! Kertaa vielä väärät käsitteet.':'Lue valittu alue uudelleen ja pelaa vielä kerran.'}</p><button class="btn" onclick="startGame('quiz')">Pelaa uudelleen</button></div>`);return}
+ const q=qs[n];locked=false;document.getElementById('gameArea').innerHTML=gameShell('⚡ Pikavisa',`Kysymys ${n+1}/${qs.length} • Luku ${q.p.chapter}`,`<div class="game-stat"><span>⭐ Pisteet: ${score}</span><span>📚 ${esc(q.p.chapterTitle)}</span></div><div class="game-progress"><i style="width:${n/qs.length*100}%"></i></div><div class="game-question"><div class="eyebrow">Mikä selitys kuuluu käsitteeseen?</div><h2>${esc(q.p.term)}</h2><div class="game-options">${q.options.map((o,i)=>`<button class="game-option" onclick="answerQuiz(this,${i},'${encodeURIComponent(q.p.def)}',${q.options.indexOf(q.p.def)})">${esc(o)}</button>`).join('')}</div><div id="gameFeedback" class="game-feedback" hidden></div></div>`)};
+ window.answerQuiz=(b,i,encoded,correct)=>{if(locked)return;locked=true;const ok=i===correct;b.classList.add(ok?'correct':'wrong');if(!ok)b.parentElement.querySelectorAll('.game-option')[correct].classList.add('correct');const f=document.getElementById('gameFeedback');f.hidden=false;f.innerHTML=ok?'✅ Oikein!':`❌ Oikea vastaus: <b>${decodeURIComponent(encoded)}</b>`;if(ok)score++;setTimeout(()=>{n++;render()},900)};render();
+}
+function memoryGame(sec,from,to){
+ const pairs=shuffleArr(gamePairs(sec,from,to)).slice(0,8);const cards=shuffleArr(pairs.flatMap((p,i)=>[{id:i,type:'term',text:p.term},{id:i,type:'def',text:p.def}]));let open=[],matched=0,turns=0;
+ document.getElementById('gameArea').innerHTML=gameShell('🧠 Muistipeli',`Yhdistä jokainen käsite oikeaan selitykseen. Käännöstä ei tarvita — tunnista merkitys.`,`<div class="game-stat"><span>Parit: ${pairs.length}</span><span id="memoryTurns">Siirrot: 0</span><span id="memoryMatched">Löydetty: 0</span></div><div class="memory-game-grid" id="memoryGrid">${cards.map((c,i)=>`<button class="memory-card" data-i="${i}" onclick="flipMemory(${i})">❓</button>`).join('')}</div><div id="memoryFeedback" class="game-feedback" hidden></div>`);
+ window.flipMemory=(i)=>{const grid=document.getElementById('memoryGrid');const el=grid.children[i];if(el.classList.contains('matched')||open.some(x=>x.i===i)||open.length>=2)return;const c=cards[i];el.classList.add('revealed');el.innerHTML=`<b>${esc(c.text)}</b><small>${c.type==='term'?'KÄSITE':'SELITYS'}</small>`;open.push({i,c});if(open.length===2){turns++;document.getElementById('memoryTurns').textContent='Siirrot: '+turns;const [a,b]=open;if(a.c.id===b.c.id&&a.c.type!==b.c.type){ael=grid.children[a.i];bel=grid.children[b.i];ael.classList.add('matched');bel.classList.add('matched');matched++;document.getElementById('memoryMatched').textContent='Löydetty: '+matched;open=[];if(matched===pairs.length)document.getElementById('memoryFeedback').hidden=false;document.getElementById('memoryFeedback').textContent=matched===pairs.length?'🎉 Kaikki parit löytyivät! Käsitteet ovat nyt hyvin harjoiteltu.':''}else{setTimeout(()=>{[a.i,b.i].forEach(j=>{const x=grid.children[j];x.classList.remove('revealed');x.textContent='❓'});open=[]},750)}}};
+}
+function scrambleGame(sec,from,to){
+ const words=shuffleArr(gamePairs(sec,from,to).map(x=>x.term).filter(x=>x.length>=4&&x.length<=22)).slice(0,8);if(!words.length){document.getElementById('gameArea').innerHTML=gameShell('🔤 Ei käsitteitä','Valitse toinen alue.','');return}let idx=0,typed='',score=0,letters=[];
+ const render=()=>{if(idx>=words.length){document.getElementById('gameArea').innerHTML=gameShell('🏁 Käsite-sekoitus valmis','Harjoittelit käsitteiden kirjoitusasua.',`<div class="game-result"><div class="big">${score}/${words.length}</div><p>${score===words.length?'Täydellinen!':'Hyvä harjoitus — pelaa uudelleen ja yritä parantaa tulosta.'}</p><button class="btn" onclick="startGame('scramble')">Pelaa uudelleen</button></div>`);return}const word=words[idx],clean=word.normalize('NFD').replace(/[\u0300-\u036f]/g,'').replace(/[^A-Za-zÅÄÖåäö]/g,'').toUpperCase();letters=shuffleArr(clean.split(''));typed='';document.getElementById('gameArea').innerHTML=gameShell('🔤 Käsite-sekoitus',`Kysymys ${idx+1}/${words.length} • Muista myös, mitä sana tarkoittaa.`,`<div class="scramble-word">${letters.join(' ')}</div><div class="typed-word" id="typedWord">_ _ _</div><div class="letter-buttons">${letters.map((l,i)=>`<button id="letter${i}" onclick="pickLetter(${i},'${encodeURIComponent(l)}')">${l}</button>`).join('')}</div><div class="game-actions"><button class="btn" onclick="checkScramble('${encodeURIComponent(clean)}')">Tarkista</button><button class="btn secondary" onclick="skipScramble()">Ohita</button></div><div id="scrambleFeedback" class="game-feedback" hidden></div>`)};
+ window.pickLetter=(i,l)=>{const b=document.getElementById('letter'+i);if(b.disabled)return;b.disabled=true;typed+=decodeURIComponent(l);document.getElementById('typedWord').textContent=typed};window.checkScramble=(answer)=>{const f=document.getElementById('scrambleFeedback');f.hidden=false;if(typed===decodeURIComponent(answer)){score++;f.textContent='✅ Oikein!';}else f.innerHTML=`❌ Oikea järjestys: <b>${decodeURIComponent(answer)}</b>`;setTimeout(()=>{idx++;render()},800)};window.skipScramble=()=>{document.getElementById('scrambleFeedback').hidden=false;document.getElementById('scrambleFeedback').textContent='💡 Oikea vastaus: '+word;setTimeout(()=>{idx++;render()},1000)};render();
+}
+function streakGame(sec,from,to){
+ const ss=gameSentences(sec,from,to);if(!ss.length){document.getElementById('gameArea').innerHTML=gameShell('🔥 Ei tarpeeksi väitteitä','Valitse suurempi alue.','');return}let questions=shuffleArr(ss).slice(0,12).map(x=>{const truth=Math.random()>.35;return {...x,truth,shown:truth?x.text:'Tämä väite ei liity tämän luvun aiheeseen.'}}),idx=0,streak=0,best=0;
+ const render=()=>{if(idx>=questions.length){document.getElementById('gameArea').innerHTML=gameShell('🏁 Putki valmis',`Paras putki: ${best}`,`<div class="game-result"><div class="streak-fire">🔥 ${best}</div><p>${best>=8?'Erinomainen keskittyminen!':best>=5?'Hyvä putki!':'Harjoittele vielä ja yritä rikkoa ennätys.'}</p><button class="btn" onclick="startGame('streak')">Yritä uudelleen</button></div>`);return}const q=questions[idx];document.getElementById('gameArea').innerHTML=gameShell('🔥 Oikein vai väärin?',`Väite ${idx+1}/${questions.length} • Luku ${q.chapter}`,`<div class="streak-fire">${'🔥'.repeat(Math.min(streak+1,6))}</div><div class="game-stat"><span>Putki: ${streak}</span><span>Ennätys: ${best}</span></div><div class="game-question"><p>${esc(q.shown)}</p><div class="game-actions"><button class="btn" onclick="answerStreak(true)">Totta</button><button class="btn secondary" onclick="answerStreak(false)">Tarua</button></div><div id="streakFeedback" class="game-feedback" hidden></div></div>`)};
+ window.answerStreak=(answer)=>{const q=questions[idx],ok=answer===q.truth,f=document.getElementById('streakFeedback');f.hidden=false;if(ok){streak++;best=Math.max(best,streak);f.textContent='✅ Oikein! Putki jatkuu.'}else{f.textContent='❌ Väärin. Lue luvun kohta uudelleen ja kokeile uudestaan.';streak=0}setTimeout(()=>{idx++;render()},750)};render();
+}
+
+/* Add Mini-pelit to the home page without changing the existing study layout */
+(function(){
+ const oldHome=home;
+ home=function(){
+  oldHome();
+  const hero=document.querySelector('.hero');
+  const tools=document.createElement('section');
+  tools.className='home-tools';
+  tools.innerHTML=`
+    <div class="home-tools-grid">
+      <article class="home-tool-card">
+        <div><div class="home-tool-icon">📚</div><h3>Oppimateriaali</h3><p>Lue luvun tärkeimmät asiat rauhassa ja kertaa käsitteet ennen tehtäviä.</p></div>
+        <button onclick="document.getElementById('study').scrollIntoView({behavior:'smooth'})">Aloita lukeminen</button>
+      </article>
+      <article class="home-tool-card">
+        <div><div class="home-tool-icon">📝</div><h3>Mini-kontrollit</h3><p>Valitse yksi luku tai kokonainen alue ja testaa, mitä osaat jo.</p></div>
+        <button onclick="miniTest()">Tee kontrolli</button>
+      </article>
+      <article class="home-tool-card">
+        <div><div class="home-tool-icon">🎮</div><h3>Mini-pelit</h3><p>Harjoittele käsitteitä muistipelillä, visalla ja muilla nopeilla peleillä.</p></div>
+        <button onclick="miniGames()">Pelaa nyt</button>
+      </article>
+      <article class="home-tool-card">
+        <div><div class="home-tool-icon">💬</div><h3>Foorumi</h3><p>Kysy opiskelusta anonyymisti ja valitse US tai ET sekä luokka A–D.</p></div>
+        <button onclick="forum()">Avaa foorumi</button>
+      </article>
+    </div>
+  `;
+  hero.insertAdjacentElement('afterend',tools);
+
+  const study=document.getElementById('study');
+  if(study){
+    const highlights=document.createElement('div');
+    highlights.className='home-study-highlights';
+    highlights.innerHTML=`
+      <div class="home-highlight"><strong>🎯 Tavoite</strong><span>Ymmärrä käsitteet, älä vain opettele vastauksia ulkoa.</span></div>
+      <div class="home-highlight"><strong>🧠 Kertaus</strong><span>Lyhyet tehtävät auttavat muistamaan tärkeät asiat ennen kontrollia.</span></div>
+      <div class="home-highlight"><strong>🏆 Oma tahti</strong><span>Voit lukea, harjoitella ja pelata ilman rekisteröitymistä.</span></div>
+    `;
+    study.querySelector('.books')?.insertAdjacentElement('afterend',highlights);
+  }
+};
+})();
+</script><div class="version-badge">Opiskelu US &amp; ET · v3.1.2</div>
+<script>
+/* v3.1.2 forum avatar selection */
+(function(){
+  const avatars = ["🌲","🦊","🦉","🐻","🐺","🦌","🐰","🐱","🦋","🌿"];
+  window.forumAvatars = avatars;
+  window.selectedForumAvatar = avatars[0];
+
+  window.renderForumAvatarPicker = function(container){
+    if(!container) return;
+    const avatars = window.forumAvatars || ["🌲","🦊","🦉","🐻","🐺","🦌","🐰","🐱","🦋","🌿"];
+    container.innerHTML = '<div style="font-weight:800;margin-bottom:7px">Valitse avatar</div><div class="forum-avatar-picker">'+avatars.map((a,i)=>'<button type="button" class="forum-avatar-option '+((window.selectedForumAvatar||avatars[0])===a?'selected':'')+'" data-avatar="'+a+'">'+a+'</button>').join('')+'</div>';
+    container.querySelectorAll("[data-avatar]").forEach(btn=>btn.addEventListener("click",()=>{
+      window.selectedForumAvatar=btn.dataset.avatar;
+      container.querySelectorAll(".forum-avatar-option").forEach(x=>x.classList.remove("selected"));
+      btn.classList.add("selected");
+    }));
+  };
+
+  // Patch forum post rendering if the site's forum uses localStorage.
+  const oldSetItem = Storage.prototype.setItem;
+  Storage.prototype.setItem = function(key,value){
+    if(typeof key==="string" && /forum|post|message/i.test(key)){
+      try{
+        const data = JSON.parse(value);
+        if(Array.isArray(data)){
+          data.forEach(p=>{
+            if(p && typeof p==="object" && !p.avatar) p.avatar = window.selectedForumAvatar || avatars[0];
+          });
+          value = JSON.stringify(data);
+        }
+      }catch(e){}
+    }
+    return oldSetItem.call(this,key,value);
+  };
+})();
+</script>
+
+<script>
+document.addEventListener("DOMContentLoaded",()=>{
+  const observer = new MutationObserver(()=>{
+    const forms = document.querySelectorAll("form");
+    forms.forEach(form=>{
+      if(form.dataset.avatarInserted) return;
+      const text = (form.innerText||"").toLowerCase();
+      if(text.includes("forum") || text.includes("viesti") || text.includes("message") || form.querySelector("textarea")){
+        const box=document.createElement("div");
+        box.className="forum-avatar-picker-wrap";
+        form.insertBefore(box, form.querySelector("textarea") || form.firstChild);
+        if(window.renderForumAvatarPicker) window.renderForumAvatarPicker(box);
+        form.dataset.avatarInserted="1";
+      }
+    });
+  });
+  observer.observe(document.body,{childList:true,subtree:true});
+});
+</script>
+</body></html><style>
+
+/* v3.1.2 — Home dashboard cards */
+.home-tools{max-width:1080px;margin:-38px auto 0;padding:0 20px 18px;position:relative;z-index:4}
+.home-tools-grid{display:grid;grid-template-columns:repeat(4,1fr);gap:14px}
+.home-tool-card{border:1px solid var(--line);border-radius:22px;background:var(--surface);box-shadow:0 14px 35px rgba(20,40,30,.10);padding:20px;min-height:155px;display:flex;flex-direction:column;justify-content:space-between;transition:transform .18s ease,box-shadow .18s ease}
+.home-tool-card:hover{transform:translateY(-4px);box-shadow:0 18px 42px rgba(20,40,30,.16)}
+.home-tool-icon{font-size:1.8rem;margin-bottom:8px}
+.home-tool-card h3{margin:0 0 7px;font:700 1.25rem Georgia,serif}
+.home-tool-card p{margin:0;color:var(--muted);line-height:1.55;font-size:.92rem}
+.home-tool-card button{margin-top:15px;align-self:flex-start;border:1px solid var(--line);background:var(--surface-2);color:var(--text);border-radius:999px;padding:8px 13px;font-weight:800;cursor:pointer}
+.home-tool-card button:hover{border-color:var(--accent)}
+.home-study-highlights{display:grid;grid-template-columns:repeat(3,1fr);gap:14px;margin:28px 0 4px}
+.home-highlight{padding:17px 19px;border:1px solid var(--line);border-radius:18px;background:var(--surface-2)}
+.home-highlight strong{display:block;font-size:1.05rem;margin-bottom:5px}
+.home-highlight span{color:var(--muted);font-size:.9rem;line-height:1.5}
+@media(max-width:900px){.home-tools-grid{grid-template-columns:repeat(2,1fr)}}
+@media(max-width:700px){.home-tools{margin:-22px auto 0;padding-left:15px;padding-right:15px}.home-tools-grid{grid-template-columns:1fr}.home-tool-card{min-height:135px}.home-study-highlights{grid-template-columns:1fr}}
+
+/* V6: desktop-first study layout and long-form chapter reading */
+.reader{max-width:1180px;padding:100px 28px 90px}
+.head{max-width:1080px;margin:0 auto}
+.chapter-lead{max-width:900px;margin:0 auto 22px;color:var(--muted);font-size:1.05rem;line-height:1.8}
+.study-article{max-width:1080px;margin-left:auto;margin-right:auto;padding:48px 58px}
+.study-article h2{font:700 1.55rem Georgia,serif;margin:34px 0 12px;color:var(--text-strong)}
+.study-article h2:first-child{margin-top:0}
+.study-article p{font-size:1.04rem;line-height:1.9;max-width:900px;margin:0 0 18px}
+.concept-notes{display:grid;grid-template-columns:repeat(2,minmax(0,1fr));gap:14px;margin:18px 0 8px}
+.concept-note{background:var(--surface-2);border:1px solid var(--line);border-radius:16px;padding:17px 19px}
+.concept-note h3{margin:0 0 6px;font-size:1rem;color:var(--accent)}
+.concept-note p{font-size:.96rem;line-height:1.65;margin:0}
+.study-summary{margin-top:30px;padding:22px 24px;border-radius:18px;background:linear-gradient(135deg,var(--surface-2),var(--surface));border:1px solid var(--line)}
+.study-summary h2{margin:0 0 8px;font-size:1.25rem}
+.study-summary p{margin:0}
+.memory-intro{max-width:850px;line-height:1.8;color:var(--muted)}
+.memory-grid{display:grid;grid-template-columns:repeat(2,minmax(0,1fr));gap:12px;margin-top:20px}
+.memory-item{display:grid;grid-template-columns:minmax(140px,.45fr) 1fr;gap:12px;padding:15px 17px;border:1px solid var(--line);border-radius:14px;background:var(--surface)}
+.memory-item strong{color:var(--accent)}
+.memory-item span{line-height:1.65;color:var(--muted)}
+.exam-box{margin-top:24px;padding:22px 24px;border-radius:18px;background:var(--surface-2);border:1px solid var(--line)}
+.exam-box h3{margin-top:0}.exam-box li{line-height:1.75;margin:6px 0}
+.task-grid{display:grid;grid-template-columns:repeat(2,minmax(0,1fr));gap:18px}
+.task-card{border:1px solid var(--line);border-radius:18px;padding:22px;background:var(--surface);min-width:0}
+.task-card h3{margin-top:0}.task-card p{line-height:1.7}.task-card .btn{margin-top:8px}
+@media(min-width:1200px){.study-article{padding-left:72px;padding-right:72px}.article.memory,.article#tasks{max-width:1080px}}
+@media(max-width:820px){.reader{padding:88px 16px 70px}.study-article{padding:28px 22px}.task-grid,.concept-notes,.memory-grid{grid-template-columns:1fr}.memory-item{grid-template-columns:1fr;gap:5px}.study-article p{font-size:1rem;line-height:1.78}}
+@media(max-width:520px){.chapter-lead{font-size:.95rem}.study-article h2{font-size:1.3rem}.study-article{padding:23px 17px}.memory-item{padding:14px}.task-card{padding:18px}}
+
+/* Mini-kontrollit */
+.mini-test-home{max-width:1080px;margin:0 auto 50px;padding:0 20px}.mini-test-home-card{background:var(--surface);border:1px solid var(--line);border-radius:28px;padding:34px;box-shadow:var(--shadow)}
+.mini-test-home-card h2{font:700 2.2rem Georgia,serif;margin:8px 0 10px}.mini-test-home-card p{max-width:760px;line-height:1.8}
+.mini-test-page{max-width:1100px}.mini-test-hero{margin-bottom:22px}.mini-test-selector{max-width:900px;margin:0 auto 28px}.mini-test-field label{display:block;font-weight:800;margin-bottom:7px}.mini-test-field select{width:100%;padding:13px;border:1px solid var(--line);border-radius:12px;background:var(--surface);color:var(--text);font:inherit}.mini-test-range{display:grid;grid-template-columns:1fr 1fr;gap:16px}.mini-test-presets{display:flex;align-items:center;gap:8px;flex-wrap:wrap;margin:18px 0}.mini-test-presets span{font-weight:800;margin-right:4px}.mini-test-presets button{border:1px solid var(--line);background:var(--surface-2);color:var(--text);border-radius:999px;padding:8px 12px;cursor:pointer}.mini-test-start{margin-right:8px}.mini-quiz{max-width:900px;margin:0 auto}.mini-quiz-head{display:flex;justify-content:space-between;align-items:center;gap:20px}.mini-quiz-head h2{margin:5px 0 0}.mini-count{background:var(--surface-2);padding:8px 12px;border-radius:999px;font-weight:800;white-space:nowrap}.mini-question{border:1px solid var(--line);border-radius:18px;padding:20px;margin:16px 0;background:var(--surface)}.mini-question.mini-correct{border-color:#4f9d65}.mini-question.mini-wrong{border-color:#c86b5b}.mini-q-meta{font-size:.82rem;color:var(--accent);font-weight:800;text-transform:uppercase;letter-spacing:.05em}.mini-question h3{line-height:1.5;margin:8px 0 14px}.mini-options{display:grid;gap:9px}.mini-option{display:block;border:1px solid var(--line);border-radius:12px;padding:11px 13px;cursor:pointer;background:var(--surface-2);line-height:1.5}.mini-option:hover{border-color:var(--accent)}.mini-option input{width:auto;margin:0 8px 0 0}.mini-explain{margin-top:13px;padding:12px 14px;border-radius:12px;background:var(--surface-2);line-height:1.6}.mini-result{margin-top:20px;padding:20px;border-radius:18px;background:var(--surface-2);border:1px solid var(--line);line-height:1.7}.mini-result strong{font-size:1.2rem}.mini-result span{color:var(--muted)}
+@media(max-width:700px){.mini-test-range{grid-template-columns:1fr}.mini-quiz-head{align-items:flex-start;flex-direction:column}.mini-test-home-card{padding:24px}.mini-test-start{width:100%;margin:0 0 8px}.mini-test-selector>.secondary{width:100%}}
+
+/* V29 — educational mini games */
+.mini-games-home{max-width:1080px;margin:0 auto 50px;padding:0 20px}.mini-games-home-card{background:var(--surface);border:1px solid var(--line);border-radius:28px;padding:34px;box-shadow:var(--shadow)}
+.game-grid{display:grid;grid-template-columns:repeat(2,minmax(0,1fr));gap:16px;margin-top:22px}.game-card{border:1px solid var(--line);background:var(--surface-2);border-radius:20px;padding:20px}.game-card h3{margin:5px 0 8px}.game-card p{line-height:1.65;color:var(--muted)}
+.game-selector{max-width:920px;margin:0 auto 24px}.game-select-row{display:grid;grid-template-columns:1fr 1fr;gap:14px}.game-field label{display:block;font-weight:900;margin-bottom:7px}.game-field select{width:100%;padding:13px;border:1px solid var(--line);border-radius:12px;background:var(--surface);color:var(--text);font:inherit}.game-buttons{display:flex;gap:8px;flex-wrap:wrap;margin-top:16px}.game-buttons button{border:1px solid var(--line);background:var(--surface-2);color:var(--text);border-radius:999px;padding:8px 12px;cursor:pointer}.game-type-grid{display:grid;grid-template-columns:repeat(2,minmax(0,1fr));gap:14px;margin-top:18px}.game-type{padding:18px;border:1px solid var(--line);border-radius:18px;background:var(--surface);text-align:left;cursor:pointer;color:var(--text)}.game-type:hover{border-color:var(--accent);transform:translateY(-1px)}.game-type strong{display:block;font-size:1.05rem;margin-bottom:5px}.game-type span{color:var(--muted);line-height:1.5}
+.game-board{max-width:920px;margin:0 auto}.game-head{display:flex;justify-content:space-between;align-items:center;gap:16px}.game-stat{display:flex;gap:8px;flex-wrap:wrap}.game-stat span{padding:8px 11px;border-radius:999px;background:var(--surface-2);font-weight:900}.game-question{margin:18px 0;padding:24px;border:1px solid var(--line);border-radius:20px;background:var(--surface)}.game-question h2{line-height:1.4}.game-options{display:grid;gap:10px}.game-option{padding:13px 15px;border:1px solid var(--line);border-radius:13px;background:var(--surface-2);color:var(--text);cursor:pointer;text-align:left;font:inherit}.game-option:hover{border-color:var(--accent)}.game-option.correct{outline:2px solid #4f9d65}.game-option.wrong{outline:2px solid #c86b5b}.game-feedback{margin-top:14px;padding:13px;border-radius:13px;background:var(--surface-2);line-height:1.6}.game-actions{display:flex;gap:10px;flex-wrap:wrap;margin-top:18px}.game-actions .btn{margin:0}.game-result{padding:24px;border:1px solid var(--line);border-radius:20px;background:var(--surface-2);text-align:center}.game-result .big{font:700 3rem Georgia,serif}.game-progress{height:9px;background:var(--surface-2);border-radius:99px;overflow:hidden;margin:15px 0}.game-progress i{display:block;height:100%;width:0;background:var(--accent);transition:.25s}
+.memory-game-grid{display:grid;grid-template-columns:repeat(4,minmax(0,1fr));gap:10px}.memory-card{min-height:105px;border:1px solid var(--line);border-radius:15px;background:var(--surface-2);color:var(--text);cursor:pointer;padding:12px;font-weight:800;line-height:1.4}.memory-card.revealed,.memory-card.matched{background:var(--surface);outline:2px solid var(--accent)}.memory-card.matched{opacity:.65;cursor:default}.memory-card small{display:block;color:var(--muted);font-weight:600;margin-top:6px}.scramble-word{font:900 clamp(2rem,7vw,4rem) Georgia,serif;letter-spacing:.12em;text-align:center;margin:22px 0}.letter-buttons{display:flex;justify-content:center;gap:8px;flex-wrap:wrap}.letter-buttons button{min-width:42px;height:42px;border:1px solid var(--line);border-radius:11px;background:var(--surface-2);color:var(--text);font-weight:900;cursor:pointer}.typed-word{text-align:center;min-height:45px;font-weight:900;font-size:1.35rem;margin:15px}.streak-fire{font-size:2.8rem;text-align:center}.timer-warning{font-weight:900}.game-note{color:var(--muted);line-height:1.7}
+@media(max-width:700px){.game-grid,.game-type-grid,.game-select-row{grid-template-columns:1fr}.memory-game-grid{grid-template-columns:repeat(2,minmax(0,1fr))}.game-head{align-items:flex-start;flex-direction:column}.mini-games-home-card{padding:24px}}
+</style>
