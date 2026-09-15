@@ -1297,6 +1297,103 @@ document.addEventListener("DOMContentLoaded",()=>{
   observer.observe(document.body,{childList:true,subtree:true});
 });
 </script>
+
+<!-- OPISKELU ONLINE FORUM: Supabase client -->
+<script src="https://cdn.jsdelivr.net/npm/@supabase/supabase-js@2"></script>
+<script src="supabase-config.js"></script>
+<script>
+(function(){
+  const cfg = window.OPISKELU_SUPABASE || {};
+  const configured = cfg.url && cfg.anonKey && !String(cfg.url).includes('YOUR_PROJECT') && !String(cfg.anonKey).includes('YOUR_');
+  if(!configured){
+    window.__ONLINE_FORUM_ENABLED__ = false;
+    console.warn('Online forum is not configured. Edit supabase-config.js.');
+    return;
+  }
+  window.__ONLINE_FORUM_ENABLED__ = true;
+  window.opiskeluSupabase = window.supabase.createClient(cfg.url, cfg.anonKey);
+  window.__onlineForumPosts = [];
+  window.__onlineForumLoaded = false;
+  window.__onlineForumLoading = false;
+
+  function normalize(row){
+    return {
+      id: row.id,
+      number: row.number,
+      title: row.title || '',
+      text: row.text || '',
+      subject: row.subject || 'US',
+      cls: row.cls || '1',
+      avatar: row.avatar || '🌲',
+      created_at: row.created_at
+    };
+  }
+  window.getForumPosts = function(){ return window.__onlineForumPosts || []; };
+  window.saveForumPosts = function(){ return true; };
+
+  async function refreshOnlineForum(){
+    if(window.__onlineForumLoading) return;
+    window.__onlineForumLoading = true;
+    const {data,error} = await window.opiskeluSupabase
+      .from('forum_posts').select('*').order('number',{ascending:false}).limit(200);
+    window.__onlineForumLoading = false;
+    if(error){
+      console.error(error);
+      const list=document.getElementById('forumList');
+      if(list) list.innerHTML='<div class="forum-empty">Foorumia ei voitu ladata. Tarkista Supabase-asetukset.</div>';
+      return;
+    }
+    window.__onlineForumPosts=(data||[]).map(normalize);
+    window.__onlineForumLoaded=true;
+    const active=document.querySelector('.forum-tab.active');
+    const key=active ? active.dataset.forumKey || 'ALL' : 'ALL';
+    if(document.getElementById('forumList')) window.renderForum(key);
+  }
+  window.refreshOnlineForum = refreshOnlineForum;
+
+  window.renderForum = function(key){
+    const list=document.getElementById('forumList'); if(!list)return;
+    const posts=(window.__onlineForumPosts||[]).filter(x=>key==='ALL'||x.subject===key||x.cls===key);
+    list.innerHTML=posts.length ? posts.map(x=>`<article class="forum-post"><div class="forum-post-head"><span class="forum-post-number">#${esc(x.number)}</span><span class="forum-badge">${esc(x.subject)} • Luokka ${esc(x.cls)}</span><span class="forum-meta">Anonyymi</span></div><span class="forum-post-avatar">${esc(x.avatar||'🌲')}</span><h3>${esc(x.title)}</h3><p>${esc(x.text)}</p><div class="forum-meta">${x.created_at ? new Date(x.created_at).toLocaleString('fi-FI') : ''}</div></article>`).join('') : '<div class="forum-empty">Tässä suodattimessa ei ole vielä julkaisuja.</div>';
+  };
+
+  window.filterForum = function(key,b){
+    document.querySelectorAll('.forum-tab').forEach(x=>x.classList.remove('active'));
+    if(b){b.classList.add('active'); b.dataset.forumKey=key;}
+    window.renderForum(key);
+  };
+
+  window.addForumPost = async function(){
+    const title=document.getElementById('fTitle').value.trim();
+    const text=document.getElementById('fText').value.trim();
+    const subject=document.getElementById('fSubject').value;
+    const cls=document.getElementById('fClass').value;
+    if(!title||!text){alert('Täytä otsikko ja viesti.');return;}
+    const button=document.querySelector('.forum-form button[onclick*="addForumPost"]');
+    if(button){button.disabled=true;button.textContent='Julkaistaan…';}
+    const {error}=await window.opiskeluSupabase.from('forum_posts').insert({title,text,subject,cls,avatar:(window.selectedForumAvatar||'🌲')});
+    if(button){button.disabled=false;button.textContent='Julkaise';}
+    if(error){console.error(error);alert('Julkaisu epäonnistui. Tarkista Supabase-asetukset.');return;}
+    document.getElementById('fTitle').value=''; document.getElementById('fText').value='';
+    await refreshOnlineForum();
+  };
+
+  const oldForum = window.forum;
+  window.forum = function(){
+    if(typeof oldForum==='function') oldForum();
+    const list=document.getElementById('forumList');
+    if(list){
+      list.innerHTML='<div class="forum-empty">Ladataan foorumia…</div>';
+      refreshOnlineForum();
+    }
+  };
+
+  // Realtime: new/changed/deleted posts appear without refreshing the page.
+  window.opiskeluSupabase.channel('forum-live')
+    .on('postgres_changes',{event:'*',schema:'public',table:'forum_posts'},()=>refreshOnlineForum())
+    .subscribe();
+})();
+</script>
 </body></html><style>
 
 /* v3.1.2 — Home dashboard cards */
